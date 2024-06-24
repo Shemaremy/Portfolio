@@ -1,4 +1,48 @@
 import React from "react";
+import "./CSS/Part3.CSS"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+
+
+const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    responsive: [
+        {
+            breakpoint: 768, // adjust the breakpoint as needed for mobile devices
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ]
+};
+
+
+
+const ProjectCards = (
+    <div className="projects_library">
+        <Slider {...settings} className="Slider">
+            <div className="project_card">1</div>
+            <div className="project_card">2</div>
+            <div className="project_card">3</div>
+            <div className="project_card">4</div>
+            <div className="project_card">5</div>
+            <div className="project_card">6</div>
+            <div className="project_card">7</div>
+            <div className="project_card">8</div>
+        </Slider>
+    </div>
+);
+
+
+
 
 function Part3() {
 
@@ -7,40 +51,12 @@ function Part3() {
             <div className="Two_Parts3">
                 <div className="Left_part3">
                     <h2 className="My_proj_header">My Projects</h2>
-                    <p className="My_proj_Paragraph">Below, find my projects that I’ve been working on</p>
+                    <div className="my_projects_heading_underline">
+                        <div className="main_underline"></div>
+                    </div>
                 </div>
                 <div className="Right_part3">
-                    <div className="main-card-3">
-                    <div className="left-part-3">
-                        <button id="prev-slide-3" className="slide-button-3"><i className="chev-icon-3 fa fa-angle-left" aria-hidden="true"></i></button>
-                        <ul className="cards-library-3">
-                        <div className="card-3">
-                            <div className="card-content-3 rimwe">1</div>
-                        </div>
-                        <div className="card-3">
-                            <div className="card-content-3 kabiri">2</div>
-                        </div>
-                        <div className="card-3">
-                            <div className="card-content-3 gatatu">3</div>
-                        </div>
-                        <div className="card-3">
-                            <div className="card-content-3 kane">4</div>
-                        </div>
-                        <div className="card-3">
-                            <div className="card-content-3 gatanu">5</div>
-                        </div>
-                        <div className="card-3">
-                            <div className="card-content-3 gatandatu">6</div>
-                        </div>
-                        </ul>
-                        <button id="next-slide-3" className="slide-button-3"><i className="chev-icon-3 fa fa-angle-right" aria-hidden="true"></i></button>
-                    </div>
-                    <div className="right-part-3">
-                        <div className="scrollbar-container-3">
-                        <div className="scrollbar-3"></div>
-                        </div>
-                    </div>
-                    </div>
+                    {ProjectCards}
                 </div>
             </div>
         </div>        

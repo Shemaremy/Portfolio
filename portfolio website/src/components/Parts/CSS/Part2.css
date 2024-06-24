@@ -1,0 +1,256 @@
+.Part2 {
+    width: 95%;
+    height: 9%;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.274);
+    position: relative;
+    background-color: rgba(88, 114, 136, 0.075);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #00000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        height: 7%;
+        box-shadow: none;
+        border-radius: 1px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.Two_Parts2 {
+    height: 98%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+}
+.Left_part2 {
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgba(43, 255, 0, 0);
+    
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        width: 40%;
+        height: 30vh;
+        margin-left: 0;
+        padding-left: 4%;
+    }
+}
+
+.About_Photo
+{
+    height: 180px;
+    width: 180px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 50%;
+    border-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        height: 140px;
+        width: 140px;
+    }
+}
+
+
+.meet_remy_photo {
+    min-height: 100%;
+    min-width: 95%;
+    height: 100%;
+    width: 95%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(83, 180, 38);
+}
+
+
+
+
+
+.Download_cv
+{
+    margin-top: 5%;
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        display: none;
+    }
+}
+
+.Download_cv2a
+{
+    padding: 9px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(64, 255, 47);
+    background-color: rgba(102, 255, 0, 0.075);
+    width: 90px;
+    padding: 3px;
+    font-size: 9px;
+    font-weight: 100;
+    cursor: pointer;
+    width: 70px;
+}
+
+.Download_cv2a:hover
+{
+    background-color: rgba(102, 255, 0, 0.281);
+}
+
+
+
+.Right_part2 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        font-size: 30px;
+        height: 230px;
+        width: 60%;
+        padding-right: 0;
+    }
+}
+
+.About_me_header, .About_me_par {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+.About_me_header {
+    height: 10%;
+    width: 60%;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        margin-right: 15px;
+        font-size: 22px;
+    }
+}
+
+.About_me_container {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px 0px 30px 0px;
+    border-color: rgba(56, 56, 56, 0);
+    margin-bottom: 20px;
+    background-color: rgba(224, 224, 224, 0);  
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.342);
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        width: 95%;
+        height: 80%;
+        border-radius: 0;
+        margin-top: 0px;
+        box-shadow: none;
+        overflow-y: auto;
+        border-left: none;
+        border-right: none;
+        border: none;
+        margin-right: 0;
+        margin-top: 5%;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+}
+
+
+
+.About_me_par
+{
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        width: 100%;
+        height: 100%;
+        margin-top: 50%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.The_par
+{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.849);
+    font-size: 12px;
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        font-size: 10px;
+        width: 80%;
+        height: 100%;
+        margin-top: 0;
+    }
+}
+
+
+.last
+{
+    width: 100%;
+
+    @media (max-width: 767px)
+    {
+        width: 80%;
+    }
+}

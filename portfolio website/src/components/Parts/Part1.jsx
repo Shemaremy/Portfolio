@@ -1,4 +1,5 @@
 import React from "react";
+import "./CSS/Part1.CSS"
 
 function Part1 () {
     return(
@@ -49,39 +50,39 @@ function Part1 () {
 
                         <div className="Hire_me_and_Github">
                             <p className="Github_ico">
-                                <a href="https://github.com/Shemaremy">
-                                    <i className="fab fa-github" style={{ fontSize: '17px', color: 'rgba(0, 0, 0, 0.432)' }}></i>
-                                    <span style={{ fontFamily: 'sans-serif', fontSize: '8px', marginLeft: '0', color: '#00000056' }}>My Github</span>
+                                <a href="https://github.com/Shemaremy" className="mob_github_link">
+                                    <i className="fab fa-github mob_github_ico" ></i>
+                                    <p className="mob_my_github_word">My Github</p>
                                 </a>
                             </p>
                         </div>
 
                         <div className="social_media">
-                            <ul className="all_icons">
-                                <li className="icon Linkedin">
+                            <div className="all_icons">
+                                <p className="icon Linkedin">
                                     <a href="https://www.linkedin.com">
                                         <i className="ico_1 fab fa-linkedin"></i>
                                     </a>
-                                </li>
+                                </p>
 
-                                <li className="icon Twitter">
+                                <p className="icon Twitter">
                                     <a href="https://www.twitter.com">
                                         <i className="ico_1 fab fa-twitter"></i>
                                     </a>
-                                </li>
+                                </p>
 
-                                <li className="icon Instagram">
+                                <p className="icon Instagram">
                                     <a href="https://www.instagram.com">
                                         <i className="ico_1 fab fa-instagram"></i>
                                     </a>
-                                </li>
+                                </p>
 
-                                <li className="icon Behance">
+                                <p className="icon Behance">
                                     <a href="https://www.behance.net">
                                         <i className="ico_1 fab fa-behance"></i>
                                     </a>
-                                </li>
-                            </ul>
+                                </p>
+                            </div>
                         </div>
                     </div>
 

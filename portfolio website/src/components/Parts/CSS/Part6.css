@@ -1,0 +1,180 @@
+.Part6 {
+    width: 100%; /* Adjust the width as needed */
+    height: 15%;
+    margin-top: 0%;
+    margin-bottom: 0;
+    background-color: #3030303a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @media (max-width: 767px) {
+        box-shadow: none;
+        border-radius: 0px;
+        width: 100%;
+        height: 13%;
+    }
+
+}
+
+.upper_part_skills {
+    height: 17%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.skills_header {
+    width: 85%;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media only screen and (max-width: 767px) {
+        margin-top: 10%;
+    }
+}
+
+
+.skills_underline_container{
+    height: 3vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.skills_underline_itself {
+    height: 0px;
+    width: 10%;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 500px;
+    background-color: rgb(80, 145, 199);
+}
+
+
+
+.lower_part_skills {
+    height: 83%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skill_card {
+    height: 80%;
+    width: 32%;
+    background-color: rgba(31, 44, 117, 0.075);
+    background: linear-gradient(135deg,  rgba(255, 0, 255, 0),  rgba(0, 0, 0, 0.041), rgba(255, 0, 255, 0));
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(148, 148, 148, 0.575);
+    border-radius: 2px;
+}
+
+
+/*-----------------------------------------*/
+.Front_and_design {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.Frontend, .Design {
+    height: 40%;
+    width: 97%;
+}
+
+
+/*-----------------------------------------*/
+
+
+/*-----------------------------------------*/
+.Back_Datb_collab {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Backend, .Database, .Collaboration {
+    width: 97%;
+    height: 30%;
+}
+
+
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+
+
+/*-----------------------------------------*/
+
+
+.set_name {
+    width: 100%;
+    height: 35%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Abel", sans-serif;
+    font-weight: 4000;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.mainset {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+i{
+    font-size: 40px;
+    margin-left: 5%;
+    filter: grayscale(90%);
+    cursor: pointer;
+    transition: filter 0.2s ease-in-out;
+}
+
+i:hover {
+    filter: grayscale(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.workflow {
+    width: 20%;
+}

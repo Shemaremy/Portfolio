@@ -1,4 +1,5 @@
 import React from "react";
+import "./CSS/Part8.CSS"
 
 function Part8() {
     return(

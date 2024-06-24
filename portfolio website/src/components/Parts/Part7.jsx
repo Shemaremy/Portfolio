@@ -1,4 +1,5 @@
 import React from "react";
+import "./CSS/Part7.CSS"
 
 function Part7() {
     return(
@@ -11,18 +12,16 @@ function Part7() {
                 <div className="Right_part7">
                 <div className="Everything">
                     <div className="Left_Section">
-                        <div className="words">
+                        <div className="left_words">
                             <h1 className="heading_text7">Let's talk</h1>
                             <p className="p1">Ask me anything or just say hi ...</p>
                         </div>
 
-                        <div className="Tel">
+                        <div className="Tel_container">
                             <p className="p2"><i className="icon2 fa fa-phone" aria-hidden="true"></i> &nbsp; +250 783 674 289</p>
                             <p className="p3"><i className="icon2 fas fa-envelope"></i> &nbsp; remyshema20@gmail.com</p>
-                        </div>
-                        
+                        </div>         
                     </div>
-
                     <div className="Right_section">
                     
                         <form className="myForm" action="https://half-tundra-burn.glitch.me/submit" method="POST">
