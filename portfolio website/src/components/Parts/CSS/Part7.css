@@ -1,6 +1,6 @@
 .Part7 {
     width: 100%; /* Adjust the width as needed */
-    height: 13%;
+    height: 16%;
     box-shadow:  0 0 30px rgba(0, 0, 0, 0);
     background-color: rgba(251, 255, 0, 0);
     margin-top: 0%;
@@ -9,7 +9,7 @@
     @media (max-width: 767px)     /* Mobile devices */
     {
        background-color: rgba(11, 14, 12, 0.815);
-       height: 15%;
+       height: 14%;
        width: 100%;
        margin-bottom: 0px;
     }
@@ -30,7 +30,7 @@
 
 }
 
-.Left_part7 {
+.Upper_part_footer {
     width: 100%;
     height: 15%;
     background-color: rgba(37, 37, 37, 0);
@@ -38,6 +38,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 767px) {
+        height: 20%;
+    }
 }
 
 .Get_in_touch {
@@ -49,13 +53,18 @@
 
 
     @media (max-width: 767px) {
-        color: aliceblue;
+        color: rgb(234, 245, 245);
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
     }
 }
 
 
 
-.Right_part7 {
+.Lower_part_footer  {
     width: 90%;
     height: 80%;
     background-color: rgb(217, 225, 231);
@@ -70,15 +79,17 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 767px) {
         width: 100%;
-        height: 60vh;
+        height: 80%;
         box-shadow: none;
         background-color: rgba(10, 12, 0, 0.445);
         border-radius: 1px;
         border-bottom: none;
         margin-bottom: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 }
 
@@ -92,7 +103,8 @@
 
     @media only screen and (max-width: 767px) {
         flex-direction: column;
-        margin-top: 5%;
+        width: 100%;
+        height: 90%;
     }
 }
 
@@ -154,25 +166,149 @@
 
    @media (max-width: 767px) {
         margin-top: 0;
-        padding-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        width: 100%;
     }
 }
+
+
+.myForm {
+    width: 70%;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+
 
 .row {
     width: 100%;
     height: 100%;
 
     @media (max-width: 767px) {
-        width: 70%;
-        margin-left: 13%;
-        margin-top: 8%;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
-.myForm {
-    width: 70%;
-    overflow: hidden;
+
+
+
+.Name_Email {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+    }
 }
+
+.Name, .Email {
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+
+.Message {
+
+    @media (max-width: 767px) {
+        height: 25%;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.Send {
+    @media (max-width: 767px) {
+        height: 17%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+}
+
+
+.button_7
+{
+    margin-top: 0px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: rgb(6, 168, 0);
+    border-width: 1px;
+    border-radius: 5px;
+    width: 120px;
+    padding: 9px;
+    cursor: pointer;
+    font-size: 11px;
+    background-color: rgba(51, 153, 68, 0.089);
+    color: rgb(175, 175, 175);
+    transition: transform 0.3s ease;
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        width: 100px;
+        padding: 6px;
+        color: rgb(175, 175, 175);
+        border-color: rgb(212, 255, 210);
+        background-color: rgba(132, 206, 122, 0.164);
+        
+    }
+}
+
+.button_7:hover {
+    border-color: rgb(0, 255, 98);
+    background-color: rgba(108, 197, 97, 0.212);
+}
+
+.button_7:active {
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .p1
 {
@@ -223,39 +359,6 @@
 }
 
 
-.Send
-{
-    margin-top: 30px;
-}
-
-.Name_Email
-{
-    display: flex;
-    flex-direction: row;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        flex-direction: column;
-        margin-bottom: 18%;
-    }
-}
-
-.Email
-{
-    margin-left: 15px;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
-
-.Message
-{
-    margin-top: 30px;
-}
-
 
 .heading_text7a
 {
@@ -300,8 +403,7 @@
 
 
 
-input
-{
+input {
     border-style: solid;
     border-top: none;
     border-left: none;
@@ -386,40 +488,3 @@ input:focus        /*WHILE INPUTING*/
 
 
 
-.button_7
-{
-    margin-top: 0px;
-    margin-left: 10px;
-    border-style: solid;
-    border-color: rgb(6, 168, 0);
-    border-width: 1px;
-    border-radius: 5px;
-    width: 120px;
-    padding: 9px;
-    cursor: pointer;
-    font-size: 11px;
-    background-color: rgba(51, 153, 68, 0.089);
-    color: rgb(175, 175, 175);
-    transition: transform 0.3s ease;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        margin-bottom: 10%;
-        margin-left: 0;
-        width: 100px;
-        padding: 6px;
-        color: rgb(175, 175, 175);
-        border-color: rgb(212, 255, 210);
-        background-color: rgba(132, 206, 122, 0.164);
-        
-    }
-}
-
-.button_7:hover {
-    border-color: rgb(0, 255, 98);
-    background-color: rgba(108, 197, 97, 0.212);
-}
-
-.button_7:active {
-    transform: scale(0.8);
-}

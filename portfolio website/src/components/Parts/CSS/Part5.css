@@ -9,10 +9,9 @@
     border-radius: 5px;
     background-color: rgba(209, 226, 215, 0.575);
 
-    @media only screen and (max-width: 767px) 
-    {
+    @media only screen and (max-width: 767px) {
       box-shadow: none;
-      height: 17%;
+      height: 10%;
       width: 100%;
       background-color: rgba(245, 255, 216, 0.315);
       background-color: rgba(109, 128, 0, 0.151);
@@ -44,6 +43,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
 
@@ -59,7 +65,7 @@
     text-align: center;
 
     @media only screen and (max-width: 767px) {
-        margin-top: 10%;
+        margin-top: 0;
     }
 }
 
@@ -70,6 +76,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 767px) {
+        height: 0;
+    }
+    
 }
 
 .main_underline_services {
@@ -79,6 +90,10 @@
     border-width: 0px;
     border-radius: 500px;
     background-color: rgb(80, 145, 199);
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 
@@ -89,9 +104,14 @@
 
 
 .lower_part_services {
-    height: 85%;
+    height: 80%;
     width: 100%;
     overflow: hidden;
+
+    @media only screen and (max-width: 767px) {
+        height: 70%;
+    }
+    
 }
 
 
@@ -117,6 +137,11 @@
     cursor: grab;
     border-radius: 10px;
     align-content: center;
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        border-radius: 0;
+    }
 }
   
   
@@ -132,14 +157,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: blur(1.5px) brightness(70%);
+    filter: brightness(70%);
     transition: background-color 0.7s ease-in-out, height 0.4s ease-in-out, width 0.4s ease-in-out, filter 0.4s ease-in-out ;
+
+    @media only screen and (max-width: 767px) {
+        width: 30vw !important;
+        height: 30vh;
+        border-radius: 3px;
+    }
 }
   
 
-  
-  
-  
   
   
   
@@ -149,6 +177,11 @@
     background-color: rgb(121, 101, 175);
     filter: blur(0px) brightness(100%);
     height: 45vh;
+
+    @media only screen and (max-width: 767px) {
+        width: 30vw !important;
+        height: 30vh;
+    }
   }
   
   
@@ -166,9 +199,6 @@
 
 .slick-track {
     height: 100%;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
 }
 
 .slick-slide {
@@ -182,6 +212,10 @@
 
 .slick-prev, .slick-next {
     color: black !important;
+    
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
   }
   
   

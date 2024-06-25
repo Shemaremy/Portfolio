@@ -9,7 +9,7 @@
     @media (max-width: 767px)     /* Mobile devices */
     {
         border-radius: 0px;
-        height: 15%;
+        height: 16%;
         background-color: rgba(138, 138, 138, 0.199);
         margin-bottom: 0;
     }
@@ -630,6 +630,8 @@ header
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
+    color: rgb(78, 78, 78);
 }
 
 .mob_github_ico {

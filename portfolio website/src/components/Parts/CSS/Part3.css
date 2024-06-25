@@ -8,9 +8,9 @@
     
     margin-top: 0%;
 
-    @media only screen and (max-width: 767px) 
-    {
-        height: 16%;
+    @media only screen and (max-width: 767px)  {
+        height: 15%;
+        width: 100%;
         border-width: 0px;
         border-color: rgba(255, 255, 255, 0);
         background-color: rgba(215, 223, 230, 0.507);
@@ -29,9 +29,16 @@
     margin: 0 auto;
     margin-bottom: 0;
 
-    @media only screen and (max-width: 767px) 
-    {
+    @media only screen and (max-width: 767px)  {
+        height: 100%;
+        width: 100%;
         margin-top: 0%;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -49,7 +56,10 @@
         margin-bottom: 0;
         padding-bottom: 0;
         width: 100%;
-        height: 160px;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
    }
 
 }
@@ -65,7 +75,16 @@
     margin-bottom: 0;
 
     @media only screen and (max-width: 767px) {
-        margin-top: 10%;
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 }
 
@@ -75,6 +94,11 @@
     width: 84%;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+    
 }
 
 .main_underline {
@@ -84,6 +108,11 @@
     border-width: 0px;
     border-radius: 500px;
     background-color: rgb(80, 145, 199);
+
+    @media only screen and (max-width: 767px) {
+        width: 50%;
+        display: none;
+    }
 }
 
 
@@ -96,11 +125,10 @@
     margin: 0 auto;
     overflow: hidden;
 
-    @media (max-width: 767px)
-    {
+    @media (max-width: 767px) {
         margin-left: 0;
-        width: 99%;
-        height: 65vh;
+        width: 100%;
+        height: 80%;
     }
     
 }
@@ -154,6 +182,11 @@
     justify-content: center;
     align-items: center;
     cursor: grab;
+
+    @media (max-width: 767px) {
+        height: 50vh !important;
+        width: 48vh !important;
+    }
 }
 
 

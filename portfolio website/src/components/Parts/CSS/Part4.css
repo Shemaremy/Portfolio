@@ -16,23 +16,12 @@
         border-radius: 0px;
         border-color: rgba(230, 230, 230, 0);
         width: 100%;
-        height: 15%;
+        height: 28%;
         box-shadow: none;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(203, 212, 219, 0.507);
     }
 
 
-}
-
-
-.Two_Parts4 {
-    display: flex;
-    flex-direction: column;
-
-    @media only screen and (max-width: 767px) 
-{
-      margin-top: 0;
-}
 }
 
 
@@ -191,6 +180,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 .certifications_and_experience_top {
@@ -201,6 +198,11 @@
     justify-content: flex-end;
     align-items: center;
     padding: 0;
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        height: 15%;
+    }
 }
 
 
@@ -217,6 +219,10 @@
     margin-bottom: 0;
     font-size: 30px;
     text-align: right;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 28px;
+    }
 }
 
 
@@ -229,6 +235,10 @@
     align-items: center; 
     margin-top: 0;
     margin-bottom: 0;
+
+    @media only screen and (max-width: 767px) {
+        height: 4vh;
+    }
 }
 
 .main_underline_2 {  
@@ -253,6 +263,12 @@
     flex-direction: column;
     align-items: center;
     overflow: auto;
+
+    @media only screen and (max-width: 767px) {
+        justify-content: space-around;
+        height: 85%;
+    }
+
 }
 
 
@@ -264,7 +280,16 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        width: 90%;
+        height: 8%;
+        display: none;
+    }
+    
+
 }
+
 
 .onCertificate {
     width: 16%;
@@ -315,6 +340,14 @@
 }
 
 
+.onCertificate, .onExperience {
+    @media only screen and (max-width: 767px) {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 5%;
+    }
+}
+
 
 
 
@@ -358,6 +391,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        height: 65%;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .left_part_certificates {
@@ -365,6 +406,13 @@
     width: 40%;
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: 767px) {
+        width: 45%;
+        height: 50%;
+        padding-left: 2%;
+        justify-content: space-around;
+    }
 }
 
 .check_out {
@@ -379,6 +427,10 @@
     font-style: normal;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.788);
+
+    @media only screen and (max-width: 767px) {
+        font-size: 40px;
+    }
 }
 
 .c_out {
@@ -388,6 +440,10 @@
     font-weight: 500;
     font-style: normal;
     color: rgb(93, 163, 76);
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .check_out_par {
@@ -399,6 +455,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: rgba(255, 255, 255, 0.788);
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        font-size: 12px;
+    }
 }
 
 
@@ -415,6 +476,13 @@
     color: rgb(224, 224, 224);
     cursor: pointer;
     transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out ;
+
+    @media only screen and (max-width: 767px) {
+        background-color: green;
+        width: 40%;
+        padding: 6px;
+        font-size: 10px;
+    }
 }
 
 .learn_more_cert:hover {
@@ -447,6 +515,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        height: 85%;
+    }
 }
 
 .cert_card {
@@ -455,12 +530,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: 767px) {
+        width: 95%;
+        height: 30%;
+    }
 }
 
 
 .upper_cert {
     width: 100%;
     height: 53%;
+
+    @media only screen and (max-width: 767px) {
+        height: 70%;
+    }
 }
 
 .cert_img {
@@ -482,6 +566,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    @media only screen and (max-width: 767px) {
+        height: 30%;
+    }
 }
 
 .cert_name {
@@ -490,6 +578,12 @@
     padding: 0;
     font-family: sans-serif;
     color: rgb(93, 163, 76);
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+    }
 }
 
 .cert_par {
@@ -501,6 +595,11 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.788);
     font-weight: 100;
+
+    @media only screen and (max-width: 767px) {
+        width: 90%;
+        font-size: 9px;
+    }
 }
 
 
@@ -519,6 +618,100 @@
 
 
 .Experience_panel {
-    height: 30%;
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+        height: 35%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: rgb(55, 61, 59);
+    }
+
+}
+
+.work_experience {
+    width: 47%;
+    height: 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: rgb(155, 155, 155);
+    letter-spacing: 2px;
+}
+
+.experience_list {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+.main_experience_list {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.the_li {
+    background-color: rgb(79, 84, 90);
+    background: linear-gradient(to left, rgb(79, 84, 90), rgba(0, 0, 0, 0));
+    text-align: right;
     width: 95%;
+    height: 30%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.Organisation {
+    font-size: 15px;
+    margin-bottom: 2%;
+    margin-top: 0;
+    padding: 0;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    width: 96%;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.job_title {
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    width: 98%;
+    color: rgb(155, 155, 155);
+    color: #00BFFF;
+    color: chocolate;
+}
+
+.duration {
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    margin-top: 0;
+    font-weight: 500;
+    width: 98%;
+    color: rgb(155, 155, 155);
+    color: #B0B0B0;
 }

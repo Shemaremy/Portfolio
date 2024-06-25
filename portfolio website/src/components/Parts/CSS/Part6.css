@@ -1,6 +1,6 @@
 .Part6 {
     width: 100%; /* Adjust the width as needed */
-    height: 15%;
+    height: 12%;
     margin-top: 0%;
     margin-bottom: 0;
     background-color: #3030303a;
@@ -13,7 +13,7 @@
         box-shadow: none;
         border-radius: 0px;
         width: 100%;
-        height: 13%;
+        height: 12%;
     }
 
 }
@@ -25,6 +25,11 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -33,20 +38,26 @@
     width: 85%;
     font-family: sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 0;
-    color: rgb(0, 0, 0);
+    color: rgb(88, 88, 88);
     margin-top: 0;
     margin-bottom: 0;
 
     @media only screen and (max-width: 767px) {
-        margin-top: 10%;
+        height: 65%;
+        width: 90%;
+        font-size: 23px;
+        margin-bottom: 0;
+        margin-top: 0;
+        display: flex;
+        align-items: flex-end;
     }
 }
 
 
 .skills_underline_container{
-    height: 3vh;
+    height: 0vh;
     width: 70%;
     display: flex;
     align-items: center;
@@ -65,19 +76,23 @@
 
 .lower_part_skills {
     height: 83%;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    background-color: #3030303a;
+
+    @media only screen and (max-width: 767px) {
+        background-color: #30303017;
+    }
 }
 
 .skill_card {
     height: 80%;
     width: 32%;
-    background-color: rgba(31, 44, 117, 0.075);
-    background: linear-gradient(135deg,  rgba(255, 0, 255, 0),  rgba(0, 0, 0, 0.041), rgba(255, 0, 255, 0));
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     border-color: rgba(148, 148, 148, 0.575);
     border-radius: 2px;
 }
@@ -88,8 +103,6 @@
     width: 37%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;    
 }
 
 .Frontend, .Design {
@@ -141,6 +154,8 @@
     font-weight: 4000;
     font-style: normal;
     font-size: 15px;
+    padding-left: 5%;
+    text-decoration: underline;
 }
 
 .mainset {
@@ -167,6 +182,10 @@ i:hover {
 
 
 
+.Frontend > .mainset > i, .Design > .mainset > i {
+    font-size: 33px;
+}
+
 
 
 
@@ -177,4 +196,9 @@ i:hover {
 
 .workflow {
     width: 20%;
+    border-width: 1px;
+    border-color: rgb(110, 110, 110);
+    border-radius: 10px;
+    border-style: dashed;
+    display: none;
 }

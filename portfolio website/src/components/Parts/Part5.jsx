@@ -13,7 +13,15 @@ function Part5() {
         infinite: true,
         centerPadding: "0px",
         slidesToShow: 3,
-        speed: 500
+        speed: 500,
+        responsive: [
+            {
+                breakpoint: 768, // adjust the breakpoint as needed for mobile devices
+                settings: {
+                    dots: false
+                },
+            },
+        ]
       };
       
 

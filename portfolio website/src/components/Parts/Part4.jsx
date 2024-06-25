@@ -42,9 +42,36 @@ function Part4() {
                     </div>
                     <div className="lower_cert">
                         <h4 className="cert_name">Essentials</h4>
-                        <h4 className="cert_par">This is a zipped file containing all my essential documents including CV, Resume, Diploma and Digital Assessments results.</h4>
+                        <h4 className="cert_par">File containing my essential documents like CV, Resume, Diploma ...</h4>
                     </div>
                 </div>
+            </div>
+        </div>
+    );
+
+
+    //Content for experience section
+    const ExperienceSection = (
+        <div className="Experience_panel">
+            <h1 className="work_experience">Work Experience</h1>
+            <div className="experience_list">
+                <ul className="main_experience_list">
+                    <li className="the_li">
+                        <h5 className="Organisation">FRA</h5>
+                        <p className="job_title">Software Engineer - Part time</p>
+                        <p className="duration">March 2024 - Present</p>
+                    </li>
+                    <li className="the_li">
+                        <h5 className="Organisation">SGS</h5>
+                        <p className="job_title">Software Engineer - Part time</p>
+                        <p className="duration">August 2023 - Present</p>
+                    </li>
+                    <li className="the_li">
+                        <h5 className="Organisation">IREMBO services</h5>
+                        <p className="job_title">Junior Software Engineer - Full time</p>
+                        <p className="duration">March 2020 - July 2020</p>
+                    </li>
+                </ul>
             </div>
         </div>
     );
@@ -71,6 +98,7 @@ function Part4() {
                         <p className="onExperience OnEm">Experience</p>
                     </div>
                     {CertificatesSection}
+                    {ExperienceSection}
                 </div>
             </div>
         </div>

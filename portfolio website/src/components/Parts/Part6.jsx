@@ -13,7 +13,7 @@ function Part6() {
             <div className="lower_part_skills">
                 <div className="skill_card Front_and_design">
                     <div className="Frontend">
-                        <h4 className="set_name">Front - end tools</h4>
+                        <h4 className="set_name">Front - end</h4>
                         <div className="mainset">
                             <i className="devicon-html5-plain-wordmark colored"></i>
                             <i className="devicon-css3-plain-wordmark colored"></i>
@@ -36,7 +36,7 @@ function Part6() {
 
                 <div className="skill_card Back_Datb_collab">
                     <div className="Backend">
-                        <h4 className="set_name">Back - end tools</h4>
+                        <h4 className="set_name">Back - end</h4>
                         <div className="mainset">
                             <i className="devicon-cplusplus-plain colored"></i>
                             <i className="devicon-csharp-plain colored"></i>
@@ -48,7 +48,7 @@ function Part6() {
                         </div>
                     </div>
                     <div className="Database">
-                        <h4 className="set_name">Database tools</h4>
+                        <h4 className="set_name">Database</h4>
                         <div className="mainset">
                             <i className="devicon-mongodb-plain-wordmark colored"></i>
                             <i className="devicon-sqlite-plain-wordmark colored"></i>
