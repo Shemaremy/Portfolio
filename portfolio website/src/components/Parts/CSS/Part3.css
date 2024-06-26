@@ -9,7 +9,7 @@
     margin-top: 0%;
 
     @media only screen and (max-width: 767px)  {
-        height: 15%;
+        height: 13%;
         width: 100%;
         border-width: 0px;
         border-color: rgba(255, 255, 255, 0);
@@ -74,7 +74,7 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 455px) {
         width: 100%;
         height: 60%;
         text-align: center;
@@ -95,7 +95,7 @@
     display: flex;
     align-items: center;
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 455px) {
         display: none;
     }
     
@@ -109,7 +109,7 @@
     border-radius: 500px;
     background-color: rgb(80, 145, 199);
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 455px) {
         width: 50%;
         display: none;
     }
@@ -190,6 +190,13 @@
 }
 
 
+
+.slick-next, .slick-prev {
+
+    @media only screen and (max-width: 767px) {
+        display: none !important;
+    }
+}
 
 .slick-next {
     right: -23px !important;

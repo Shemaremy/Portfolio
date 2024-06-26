@@ -37,9 +37,8 @@ body {
     margin: 0;
     padding: 0;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        height: 520vh;
+    @media (max-width: 767px) {
+        height: 580vh;
         padding-bottom: 0;
         margin-bottom: 0;
         overflow-x: hidden;

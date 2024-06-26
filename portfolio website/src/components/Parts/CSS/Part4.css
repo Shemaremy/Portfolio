@@ -16,7 +16,7 @@
         border-radius: 0px;
         border-color: rgba(230, 230, 230, 0);
         width: 100%;
-        height: 28%;
+        height: 26%;
         box-shadow: none;
         background-color: rgba(203, 212, 219, 0.507);
     }
@@ -175,7 +175,7 @@
 
 .Certifications_and_experience_panel {
     width: 100%;
-    height: 95%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,6 +260,7 @@
     width: 100%;
     background-color: rgb(79, 90, 87);
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
     align-items: center;
     overflow: auto;
@@ -273,80 +274,6 @@
 
 
 
-.nav_panel {
-    height: 25%;
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    @media only screen and (max-width: 767px) {
-        width: 90%;
-        height: 8%;
-        display: none;
-    }
-    
-
-}
-
-
-.onCertificate {
-    width: 16%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: rgb(211, 211, 211);
-    padding: 7px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    cursor: pointer;
-    margin-bottom: 18%;
-    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
-
-
-.onExperience {
-    width: 17%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    font-size: 13px;
-    padding: 7px;
-    border-style: solid;
-    border-width: 1px;
-    color: rgb(211, 211, 211);
-    border-color: white;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    cursor: pointer;
-    margin-bottom: 18%;
-    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
-
-
-
-.onCertificate:hover, .onExperience:hover {
-    color: rgb(57, 202, 57);
-    border-color: rgb(57, 202, 57);
-}
-
-
-.onCertificate, .onExperience {
-    @media only screen and (max-width: 767px) {
-        margin-top: 0;
-        margin-bottom: 0;
-        width: 5%;
-    }
-}
 
 
 
@@ -385,7 +312,7 @@
 
 
 .Certifications_panel {
-    height: 60%;
+    height: 50%;
     width: 95%;
     display: flex;
     flex-direction: row;
@@ -453,7 +380,7 @@
     margin-bottom: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     color: rgba(255, 255, 255, 0.788);
 
     @media only screen and (max-width: 767px) {
@@ -468,14 +395,16 @@
     border-style: solid;
     border-width: 1px;
     width: 30%;
-    padding: 10px;
+    padding: 7px;
     border-radius: 20px;
     background-color: rgba(0, 139, 0, 0.37);
     border-color: rgb(133, 133, 133);
-    margin-top: 10%;
+    margin-top: 5%;
     color: rgb(224, 224, 224);
     cursor: pointer;
+    font-size: 11px;
     transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out ;
+
 
     @media only screen and (max-width: 767px) {
         background-color: green;
@@ -521,6 +450,7 @@
         justify-content: space-around;
         width: 50%;
         height: 85%;
+        overflow-y: auto;
     }
 }
 
@@ -533,7 +463,7 @@
 
     @media only screen and (max-width: 767px) {
         width: 95%;
-        height: 30%;
+        height: auto;
     }
 }
 
@@ -618,7 +548,15 @@
 
 
 .Experience_panel {
-    display: none;
+
+    height: 42%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgba(25, 27, 27, 0.616);
+
 
     @media only screen and (max-width: 767px) {
         height: 35%;
@@ -628,12 +566,13 @@
         justify-content: center;
         align-items: flex-end;
         background-color: rgb(55, 61, 59);
+        background-color: rgb(25, 27, 27);
     }
 
 }
 
 .work_experience {
-    width: 47%;
+    width: 20%;
     height: 15%;
     margin-top: 0;
     margin-bottom: 0;
@@ -645,6 +584,21 @@
     align-items: center;
     color: rgb(155, 155, 155);
     letter-spacing: 2px;
+
+    @media only screen and (max-width: 767px) {
+        width: 47%;
+        height: 15%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        font-family: sans-serif;
+        overflow: hidden;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        color: rgb(155, 155, 155);
+        letter-spacing: 2px;
+    }
 }
 
 .experience_list {
@@ -658,7 +612,7 @@
 
 
 .main_experience_list {
-    width: 100%;
+    width: 93%;
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
@@ -667,51 +621,114 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 
 .the_li {
+
     background-color: rgb(79, 84, 90);
-    background: linear-gradient(to left, rgb(79, 84, 90), rgba(0, 0, 0, 0));
+    background: linear-gradient(to left, rgba(79, 84, 90, 0.116), rgba(0, 0, 0, 0));
     text-align: right;
-    width: 95%;
+    width: 100%;
     height: 30%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
+
+    @media only screen and (max-width: 767px) {
+        background-color: rgb(79, 84, 90);
+        background: linear-gradient(to left, rgba(79, 84, 90, 0.267), rgba(0, 0, 0, 0));
+        text-align: right;
+        width: 95%;
+        height: 30%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
 }
 
 .Organisation {
-    font-size: 15px;
-    margin-bottom: 2%;
+
+    font-size: 12px;
+    color: rgb(236, 236, 236);
+    margin-bottom: 0%;
     margin-top: 0;
     padding: 0;
     font-family: "Dosis", sans-serif;
     font-weight: 600;
-    width: 96%;
+    width: 97%;
     text-decoration: underline;
-    color: rgba(255, 255, 255, 0.856);
+    
+
+    @media only screen and (max-width: 767px) {
+        font-size: 13px;
+        color: rgb(236, 236, 236);
+        margin-bottom: 2%;
+        margin-top: 0;
+        padding: 0;
+        font-family: "Dosis", sans-serif;
+        font-weight: 600;
+        width: 96%;
+        text-decoration: underline;
+    }
 }
 
 .job_title {
+
     font-family: sans-serif;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 11px;
     width: 98%;
     color: rgb(155, 155, 155);
     color: #00BFFF;
     color: chocolate;
+
+    @media only screen and (max-width: 767px) {
+        font-family: sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 13px;
+        width: 98%;
+        color: rgb(155, 155, 155);
+        color: #00BFFF;
+        color: chocolate;
+    }
 }
 
 .duration {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 0;
     font-weight: 500;
     width: 98%;
     color: rgb(155, 155, 155);
     color: #B0B0B0;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 11px;
+        font-family: "Dosis", sans-serif;
+        margin-top: 0;
+        font-weight: 500;
+        width: 98%;
+        color: rgb(155, 155, 155);
+        color: #B0B0B0;
+    }
 }

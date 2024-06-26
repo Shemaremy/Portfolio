@@ -57,15 +57,13 @@
     
     @media (max-width: 767px)     /* Mobile devices */
     {
-        width: 40%;
-        height: 30vh;
+        width: 45%;
+        height: 80%;
         margin-left: 0;
-        padding-left: 4%;
     }
 }
 
-.About_Photo
-{
+.About_Photo {
     height: 180px;
     width: 180px;
     border-style: solid;
@@ -77,8 +75,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 767px) {
         height: 140px;
         width: 140px;
     }
@@ -139,15 +136,15 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
 
     @media (max-width: 767px)     /* Mobile devices */
     {
         font-size: 30px;
-        height: 230px;
-        width: 60%;
+        height: 80%;
+        width: 53%;
         padding-right: 0;
     }
 }
@@ -159,16 +156,20 @@
 
 
 .About_me_header {
-    height: 10%;
-    width: 60%;
-    font-size: 20px;
+    height: 15%;
+    width: 70%;
+    font-size: 18px;
     margin-bottom: 0;
     margin-top: 0;
+    color: rgb(90, 90, 90);
+    display: flex;
+    align-items: center;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        margin-right: 15px;
-        font-size: 22px;
+    @media (max-width: 767px) {
+        height: 10%;
+        width: 90%;
+        font-size: 17px;
+        font-weight: 100;    
     }
 }
 
@@ -187,54 +188,50 @@
     background-color: rgba(224, 224, 224, 0);  
     box-shadow:  0 0 5px rgba(0, 0, 0, 0.342);
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 820px) {
         width: 95%;
-        height: 80%;
-        border-radius: 0;
-        margin-top: 0px;
-        box-shadow: none;
-        overflow-y: auto;
-        border-left: none;
-        border-right: none;
+        height: auto;
         border: none;
-        margin-right: 0;
-        margin-top: 5%;
-        padding-right: 0;
-        padding-top: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        overflow-y: auto;
     }
 
 }
 
 
 
-.About_me_par
-{
-    width: 85%;
+.About_me_par_container {
+    width: 90%;
     height: 85%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 767px) {
         width: 100%;
-        height: 100%;
-        margin-top: 50%;
-        padding-top: 0;
-        padding-bottom: 0;
+        height: 90%;
+        padding: 0;
+        overflow-y: auto;
+        display: block;
     }
 }
 
-.The_par
-{
+.The_par {
     font-family: "Philosopher", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: rgba(0, 0, 0, 0.849);
     font-size: 12px;
+    height: 30%;
+    width: 100%;
+    overflow-y: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 
     @media (max-width: 767px)     /* Mobile devices */
     {
@@ -255,3 +252,167 @@
         width: 80%;
     }
 }
+
+
+
+
+
+
+
+
+.one_par {
+    width: 100%;
+    height: 10% !important;
+    height: auto !important;
+
+    @media (max-width: 767px) {
+        height: auto !important;
+        margin-top: 10%;
+        width: 90%;
+    }
+}
+
+.two_par {
+    width: 100%;
+    height: 36% !important;
+    height: auto !important;
+
+    @media (max-width: 767px) {
+        width: 90% !important;
+        height: auto !important;
+        margin-top: 10%;
+    }
+}
+
+.three_par {
+    width: 100%;
+    height: 23% !important;
+    height: auto !important;
+
+    @media (max-width: 767px) {
+        height: auto !important;
+        width: 95%;
+        margin-top: 10%;
+    }
+}
+
+.four_par {
+    width: 100%;
+    height: 10% !important;
+    height: auto !important;
+
+    @media (max-width: 767px) {
+        height: auto !important;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hide scrollbar container */
+::-webkit-scrollbar {
+    width: 6px !important; 
+    height: 10px;
+  }
+  
+  /* Red scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(131, 131, 131);
+    border-radius: 55px;
+    cursor: pointer;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(56, 56, 56);
+  }
+  

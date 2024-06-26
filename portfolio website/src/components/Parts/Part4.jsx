@@ -93,10 +93,6 @@ function Part4() {
                     </div>
                 </div>
                 <div className="certifications_and_experience_bottom">
-                    <div className="nav_panel">
-                        <p className="onCertificate OnEm">Certificates</p>
-                        <p className="onExperience OnEm">Experience</p>
-                    </div>
                     {CertificatesSection}
                     {ExperienceSection}
                 </div>

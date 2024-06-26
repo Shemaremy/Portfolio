@@ -1,7 +1,6 @@
-.Part5
-{
+.Part5 {
     width: 100%; /* Adjust the width as needed */
-    height: 14%;
+    height: 12%;
     margin-top: 0%;
     border-style: solid;
     border-width: 1px;
@@ -11,7 +10,7 @@
 
     @media only screen and (max-width: 767px) {
       box-shadow: none;
-      height: 10%;
+      height: 16%;
       width: 100%;
       background-color: rgba(245, 255, 216, 0.315);
       background-color: rgba(109, 128, 0, 0.151);
@@ -27,9 +26,9 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: rgba(29, 12, 0, 0.555);
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 767px){
         margin-top: 0%;
     }
 
@@ -37,7 +36,7 @@
 
 
 .upper_part_services {
-    height: 15%;
+    height: 25%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -45,7 +44,7 @@
     align-items: center;
 
     @media only screen and (max-width: 767px) {
-        height: 30%;
+        height: 10%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -57,9 +56,9 @@
     width: 100%;
     font-family: sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 27px;
     margin-bottom: 0;
-    color: rgb(97, 97, 97);
+    color: rgb(224, 224, 224);
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
@@ -69,32 +68,6 @@
     }
 }
 
-
-.services_underline_container{
-    height: 3vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media only screen and (max-width: 767px) {
-        height: 0;
-    }
-    
-}
-
-.main_underline_services {
-    height: 2px;
-    width: 8%;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 500px;
-    background-color: rgb(80, 145, 199);
-
-    @media only screen and (max-width: 767px) {
-        display: none;
-    }
-}
 
 
 
@@ -107,6 +80,8 @@
     height: 80%;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 
     @media only screen and (max-width: 767px) {
         height: 70%;
@@ -115,119 +90,86 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-.slider-container-2 {
-    width: 80%;
+.service_cards_container {
+    width: 85%;
     height: 90%;
-    margin: 0 auto;
-    cursor: grab;
-    border-radius: 10px;
-    align-content: center;
-
-    @media only screen and (max-width: 767px) {
-        width: 100%;
-        border-radius: 0;
-    }
-}
-  
-  
-  
-
-  
-.card-2 {
-    margin: 0 auto;
-    height: 40vh;
-    width: 25vw !important;
-    background-color: rgb(146, 133, 182);
-    border-radius: 7px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    filter: brightness(70%);
-    transition: background-color 0.7s ease-in-out, height 0.4s ease-in-out, width 0.4s ease-in-out, filter 0.4s ease-in-out ;
 
     @media only screen and (max-width: 767px) {
-        width: 30vw !important;
-        height: 30vh;
-        border-radius: 3px;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
     }
 }
-  
 
-  
-  
-  
-  /* Add this CSS to your App.css file */
-  
-  .slick-current .card-2 {
-    background-color: rgb(121, 101, 175);
-    filter: blur(0px) brightness(100%);
-    height: 45vh;
+
+.service_card {
+    height: 80%;
+    width: 23%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 
     @media only screen and (max-width: 767px) {
-        width: 30vw !important;
-        height: 30vh;
+        width: 48%;
+        height: 48%;
+        border-radius: 10px 0px;
+        border-color: rgb(156, 156, 156);
     }
-  }
-  
-  
-  
-  
-  
-  
-  
-
-
-.slick-list {
-    height: auto;
-    margin-bottom: 0 !important;
 }
 
-.slick-track {
-    height: 100%;
-}
-
-.slick-slide {
-    display: flex !important;
-    justify-content: center;
+.upper_service_card {
+    height: 55%;
+    width: 50%;
+    display: flex;
     align-items: center;
-    width: 100% !important;
-    height: 55vh !important;
+    padding-left: 10%;
 }
 
+.service_svg {
+    min-height: 40%;
+    min-width: 40%;
+    height: 40%;
+    width: 40%;
+    filter: invert(100%);
+}
 
-.slick-prev, .slick-next {
-    color: black !important;
-    
+.lower_service_card {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.proffession_title {
+    width: 93%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: rgb(199, 129, 0);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.proffession_paragraph {
+    width: 93%;
+    font-family: sans-serif;
+    color: rgb(194, 194, 194);
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+
     @media only screen and (max-width: 767px) {
-        display: none;
+        font-size: 9px;
+        color: rgb(202, 202, 202);
     }
-  }
-  
-  
-  .slick-next {
-    right: -45px !important;
-  }
-  
-  .slick-prev {
-    left: -45px !important;
-  }
-  
-  
-.slick-dots {
-    bottom: -0px !important;
 }

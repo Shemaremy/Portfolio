@@ -1,6 +1,6 @@
 .Part6 {
     width: 100%; /* Adjust the width as needed */
-    height: 12%;
+    height: 14%;
     margin-top: 0%;
     margin-bottom: 0;
     background-color: #3030303a;
@@ -19,16 +19,17 @@
 }
 
 .upper_part_skills {
-    height: 17%;
+    height: 15%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
     @media only screen and (max-width: 767px) {
         display: flex;
         justify-content: center;
+        height: 20%;
     }
 }
 
@@ -57,36 +58,42 @@
 
 
 .skills_underline_container{
-    height: 0vh;
-    width: 70%;
+    height: 3vh;
+    width: 85%;
     display: flex;
     align-items: center;
 }
 
 .skills_underline_itself {
-    height: 0px;
-    width: 10%;
+    height: 1px;
+    width: 8%;
     border-style: solid;
     border-width: 0px;
     border-radius: 500px;
-    background-color: rgb(80, 145, 199);
+    background-color: rgb(19, 45, 66);
 }
 
 
 
 .lower_part_skills {
-    height: 83%;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #3030303a;
 
     @media only screen and (max-width: 767px) {
-        background-color: #30303017;
+        background-color: #30303007;
+        height: 80%;
+        justify-content: space-between;
     }
 }
+
+
+
+
+
 
 .skill_card {
     height: 80%;
@@ -103,6 +110,11 @@
     width: 37%;
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: 767px) {
+        width: 49%;
+        height: 90%;
+    }
 }
 
 .Frontend, .Design {
@@ -121,6 +133,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    @media only screen and (max-width: 767px) {
+        width: 47%;
+        height: 100%;
+    }
 }
 
 .Backend, .Database, .Collaboration {
@@ -156,6 +173,7 @@
     font-size: 15px;
     padding-left: 5%;
     text-decoration: underline;
+    color: rgb(92, 43, 7);
 }
 
 .mainset {
@@ -165,26 +183,116 @@
     flex-direction: row;
     align-items: center;
     overflow: hidden;
+
+    @media only screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+    
 }
 
 
-i{
+.devicon{
     font-size: 40px;
     margin-left: 5%;
-    filter: grayscale(90%);
+    filter: grayscale(100%);
     cursor: pointer;
     transition: filter 0.2s ease-in-out;
+    color: rgb(59, 59, 59) !important;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 25px;
+    }
 }
 
-i:hover {
+.devicon:hover {
+    color: chocolate !important;
     filter: grayscale(0%);
 }
 
 
 
-.Frontend > .mainset > i, .Design > .mainset > i {
-    font-size: 33px;
+.Frontend > .mainset > .devicon, .Design > .mainset > .devicon {
+    font-size: 35px;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 22px;
+    }
 }
+
+.Database > .mainset > .devicon {
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

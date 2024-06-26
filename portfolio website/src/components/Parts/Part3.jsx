@@ -1,5 +1,8 @@
 import React from "react";
 import "./CSS/Part3.CSS"
+import "./CSS/Responsive.css"
+
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

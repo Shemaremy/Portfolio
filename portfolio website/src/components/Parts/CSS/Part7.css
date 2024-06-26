@@ -9,7 +9,7 @@
     @media (max-width: 767px)     /* Mobile devices */
     {
        background-color: rgba(11, 14, 12, 0.815);
-       height: 14%;
+       height: 12%;
        width: 100%;
        margin-bottom: 0px;
     }
@@ -131,13 +131,10 @@
     height: 50%;
 }
 
-.Tel_container {
-    width: 70%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
-.heading_text7 {  
+
+
+.Lets_talk_heading {  
     font-size: 50px;
     margin-bottom: 0;
     margin-top: 0;
@@ -157,6 +154,114 @@
     }
 }
 
+
+
+
+
+
+.Ask_me_anything {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    margin-left: 10px;
+    margin-top: 0px;
+    color: #ffffff67;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+.Tel_container {
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.p2, .p3 {
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: #adadadb9;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+
+.icon2 {
+    margin-left: 5px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.829) !important;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Right_section {
     height: 100%;
     width: 50%;
@@ -174,8 +279,12 @@
 
 
 .myForm {
-    width: 70%;
+    width: 90%;
+    height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 767px) {
         width: 80%;
@@ -191,8 +300,13 @@
 
 
 .row {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 
     @media (max-width: 767px) {
         height: 100%;
@@ -208,159 +322,7 @@
 
 
 
-.Name_Email {
-    display: flex;
-    flex-direction: row;
-
-    @media (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 50%;
-        width: 100%;
-    }
-}
-
-.Name, .Email {
-
-    @media (max-width: 767px) {
-        width: 100%;
-        height: 50%;
-    }
-}
-
-
-
-.Message {
-
-    @media (max-width: 767px) {
-        height: 25%;
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-.Send {
-    @media (max-width: 767px) {
-        height: 17%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-    }
-}
-
-
-.button_7
-{
-    margin-top: 0px;
-    margin-left: 10px;
-    border-style: solid;
-    border-color: rgb(6, 168, 0);
-    border-width: 1px;
-    border-radius: 5px;
-    width: 120px;
-    padding: 9px;
-    cursor: pointer;
-    font-size: 11px;
-    background-color: rgba(51, 153, 68, 0.089);
-    color: rgb(175, 175, 175);
-    transition: transform 0.3s ease;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        width: 100px;
-        padding: 6px;
-        color: rgb(175, 175, 175);
-        border-color: rgb(212, 255, 210);
-        background-color: rgba(132, 206, 122, 0.164);
-        
-    }
-}
-
-.button_7:hover {
-    border-color: rgb(0, 255, 98);
-    background-color: rgba(108, 197, 97, 0.212);
-}
-
-.button_7:active {
-    transform: scale(0.8);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.p1
-{
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 15px;
-    letter-spacing: 1.3px;
-    margin-left: 10px;
-    margin-top: 0px;
-    color: #ffffff67;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        display: none;
-    }
-}
-
-.p2
-{
-    margin-bottom: 0px;
-    font-size: 10px;
-    color: #adadadb9;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        display: none;
-    }
-}
-
-.p3
-{
-    margin-top: 0px;
-    font-size: 11px;
-    color: #adadadb9;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        display: none;
-    }
-
-}
-
-.icon2
-{
-    margin-left: 5px;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.589);  
-}
-
-
-
-.heading_text7a
+.form_headers
 {
     font-family: Arial, sans-serif;
     font-weight: 400;
@@ -379,9 +341,11 @@
 
 
 
+
+
+
 .Name input::placeholder, .Email input::placeholder 
 {
-    color: rgba(0, 0, 0, 0.596);
     color: rgba(175, 175, 175, 0.363);
     font-size: 12px;
 }
@@ -433,14 +397,12 @@ input {
 
 }
 
-input:hover
-{   
+input:hover {   
     border-color: rgb(5, 160, 0);
     width: 85%;
 }
 
-input:focus        /*WHILE INPUTING*/
-{
+input:focus  {
     outline: none;
     border-style: solid;
     border-top: none;
@@ -469,8 +431,7 @@ input:focus        /*WHILE INPUTING*/
 }
 
 
-.text_area    /*WORDS IN TEXTAREA AFTER INPUTING*/
-{
+.text_area {
     width: 95%;
     color: rgba(255, 255, 255, 0.685);
     font-size: 12px;
@@ -481,10 +442,138 @@ input:focus        /*WHILE INPUTING*/
     }
 }
 
-.text_area:hover
-{
+.text_area:hover {
     width: 90%;
 }
+
+
+
+
+
+
+
+
+.Name_Email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+    }
+}
+
+.Name, .Email {
+
+    width: 48%;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+
+.Message {
+    width: 100%;
+
+    @media (max-width: 767px) {
+        height: 25%;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.send_button_container {
+    width: 100%;
+
+    @media (max-width: 767px) {
+        height: 17%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+}
+
+
+.send_button {
+    margin-top: 0;
+    border-style: solid;
+    border-color: rgb(6, 168, 0);
+    border-width: 1px;
+    border-radius: 5px;
+    width: 120px;
+    padding: 9px;
+    cursor: pointer;
+    font-size: 11px;
+    background-color: rgba(51, 153, 68, 0.089);
+    color: rgb(175, 175, 175);
+    transition: transform 0.3s ease;
+
+    @media (max-width: 767px)     /* Mobile devices */
+    {
+        width: 100px;
+        padding: 6px;
+        color: rgb(175, 175, 175);
+        border-color: rgb(212, 255, 210);
+        background-color: rgba(132, 206, 122, 0.164);
+        
+    }
+}
+
+.send_button:hover {
+    border-color: rgb(0, 255, 98);
+    background-color: rgba(108, 197, 97, 0.212);
+}
+
+.send_button:active {
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

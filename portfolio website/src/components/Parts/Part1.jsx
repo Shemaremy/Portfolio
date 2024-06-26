@@ -1,5 +1,6 @@
 import React from "react";
 import "./CSS/Part1.CSS"
+import "./CSS/Responsive.css"
 
 function Part1 () {
     return(
@@ -7,9 +8,11 @@ function Part1 () {
                 <div className="navigation_links">
                     <header>
                         <div className="container">
-                            <button className="hamburger">
-                                <div className="bar"></div>
-                            </button>
+                            <div className="hamburger_container">
+                                <button className="hamburger">
+                                    <div className="bar"></div>
+                                </button>
+                            </div>
                             <div className="Mobile_Logo_container">
                                 <div className="Portfolio_word_container">
                                     <h1 className="Portfolio_word">Portfolio.</h1>
@@ -41,7 +44,7 @@ function Part1 () {
                         </div>
 
                         <div className="small_paragraph">
-                            <p id="animated-paragraph" className="paragraph">Software engineer, visual artist & a creative thinker.</p>
+                            <p id="animated-paragraph" className="paragraph">A full-stack Software Engineer & a creative thinker.</p>
                         </div>
 
                         <div className="Buy_me_coffee">

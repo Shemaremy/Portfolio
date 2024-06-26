@@ -13,8 +13,8 @@ function Part7() {
                     <div className="Everything">
                         <div className="Left_Section">
                             <div className="left_words">
-                                <h1 className="heading_text7">Let's talk</h1>
-                                <p className="p1">Ask me anything or just say hi ...</p>
+                                <h1 className="Lets_talk_heading">Let's talk</h1>
+                                <p className="Ask_me_anything">Ask me anything or just say hi ...</p>
                             </div>
 
                             <div className="Tel_container">
@@ -28,23 +28,23 @@ function Part7() {
                                 <div className="row">
                                     <div className="Name_Email">
                                         <div className="Name">
-                                            <h2 className="heading_text7a">Name</h2>
+                                            <h2 className="form_headers">Name</h2>
                                             {/* Add name attribute for the name input field */}
                                             <input type="text" className="name" name="name" placeholder="Your name" required />
                                         </div>
                                         <div className="Email">
-                                            <h2 className="heading_text7a">Email</h2>
+                                            <h2 className="form_headers">Email</h2>
                                             {/* Add name attribute for the email input field */}
                                             <input type="email" className="email" name="email" placeholder="Email address" required />
                                         </div>
                                     </div>
                                     <div className="Message">
-                                        <h2 className="heading_text7a">Message</h2>
+                                        <h2 className="form_headers">Message</h2>
                                         {/* Add name attribute for the message input field */}
                                         <input className="text_area message" type="text" name="message" placeholder="Message" required />
                                     </div>
-                                    <div className="Send">
-                                        <button type="submit" className="button_7" onClick={() => startLoadingtwo()}>Send<i className="icon2 fa fa-paper-plane" style={{ marginLeft: 12 }}></i></button>
+                                    <div className="send_button_container">
+                                        <button type="submit" className="send_button" onClick={() => startLoadingtwo()}>Send<i className="icon2 fa fa-paper-plane" style={{ marginLeft: 12 }}></i></button>
                                     </div>
                                 </div> 
                             </form>
