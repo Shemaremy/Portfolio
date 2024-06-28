@@ -1,7 +1,8 @@
 import React from "react";
 import "./CSS/Part6.CSS"
+import "./CSS/Responsive.css"
 
-function Part6() {
+function Part6() { 
     return(
         <div className="Part6">
             <div className="upper_part_skills">
@@ -42,9 +43,9 @@ function Part6() {
                             <i className="devicon devicon-csharp-plain colored"></i>
                             <i className="devicon devicon-java-plain-wordmark colored"></i>
                             <i className="devicon devicon-python-plain-wordmark colored"></i>
+                            <i className="devicon devicon-nodejs-plain-wordmark colored"></i>
                             <i className="devicon devicon-flask-original-wordmark colored"></i>
                             <i className="devicon devicon-express-original-wordmark"></i>
-                            <i className="devicon devicon-nodejs-plain-wordmark colored"></i>
                         </div>
                     </div>
                     <div className="Database">

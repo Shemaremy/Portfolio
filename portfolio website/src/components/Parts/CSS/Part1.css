@@ -190,7 +190,7 @@
 header, .mobile-nav, .container
 {
 
-    @media (min-width: 768px) and (max-width: 2000px)   /* Tablets and small laptops */
+    @media (min-width: 768px) and (max-width: 5000px)   /* Tablets and small laptops */
     {
         display: none;
     }

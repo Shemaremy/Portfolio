@@ -16,7 +16,7 @@
     align-items: center;
 
 
-    @media (max-width: 767px)     /* Mobile devices */
+    @media (max-width: 1024px)     /* Mobile devices */
     {
         height: 7%;
         box-shadow: none;
@@ -54,13 +54,7 @@
     flex-direction: column;
     margin: 0 auto;
     background-color: rgba(43, 255, 0, 0);
-    
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        width: 45%;
-        height: 80%;
-        margin-left: 0;
-    }
+
 }
 
 .About_Photo {
@@ -74,11 +68,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @media (max-width: 767px) {
-        height: 140px;
-        width: 140px;
-    }
 }
 
 
@@ -98,17 +87,14 @@
 
 
 
-.Download_cv
-{
-    margin-top: 5%;
+.my_github_desk_contain {
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 767px) {
         display: none;
     }
 }
 
-.Download_cv2a
+.my_github_desktop
 {
     padding: 9px;
     border-style: solid;
@@ -124,7 +110,7 @@
     width: 70px;
 }
 
-.Download_cv2a:hover
+.my_github_desktop:hover
 {
     background-color: rgba(102, 255, 0, 0.281);
 }
@@ -145,7 +131,6 @@
         font-size: 30px;
         height: 80%;
         width: 53%;
-        padding-right: 0;
     }
 }
 

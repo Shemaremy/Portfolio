@@ -1,6 +1,5 @@
 import React from "react";
 import "./CSS/Part3.CSS"
-import "./CSS/Responsive.css"
 
 
 import Slider from "react-slick";
@@ -17,19 +16,31 @@ const settings = {
     slidesToShow: 4,
     slidesToScroll: 2,
     responsive: [
+
         {
-            breakpoint: 768, // adjust the breakpoint as needed for mobile devices
+            breakpoint: 1245, // adjust the breakpoint as needed for mobile devices
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+
+
+
+        {
+            breakpoint: 679, // adjust the breakpoint as needed for mobile devices
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
             },
-        },
+        }
+
     ]
 };
 
 
 
-const ProjectCards = (
+const ProjectCards = (    // For only large screens. Small screens its weird
     <div className="projects_library">
         <Slider {...settings} className="Slider">
             <div className="project_card">1</div>
@@ -44,6 +55,23 @@ const ProjectCards = (
     </div>
 );
 
+
+const NormalProjectCards = (
+    <div className="small_device_cards">
+        <div className="project_card_2">
+            <div className="main_card_2">1</div>
+        </div>
+        <div className="project_card_2">
+            <div className="main_card_2">2</div>
+        </div>
+        <div className="project_card_2">
+            <div className="main_card_2">3</div>
+        </div>
+        <div className="project_card_2">
+            <div className="main_card_2">4</div>
+        </div>
+    </div>
+);
 
 
 
@@ -60,6 +88,7 @@ function Part3() {
                 </div>
                 <div className="Right_part3">
                     {ProjectCards}
+                    {NormalProjectCards}
                 </div>
             </div>
         </div>        

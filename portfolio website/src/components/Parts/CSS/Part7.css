@@ -6,8 +6,7 @@
     margin-top: 0%;
     background-color: rgba(11, 14, 12, 0.815);
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 1060px)  {
        background-color: rgba(11, 14, 12, 0.815);
        height: 12%;
        width: 100%;
@@ -22,8 +21,7 @@
     justify-content: space-between;
     align-items: center;
     
-    @media (max-width: 767px)
-    {
+    @media (max-width: 1060px)  {
         margin-bottom: 0;
         height: 100%;
     }
@@ -39,7 +37,8 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
+
         height: 20%;
     }
 }
@@ -52,7 +51,8 @@
     font-size: 30px;
 
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
+
         color: rgb(234, 245, 245);
         margin-top: 0;
         margin-bottom: 0;
@@ -79,7 +79,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
         width: 100%;
         height: 80%;
         box-shadow: none;
@@ -101,7 +101,7 @@
     height: 75%;
     width: 95%;
 
-    @media only screen and (max-width: 767px) {
+    @media (max-width: 1060px)  {
         flex-direction: column;
         width: 100%;
         height: 90%;
@@ -117,7 +117,8 @@
     justify-content: center;
     align-items: center;
 
-   @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
+
         height: 80px;
         display: none;
     }
@@ -145,8 +146,8 @@
     color: #ffffffd3;
 
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 1060px)  {
+
         font-size: 250%;
         margin-top: 0;
         display: none;
@@ -168,7 +169,7 @@
     margin-top: 0px;
     color: #ffffff67;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
         display: none;
     }
 }
@@ -269,7 +270,7 @@
     justify-content: center;
     align-items: center;
 
-   @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
@@ -286,7 +287,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
         width: 80%;
         height: 90%;
         display: flex;
@@ -308,7 +309,7 @@
     align-items: center;
 
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
         height: 100%;
         width: 100%;
         overflow: hidden;
@@ -329,8 +330,7 @@
     font-size: 15px;
     color: rgba(240, 248, 255, 0.89);
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 1060px)  {
         font-size: 15px;
         margin-bottom: 0px;
         color: rgba(240, 248, 255, 0.89);
@@ -356,8 +356,8 @@
 }
 
 
-@media (max-width: 767px)     /* Mobile devices */
-    {
+@media (max-width: 1060px)  {
+
         .Name input::placeholder, .Email input::placeholder, .Message input::placeholder 
         {
             color: rgba(255, 255, 0, 0);
@@ -382,8 +382,8 @@ input {
     color: rgba(255, 255, 255, 0.514);
     font-size: 13px;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 1060px)  {
+
         padding: 5px;
         width: 100%;
         color: rgba(255, 255, 255, 0.514);
@@ -417,8 +417,8 @@ input:focus  {
     transition: padding 0.3s ease;
     color: rgba(255, 255, 255, 0.685);
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 1060px)  {
+
         transition: padding 0.3s ease;
         padding: 5px;
         font-size: 12px;
@@ -436,8 +436,7 @@ input:focus  {
     color: rgba(255, 255, 255, 0.685);
     font-size: 12px;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 1060px)  {
         width: 100%;
     }
 }
@@ -459,7 +458,7 @@ input:focus  {
     justify-content: space-between;
     width: 100%;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -473,7 +472,8 @@ input:focus  {
 
     width: 48%;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
+
         width: 100%;
         height: 50%;
     }
@@ -484,7 +484,8 @@ input:focus  {
 .Message {
     width: 100%;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
+
         height: 25%;
         width: 100%;
         margin-top: 0;
@@ -495,7 +496,7 @@ input:focus  {
 .send_button_container {
     width: 100%;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1060px)  {
         height: 17%;
         width: 100%;
         display: flex;
@@ -519,8 +520,8 @@ input:focus  {
     color: rgb(175, 175, 175);
     transition: transform 0.3s ease;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 1060px)  {
+
         width: 100px;
         padding: 6px;
         color: rgb(175, 175, 175);

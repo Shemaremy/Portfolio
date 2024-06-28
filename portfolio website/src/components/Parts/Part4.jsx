@@ -1,5 +1,6 @@
 import React from "react";
 import "./CSS/Part4.CSS"
+import "./CSS/Responsive.css"
 import EssentialDocs from '../../images/Essential Docs.jpg';
 import AlxPhoto from '../../images/Alx Photo.jpg';
 import WorkingOnIt from '../../images/freecodecamp.jpg';
@@ -42,7 +43,7 @@ function Part4() {
                     </div>
                     <div className="lower_cert">
                         <h4 className="cert_name">Essentials</h4>
-                        <h4 className="cert_par">File containing my essential documents like CV, Resume, Diploma ...</h4>
+                        <h4 className="cert_par">File of my essential docs like CV, Resume, Diploma ...</h4>
                     </div>
                 </div>
             </div>

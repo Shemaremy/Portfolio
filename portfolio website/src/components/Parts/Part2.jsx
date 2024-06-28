@@ -13,10 +13,10 @@ function Part2 () {
                     <div className="About_Photo">
                         <img className="meet_remy_photo"  src={MyFace} alt="" />
                     </div>
-                    <div className="Download_cv">
-                    <a href="https://github.com/Shemaremy" style={{ marginLeft: '11%' }}>
-                        <button className="Download_cv2a">
-                        <i className="fab fa-github" style={{ fontSize: '10px', color: 'rgba(0, 0, 0, 0.623)' }}></i>
+                    <div className="my_github_desk_contain">
+                    <a href="https://github.com/Shemaremy">
+                        <button className="my_github_desktop">
+                            <i className="fab fa-github" style={{ fontSize: '10px', color: 'rgba(0, 0, 0, 0.623)' }}></i>
                         </button>
                     </a>
                     </div>
