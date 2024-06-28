@@ -191,6 +191,7 @@
 
 
 
+
 /*--------------------------PART 2 SECTION----------------------------------------------------------*/
 /*--------------------------PART 2 SECTION----------------------------------------------------------*/
 
@@ -1872,13 +1873,13 @@
 
 @media (max-width: 767px) {
     body {
-        height: 500vh !important;
+        height: 510vh !important;
     }
 
 
 
     .center_img {
-        height: 16% !important;
+        height: 17% !important;
     }
 
     .Part2 {
