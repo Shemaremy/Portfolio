@@ -630,35 +630,16 @@ header
 
 
 
-
-.Linkedin, .Twitter, .Instagram, .Behance
-{
-    border-color: rgba(27, 56, 0, 0.795);
-    border-style: solid;
-    border-radius: 50%;
-    border-width: 1px;
-    padding: 3px;
-    width: 20px;
-    background-color: rgba(0, 209, 0, 0);
-}
-
-.LinkedIn:hover,
-.Twitter:hover,
-.Instagram:hover,
-.Behance:hover 
-{
-    background-color: rgba(255, 255, 255, 0.068);
-    box-shadow:  0 0 30px rgba(0, 0, 0, 0.288);
-}
-
-
 .ico_1 {
     font-size: 13px;
-    color: rgba(0, 0, 0, 0.863);
+    color: rgba(31, 31, 31, 0.863);
     text-align: center;
     margin: 0 auto;
-    padding: 4px;
+    padding: 5px;
     margin-bottom: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
 }
 
 .ico_1:hover {

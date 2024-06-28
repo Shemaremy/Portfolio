@@ -129,6 +129,7 @@
 /*-----------------------------------------*/
 .Back_Datb_collab {
     width: 37%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -145,7 +146,7 @@
     height: 30%;
 }
 
-.Backend {
+.Database {
     height: 40%;
 }
 
