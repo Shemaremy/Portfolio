@@ -23,7 +23,7 @@ function Part1 () {
                 downloadButton.innerHTML = " ";
                 startLoading();
 
-                fetch('https://raw.githubusercontent.com/Shemaremy/Portfolio/main/IMAGES/CV_Remy.zip')
+                fetch('https://raw.githubusercontent.com/Shemaremy/Me-Time/main/IMAGES/CV_Remy.zip')
                     .then(response => response.blob())
                     .then(blob => {
                         const url = URL.createObjectURL(blob);
