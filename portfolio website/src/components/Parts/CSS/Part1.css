@@ -152,12 +152,23 @@
 	background-color: #0000001c;
 	padding-top: 120px;
 	transition: 0.4s;
-    margin-top: 15%;
+    margin-top: 0%;
 }
 
 .mobile-nav.is-active {
 	left: 0;
 }
+
+
+
+
+.mobile_nav_contains {
+    margin-top: 20%;
+}
+
+
+
+
 
 .mobile-nav a {
 	display: block;
@@ -227,6 +238,7 @@ header
     font-family: 'Orbitron', sans-serif;
     font-size: 14px;
     position: relative;
+    cursor: pointer;
 
     @media (max-width: 767px)     /* Mobile devices */
     {
@@ -387,7 +399,7 @@ header
 }
 
 
-/* YOOO THIS IS FOR THE HEADING (h2, h1) ANIMATIONS MAN */
+/* HEADING (h2, h1) ANIMATIONS MAN */
 
 .heading {
     opacity: 0; /* Start with the headings invisible */
@@ -490,7 +502,7 @@ header
     cursor: pointer; /* Show pointer cursor on hover */
     background-color: rgba(0, 184, 0, 0.062);
     border-color: rgba(0, 184, 0, 0.74);
-    transition: transform 0.3s ease-in-out, background-color 0.7s ease;
+    transition: transform 0.3s ease-in-out, background-color 0.7s ease !important;
 
 
     @media (max-width: 767px)     /* Mobile devices */
@@ -512,7 +524,7 @@ header
 }
 
 .coffee-button:active {
-    transform: scale(0.8);
+    transform: scale(0.9);
     box-shadow: 0 0 1px rgba(0, 0, 0, 3);
 
     @media (max-width: 767px) {
@@ -520,32 +532,22 @@ header
     }   
 }
 
-#downloadButton.completed 
-{
-    background-color: rgba(0, 184, 0, 0.068);
-    border-color: rgba(0, 116, 52, 0.74);
-    margin-right: 45%;
+
+
+
+
+#downloadButton.completed {
+    background-color: rgba(255, 255, 255, 0);
     cursor: not-allowed;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        background-color: rgba(0, 184, 0, 0.068);
-        border-color: rgba(0, 116, 52, 0.74);
-        border-radius: 30px;
-        padding: 12px;
-        font-weight: 400;
-        width: 70%;
-        margin-right: 12%;
-        transition: width 0.5s ease;
-    }
-
 }
 
 #downloadButton:disabled {
     cursor: not-allowed;
-    box-shadow: none;
-    color: rgba(0, 34, 0, 0.678);
+    box-shadow: 1px;
 }
+
+
+
 
 .Hire_me_and_Github
 {
@@ -678,15 +680,13 @@ header
 }
 
 
-.My_photo
-{
+.My_photo {
     height: 70%;
     width: 70%;
     background-color: rgba(127, 255, 212, 0);
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
-    border-color: rgba(240, 248, 255, 0);
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.13);
+    border-color: rgba(0, 0, 0, 0.192);
 }
 

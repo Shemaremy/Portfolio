@@ -2,6 +2,29 @@
 /*--------------------------PART 1 SECTION----------------------------------------------------------*/
 /*--------------------------PART 1 SECTION----------------------------------------------------------*/
 
+@media (max-width: 340px) {
+
+    .hello_heading {
+        font-size: 35px !important;
+    }
+
+    .Remy_heading {
+        font-size: 40px !important;
+    }
+
+    .small_paragraph {
+        font-size: 12px !important;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .coffee-button {
+        height: 70%;
+    }
+}
+
+
 @media (max-width: 401px) {
     .Remy_heading {
         font-size: 45px;
@@ -16,31 +39,6 @@
     }
 }
   
-
-
-
-
-
-@media (max-width: 340px) {
-
-
-    .Remy_heading {
-        font-size: 40px;
-    }
-
-    .small_paragraph {
-        font-size: 15px;
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .coffee-button {
-        height: 70%;
-    }
-}
-
-
 
 
 
@@ -179,7 +177,7 @@
 }
 
 
-@media (min-width: 600px) and (max-width: 776px) {
+@media (min-width: 600px) and (max-width: 767px) {
 
 
     .Two_Parts  {
@@ -196,7 +194,6 @@
         align-items: center;
         overflow: hidden !important;
         height: 80% !important;
-        background-color: orange;
     }
 
     .First_headings {
@@ -209,7 +206,6 @@
     }
 
     .Remy_heading {
-        background-color: red;
         font-size: 60px;
     }
 
@@ -237,7 +233,6 @@
     }
 
     .mob_github_link{
-        background-color: green !important;
         width: 10%;
     }
 
@@ -252,6 +247,47 @@
         overflow: hidden !important;
     }
 }
+
+
+
+
+@media (min-width: 470px) and (max-width: 767px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -496,8 +532,9 @@
     }
     
     
-    .my_github_desk_contain {
-        display: contents;
+
+    .my_github_desktop {
+        margin-top: 15%;
     }
 
 
@@ -541,7 +578,22 @@
 }
 
 
-@media (min-width: 1024px) and (max-width: 5000px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1368,6 +1420,10 @@
 
     .cert_par {
         font-size: 10px;
+    }
+
+    .Experience_panel {
+        box-shadow: 0px 0px 10px black;
     }
 
     .work_experience {

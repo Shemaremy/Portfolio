@@ -184,138 +184,18 @@ body {
   }
 
 
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    animation: float 5s infinite alternate;
-  }
 
-  .circle1 {
-    width: 50px;
-    height: 50px;
-    margin-top: 4%;
-    margin-left: 10%;
-    background-color:  #aa7f2fa1;
-    z-index: 999;
-    display: none;
-  }
 
-  .circle2 {
-    width: 450px;
-    height: 450px;
-    bottom: 88%;
-    right: 60%;
-    animation-duration: 5s;
-    background-color:  #2f87aa27;
-    display: none;
-    
-  }
 
-.circle3 /*THE ONE ON ABOUT SECTION*/
-{
-    width: 200px;
-    height: 200px;
-    top: 18%;
-    left: 80%;
-    transform: translateX(-50%);
-    animation-duration: 5000s;
-    background-color:  #4caa2f2d;
-    display: none;
-}
 
-  
 
-.circle4a 
-{
-    width: 600px;
-    height: 600px;
-    bottom: 77%;
-    right: 55%;
-    animation-duration: 5000s;
-    background-color:  rgba(29, 80, 0, 0.308);
-    transform: rotate(90deg);
-    display: none;
-  }
 
-.circle4b 
-{
-    width: 450px;
-    height: 450px;
-    bottom: 74%;
-    right: 50%;
-    animation-duration: 5000s;
-    background-color:  rgba(29, 80, 0, 0.068);
-    transform: rotate(90deg);
-    display: none;
-
-} 
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  .triangle2a {
-    position: absolute;
-    bottom: 46%;
-    left: 25%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 700px solid transparent;   /* Length of the left side */
-    border-right: 700px solid transparent;  /* Length of the right side */
-    border-bottom: 1500px solid #a1ff8e31;      /* Length of the bottom side to reduce as px increase*/
-    border-radius: 50%;
-    animation: rotateTriangle 50s infinite linear;
-    filter: blur(5px);
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        border-bottom: 1500px solid #8eacff10;
-    }
-  }
-
-  .triangle3 {
-    display: none;
-    position: absolute;
-    bottom: 99%;
-    left: 97%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;   /* Length of the left side*/
-    border-right: 20px solid transparent;  /* Length of the right side*/
-    border-bottom: 35px solid #c2670079;   /* Length of the bottom side to reduce as px increase*/
-    animation: rotateTriangle 15s infinite linear;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        display: none;
-    }
-    
-  }
-
-  @keyframes rotateTriangle {
-    0% {
-      transform: translateX(-50%) rotate(0deg);
-    }
-    100% {
-      transform: translateX(-50%) rotate(360deg);
-    }
-  }
 
 .triangle1 {
     width: 0;
     height: 0;
-    border-top: 100px solid rgb(0, 143, 24); /* Height of the triangle */
-    border-right: 80px solid transparent; /* Width of the triangle */
+    border-top: 70px solid rgb(0, 143, 24); /* Height of the triangle */
+    border-right: 60px solid transparent; /* Width of the triangle */
     position: absolute;
     top: 0;
     left: 0;
@@ -326,73 +206,8 @@ body {
     }
   }
 
-.triangle2
-{
-    width: 0;
-    height: 0;
-    border-bottom: 50px solid rgb(0, 143, 24); /* Height of the triangle */
-    border-left: 50px solid transparent; /* Width of the triangle */
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 999;
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        display: none;
-    }
-}
-
-  .green-line1 
-  {
-    display: none;
-    width: 40px; /* Length of the line */
-    height: 1px; /* Thickness of the line */
-    background-color: rgba(0, 128, 0, 0.247);
-    position: absolute;
-    top: 13%; /* Distance from the top */
-    left: 3%;
-    transform: rotate(-53deg); /* Rotate the line */
-
-    
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        display: none;
-    }
-  }
-
-  .green-line2 
-  {
-    display: none;
-    width: 40px; /* Length of the line */
-    height: 1px; /* Thickness of the line */
-    background-color: rgba(0, 128, 0, 0.24);
-    position: absolute;
-    top: 16.5%; /* Distance from the top */
-    left: 33%;
-    transform: rotate(-53deg); /* Rotate the line */
-
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        display: none;
-    }    
-  }
 
 
-
-  .circle5 /*THE ONE ON ABOUT SECTION*/
-{
-    width: 200px;
-    height: 200px;
-    top: 41%;
-    left: 25%;
-    border-bottom: 200px;
-    transform: translateX(-50%);
-    animation-duration: 5000s;
-    background-color:  #00000034;
-    filter: blur(50px);
-    display: none;
-}
 
 
 /*--------------------------------------------------------------------------------------------------------*/
