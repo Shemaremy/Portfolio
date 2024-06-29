@@ -120,7 +120,10 @@
 @media (min-width: 0px) and (max-width: 600px) {
 
 
-    
+    .Two_Parts {
+        margin-top: 90px;
+    }
+
     .Left_part {
         display: flex;
         flex-direction: column;
@@ -1129,15 +1132,35 @@
         height: 80% !important;
         width: 60% !important;
         display: flex !important;
+        flex-direction: row !important;
         justify-content: center !important;
         align-items: center !important;
+        border-width: 0 !important;
     }
 
 
     .cert_img {
         min-width: 60% !important;
         width: auto !important;
+        border-radius: 8px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(185, 185, 185, 0.74) ;
     }
+
+
+
+    .essential_download {
+        width: 60% !important;
+        font-size: 7px !important;
+    }
+
+
+
+
+
+
+
 
 
     .lower_cert {

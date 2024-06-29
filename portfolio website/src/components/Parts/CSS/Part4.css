@@ -428,11 +428,21 @@
 
 
 .upper_cert {
-    width: 100%;
+    width: auto;
     height: 53%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    cursor: grab;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(185, 185, 185) ;
 }
 
 .cert_img {
@@ -440,10 +450,8 @@
     min-width: auto;
     height: 100%;
     width: auto;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(185, 185, 185) ;
+    transition: opacity 0.8s ease, transform 0.8s ease, filter 0.5s ease-in-out;
+
 }
 
 .lower_cert {
@@ -481,9 +489,53 @@
 
 }
 
+.info {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    position: absolute; 
+    bottom: 0;
+    box-sizing: border-box;
+    transition: transform 0.8s ease; 
+    transform: translateY(0); 
+}
 
 
+.essential_download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    padding: 7px;
+    width: 30%;
+    height: 50%;
+    font-size: 10px;
+    color: white;
+    border-color: rgba(240, 248, 255, 0.692);
+    border-radius: 15px;
+    background-color: rgba(0, 160, 0, 0.623);
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(100%);
+}
 
+.essential_download:hover {
+    background-color: rgb(0, 160, 0);
+}
+
+
+.upper_cert:hover .info .essential_download {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.upper_cert:hover .cert_img {
+    filter: grayscale(100%) blur(2px) brightness(50%);
+    transform: scale(1.1);
+}
 
 
 
