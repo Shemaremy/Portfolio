@@ -4,6 +4,7 @@
     box-shadow:  0 0 30px rgba(0, 0, 0, 0);
     background-color: rgba(138, 138, 138, 0.199);
     margin-bottom: 0px;
+    overflow: hidden;
 
     @media (max-width: 767px)     /* Mobile devices */
     {
@@ -557,9 +558,6 @@ header
         justify-content: center;
         align-items: center;
         width: 100%; 
-        height: 50px; 
-        margin-top: 17%;
-        margin-left: 7%;
     }
 }
 

@@ -599,8 +599,7 @@
     border-radius: 10px;
 
     @media only screen and (max-width: 767px) {
-        background-color: rgb(79, 84, 90);
-        background: linear-gradient(to left, rgba(79, 84, 90, 0.267), rgba(0, 0, 0, 0));
+        background-color: rgba(54, 57, 61, 0.24);
         text-align: right;
         width: 95%;
         height: 30%;
@@ -654,7 +653,7 @@
         font-family: sans-serif;
         margin-top: 0;
         margin-bottom: 0;
-        font-size: 13px;
+        font-size: 11px;
         width: 98%;
         color: rgb(155, 155, 155);
         color: #00BFFF;
@@ -672,7 +671,7 @@
     color: #B0B0B0;
 
     @media only screen and (max-width: 767px) {
-        font-size: 11px;
+        font-size: 10px;
         font-family: "Dosis", sans-serif;
         margin-top: 0;
         font-weight: 500;
