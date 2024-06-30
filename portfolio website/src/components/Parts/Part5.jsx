@@ -20,28 +20,28 @@ function Part5() {
                             <div className="upper_service_card"><img className="service_svg" src={WebDvt} alt="" /></div>
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">Web Development</h3>
-                                <p className="proffession_paragraph">I build advanced, responsive websites that meet your business needs, using the latest technologies and best practices for exceptional user experiences.</p>
+                                <p className="proffession_paragraph">I build advanced, responsive and robust websites that meet your business needs, using the latest technologies and popular frameworks for exceptional user experiences.</p>
                             </div>
                         </div>
                         <div className="service_card">
                             <div className="upper_service_card"><img className="service_svg" src={MobileApp} alt="" /></div>
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">Mobile App Dvt</h3>
-                                <p className="proffession_paragraph">I build intuitive and high-performance mobile applications for both Android and iOS platforms, ensuring seamless user experiences.</p>
+                                <p className="proffession_paragraph">My comprehensive mobile app development services cover building high-performance mobile applications for both Android and iOS platforms, designed to meet your needs</p>
                             </div>
                         </div>
                         <div className="service_card">
                             <div className="upper_service_card"><img className="service_svg" src={Database} alt="" /></div>
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">Database Architecture</h3>
-                                <p className="proffession_paragraph">I design robust and scalable database solutions to manage your data efficiently, with a focus on security and performance optimization.</p>
+                                <p className="proffession_paragraph">I also design robust and scalable database solutions to manage your data efficiently, with a deep focus on security and performance optimization.</p>
                             </div>
                         </div>
                         <div className="service_card">
                             <div className="upper_service_card"><img className="service_svg" src={API} alt="" /></div>
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">API Integration</h3>
-                                <p className="proffession_paragraph">I integrate and develop APIs to ensure smooth communication between different software systems, enhancing functionality and connectivity.</p>
+                                <p className="proffession_paragraph">Gain a competitive edge with our scalable API integrations to ensure smooth communication between different software systems to enhance functionality and connectivity.</p>
                             </div>
                         </div>
                     </div>

@@ -5,7 +5,6 @@
     background-color: rgba(138, 138, 138, 0.199);
     margin-bottom: 0px;
     overflow: hidden;
-    background-color: chocolate;
 
     @media (max-width: 767px)     /* Mobile devices */
     {

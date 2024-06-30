@@ -1260,6 +1260,11 @@
 
     .check_out_par {
         width: 90% !important;
+        font-size: 10px !important;
+    }
+
+    .learn_more_cert {
+        display: none;
     }
 
     .right_part_certificates {
@@ -1334,6 +1339,7 @@
     .check_out_par {
         margin: 0 auto;
         width: 80% !important;
+        font-size: 10px !important;
     }
 
     .right_part_certificates {
@@ -1671,6 +1677,12 @@
 }
 
 
+@media (min-width: 1025px) and (max-width: 5000px) {
+    .proffession_paragraph {
+        font-size: 11px !important;
+        color: rgb(231, 231, 231) !important;
+    }
+}
 
 
 
@@ -2101,13 +2113,13 @@
 
 @media (max-width: 767px) {
     body {
-        height: 540vh !important;
+        height: 545vh !important;
     }
 
 
 
     .center_img {
-        height: 15% !important;
+        height: 16% !important;
     }
 
     .Part2 {
@@ -2117,16 +2129,16 @@
         height: 14% !important;
     }
     .Part4 {
-        height: 23% !important;
+        height: 22% !important;
     }
     .Part5 {
-        height: 15% !important;
+        height: 14% !important;
     }
     .Part6 {
         height: 12% !important;
     }
     .Part7 {
-        height: 13% !important;
+        height: 14% !important;
     }
     .Part8 {
         height: 2% !important;

@@ -49,8 +49,6 @@ const ProjectCards = (    // For only large screens. Small screens its weird
             <div className="project_card">4</div>
             <div className="project_card">5</div>
             <div className="project_card">6</div>
-            <div className="project_card">7</div>
-            <div className="project_card">8</div>
         </Slider>
     </div>
 );

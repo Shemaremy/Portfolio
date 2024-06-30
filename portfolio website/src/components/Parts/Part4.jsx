@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./CSS/Part4.CSS"
 import "./CSS/Responsive.css"
 import EssentialDocs from '../../images/Essential Docs.jpg';
@@ -6,7 +6,77 @@ import AlxPhoto from '../../images/Alx Photo.jpg';
 import WorkingOnIt from '../../images/freecodecamp.jpg';
 
 
+
 function Part4() {
+
+
+
+        // Downloading the Essentials
+        useEffect(() => {
+            const downloadButton = document.getElementById('essentials');
+    
+            const startLoading = () => {
+                const loaderSpan = document.createElement('span');
+                const reducePadding = document.querySelector('.coffee-button');
+                reducePadding.style.padding = '8px';
+                loaderSpan.classList.add('loader');
+                downloadButton.appendChild(loaderSpan);
+                downloadButton.disabled = true;
+            };
+
+
+            const handleDownload = async () => {
+                const CV = window.confirm("Are you sure you want to download this file ? It contains CV, Resume, Diploma and English assessment results.");
+    
+                if (CV) {
+                    downloadButton.innerHTML = " ";
+                    startLoading();
+            
+                    try {
+                      const response = await fetch('/Remy_Essentials.zip');
+                      const blob = await response.blob();
+                      const url = URL.createObjectURL(blob);
+                      const link = document.createElement('a');
+                      link.setAttribute('href', url);
+                      link.setAttribute('download', 'Remy_Essentials.zip');
+                      link.style.display = 'none';
+                      document.body.appendChild(link);
+                      link.click();
+                      URL.revokeObjectURL(url);
+            
+                      downloadButton.disabled = true;
+                      downloadButton.textContent = "Downloaded successfully!";
+                      downloadButton.classList.add('completed');
+                      downloadButton.innerHTML = "Success!";
+                    } catch (error) {
+                      console.error('Error occurred while downloading:', error);
+                      downloadButton.textContent = "Download failed. Please try again.";
+                      downloadButton.disabled = false;
+                    }
+                  }
+            };
+    
+    
+            if (downloadButton) {
+                downloadButton.addEventListener('click', handleDownload);
+            }
+    
+            return () => {
+                if (downloadButton) {
+                    downloadButton.removeEventListener('click', handleDownload);
+                }
+            };
+        }, []);
+    
+
+
+
+
+
+
+
+
+
 
 
 
@@ -15,7 +85,7 @@ function Part4() {
         <div className="Certifications_panel">
             <div className="left_part_certificates">
                 <h1 className="check_out"><span className="c_out">Check out <br/></span>My Certificates</h1>
-                <p className="check_out_par">I have done various programming courses to increase my programming skills so I'm sharing a few of them.</p>
+                <p className="check_out_par">I've dedicated myself to expanding my programming expertise through a range of courses, each aimed at honing specific skills and broadening my technical knowledge. Among these, I've completed courses in languages like Python, JavaScript, and Java, diving deep into topics such as data structures, algorithms, and web development frameworks such as Bootstrap, Reactjs, JQuery and many more. </p>
                 <button className="learn_more_cert">Learn more</button>
             </div>
             <div className="right_part_certificates">
@@ -41,7 +111,7 @@ function Part4() {
                     <div className="upper_cert">
                         <img className="cert_img" src={EssentialDocs} alt="" />
                         <div className="info">
-                            <button className="essential_download">Download</button>
+                            <button className="essential_download" id="essentials">Download</button>
                         </div>                        
                     </div>
                     <div className="lower_cert">
