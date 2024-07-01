@@ -681,13 +681,13 @@
         width: 90%;
         height: 60%;
         text-align: center;
-        font-size: 25px !important;
+        font-size: 20px !important;
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center !important;
     }
 
 
@@ -823,6 +823,7 @@
 
     .lower_proj2 > a {
         margin: 0 auto;
+        width: 100%;
     }
     
     .view_proj2:hover {

@@ -67,7 +67,7 @@ const ProjectCards = (    // For only large screens. Small screens its weird
                         <p className="proj_category">e-commerce website</p>
                     </div>
                     <div className="lower_proj">
-                        <button className="view_proj">On it... &nbsp; (60% done)</button>
+                        <button className="view_proj">View project</button>
                     </div>
                 </div>
             </div>
@@ -163,7 +163,7 @@ const NormalProjectCards = (// For the small screens
                         <p className="proj_category2">React web app</p>
                     </div>
                     <div className="lower_proj2">
-                        <a href="https://remytodolistapp.netlify.app/"><button className="view_proj">View project</button></a>
+                    <a href="https://remytodolistapp.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
