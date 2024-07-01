@@ -824,6 +824,7 @@
     .lower_proj2 > a {
         margin: 0 auto;
         width: 100%;
+        text-decoration: none;
     }
     
     .view_proj2:hover {

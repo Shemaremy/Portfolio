@@ -495,6 +495,32 @@
 }
 
 
+@media (min-width: 0px) and (max-width: 500px){
+
+    .service_card {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .upper_service_card {
+        height: 50%;
+    }
+
+    .lower_service_card {
+        height: 50%;
+    }
+
+    .proffession_paragraph {
+        font-size: 8px;
+    }
+
+
+
+    .lower_part_services {
+        height: 80%;
+    }
+}
+
+
 
 @media (min-width: 0px) and (max-width: 400px) {
     .service_svg {
