@@ -304,79 +304,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Hide scrollbar container */
 ::-webkit-scrollbar {
     width: 6px !important; 
@@ -395,3 +322,726 @@
     background-color: rgb(56, 56, 56);
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*--------------------------PART 2 RESPONSIVE----------------------------------------------------------*/
+/*--------------------------PART 2 RESPONSIVE----------------------------------------------------------*/
+
+
+@media (max-width: 350px){
+    .About_Photo {
+        height: auto !important;
+        width: auto !important;
+    }
+
+    .meet_remy_photo {
+        min-height: 45% !important;
+        min-width: auto !important;
+        height: 45% !important;
+        width: auto !important;
+    }
+}
+
+
+@media (min-width: 351px) and (max-width: 660px){
+    .About_Photo {
+        height: auto !important;
+        width: auto !important;
+    }
+
+    .meet_remy_photo {
+        min-height: 50% !important;
+        min-width: auto !important;
+        height: 50% !important;
+        width: auto !important;
+    }
+
+    .About_me_header {
+        color: rgb(82, 82, 82);
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 661px) and (max-width: 767px){
+
+    .Left_part2 {
+        width: 45%;
+        height: 80%;
+        height: 100% !important;
+        padding-bottom: 4%;
+    }
+
+    .About_Photo {
+        height: auto !important;
+        width: auto !important;
+    }
+
+    .meet_remy_photo {
+        min-height: 60% !important;
+        min-width: auto !important;
+        height: 60% !important;
+        width: auto !important;
+    }
+
+    .The_par {
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 5000px){
+    
+    .Left_part2 {
+        width: 45% !important;
+    }
+
+    .Right_part2 {
+        width: 65% !important;
+    }
+    .About_Photo {
+        height: 55% !important;
+        width: auto !important;
+    }
+
+    .meet_remy_photo {
+        min-height: 90% !important;
+        min-width: auto !important;
+        height: 90% !important;
+        width: auto !important;
+    }
+    
+    
+    .my_github_desk_contain {
+        display: contents;
+    }
+
+    .About_me_header {
+        width: 80% !important;
+        height: 18% !important;
+        font-size: 18px;
+        color: rgb(90, 90, 90);
+        display: flex;
+        align-items: flex-end !important;
+    }
+
+    .About_me_container {
+        height: 70% !important;
+    }
+
+    .About_me_par_container {
+        overflow: auto !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+    .The_par {
+        height: auto !important;
+        margin-top: 3% !important;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 5000px){
+    
+
+    .Part2 {
+        width: 90% !important;
+    }
+
+
+    .About_Photo {
+        height: 50% !important;
+        width: auto !important;
+    }
+
+    .meet_remy_photo {
+        min-height: 100% !important;
+        min-width: auto !important;
+        height: 100% !important;
+        width: auto !important;
+    }
+    
+    
+
+    .my_github_desktop {
+        margin-top: 15%;
+    }
+
+
+
+    .About_me_header {
+        width: 70% !important;
+        height: 15% !important;
+        font-size: 18px;
+        color: rgb(90, 90, 90);
+        display: flex;
+        align-items: flex-end !important;
+    }
+
+    .About_me_container {
+        height: 70% !important;
+        padding-bottom: 2%;
+    }
+
+    .About_me_par_container {
+        overflow: auto !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+    .The_par {
+        height: auto !important;
+        margin-top: 2% !important;
+        font-size: 11px !important;
+    }
+
+
+    .Left_part2{
+        background-color: rgba(0, 128, 0, 0) !important;
+    }
+
+    .Right_part2 {
+        background-color: rgba(210, 105, 30, 0);
+    }
+
+
+}
+
+
+
+

@@ -26,152 +26,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------MODIFIED SECTION---------------------*/
-
-
-
-
 .Certifications_and_experience_panel {
     width: 100%;
     height: 100%;
@@ -732,3 +586,721 @@
         color: #B0B0B0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------PART 4 RESPONSIVE----------------------------------------------------------*/
+/*--------------------------PART 4 RESPONSIVE----------------------------------------------------------*/
+
+
+
+@media (min-width: 0px) and (max-width: 460px) {
+    .cert_name, .cert_par {
+        margin-left: 5%;
+    }
+
+    .left_part_certificates {
+        width: 100% !important;
+    }
+
+    .work_experience {
+        width: 95% !important;
+        font-size: 14px !important;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 560px) {
+
+    .certifications_and_experience_top {
+        display: none !important;
+    }
+
+    .certifications_and_experience_bottom {
+        height: 100% !important;
+    }
+
+
+    .Certifications_panel {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        height: 65% !important;
+    }
+
+    .left_part_certificates {
+        width: 90%;
+        height: 30% !important;
+    }
+
+    .c_out {
+        display: none;
+    }
+
+    .check_out {
+        width: 100% !important;
+        font-size: 30px !important;
+    }
+
+    .check_out_par {
+        font-size: 7px !important;
+        width: 70% !important;
+    }
+
+    .learn_more_cert {
+        width: 20%;
+        background-color: green;
+        padding: 4px;
+        font-size: 10px;
+        display: none;
+    }
+
+
+    .right_part_certificates{
+        width: 100% !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        overflow: auto;
+        height: 100% !important;
+    }
+
+    .cert_card {
+        width: 80% !important;
+        height: 50% !important;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .upper_cert {
+        height: 80% !important;
+        width: 60% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-width: 0 !important;
+    }
+
+
+    .cert_img {
+        min-width: 60% !important;
+        width: auto !important;
+        border-radius: 8px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(185, 185, 185, 0.74) ;
+    }
+
+
+
+    .essential_download {
+        width: 60% !important;
+        font-size: 7px !important;
+    }
+
+
+
+
+
+
+
+
+
+    .lower_cert {
+        height: 100% !important;
+        width: 40% !important;
+        overflow: hidden;
+    }
+
+    .cert_name {
+        font-size: 10px;
+        margin-top: 3% !important;
+        width: 100%;
+    }
+
+    .cert_par {
+        width: 100%;
+        text-align: left !important;
+        font-size: 9px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .Experience_panel {
+        height: 30% !important;
+    }
+
+    .work_experience {
+        width: 95% !important;
+        font-size: 13px !important;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 561px) and (max-width: 767px) {
+
+    /* Hide scrollbar container */
+    ::-webkit-scrollbar {
+        width: 0px !important; 
+        height: 0px !important;
+    }
+    
+    /* Red scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(131, 131, 131);
+        border-radius: 55px;
+        cursor: pointer;
+        height: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(56, 56, 56);
+    }
+    
+
+
+
+    .certifications_and_experience_bottom{
+        justify-content: space-between !important;
+    }
+
+    .Certifications_panel{
+        align-items: flex-end !important;
+        justify-content: space-around !important;
+        height: 65% !important;
+    }
+
+    .left_part_certificates{
+        width: 50% !important;
+        height: 80% !important;
+    }
+
+    .check_out {
+        width: 100% !important;
+    }
+
+    .check_out_par {
+        width: 90% !important;
+        font-size: 10px !important;
+    }
+
+    .learn_more_cert {
+        display: none;
+    }
+
+    .right_part_certificates {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 45% !important;
+        height: 90% !important;
+        overflow-y: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .cert_card {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .upper_cert {
+        height: 53%;
+    }
+
+    .lower_cert {
+        width: 100% !important;
+        height: 20% !important;
+    }
+
+    .cert_name {
+        font-size: 15px;       
+    }
+
+    .cert_par {
+        font-size: 8px;
+    }
+
+
+    .work_experience {
+        width: 95% !important;
+        font-size: 16px !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 994px) {
+
+    .Certifications_panel {
+        justify-content: space-around !important;
+    }
+
+    .left_part_certificates {
+        width: 50% !important;
+        height: 75% !important;
+    }
+
+    .check_out {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+
+    .check_out_par {
+        margin: 0 auto;
+        width: 80% !important;
+        font-size: 10px !important;
+    }
+
+    .right_part_certificates {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        width: 35% !important;
+        height: 100% !important;
+        overflow-y: auto;
+    }
+
+    .learn_more_cert {
+        margin-left: 10%;
+        display: none;
+    }
+
+    .cert_card {
+        width: 100% !important;
+        height: 55% !important;
+        margin-top: 5%;
+    }
+
+    .upper_cert {
+        width: auto;
+        height: 65% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lower_cert {
+        width: 100% !important;
+        height: 20% !important;
+    }
+
+    .cert_name {
+        font-size: 15px;       
+    }
+
+    .cert_par {
+        font-size: 10px;
+    }
+
+    .work_experience {
+        font-size: 13px !important;
+    }
+}
+
+
+@media (min-width: 995px) and (max-width: 5000px) {
+
+    .Certifications_panel {
+        justify-content: space-around !important;
+    }
+
+    .left_part_certificates {
+        width: 50% !important;
+        height: 75% !important;
+    }
+
+    .check_out {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+
+    .check_out_par {
+        margin: 0 auto;
+        width: 80% !important;
+    }
+
+    .right_part_certificates {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        width: 35% !important;
+        height: 100% !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .learn_more_cert {
+        margin-left: 10%;
+        display: none;
+    }
+
+    .cert_card {
+        width: 100% !important;
+        height: 70% !important;
+        margin-top: 5%;
+    }
+
+    .upper_cert {
+        width: auto;
+        height: 65% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lower_cert {
+        width: 100% !important;
+        height: 20% !important;
+    }
+
+    .cert_name {
+        font-size: 15px;       
+    }
+
+    .cert_par {
+        font-size: 10px;
+    }
+
+    .Experience_panel {
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .work_experience {
+        font-size: 13px !important;
+    }
+}
+
+
+
+

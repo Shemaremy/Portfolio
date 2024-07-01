@@ -690,3 +690,490 @@ header
     border-color: rgba(0, 0, 0, 0.192);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------PART 1 RESPONSIVE----------------------------------------------------------*/
+/*--------------------------PART 1 RESPONSIVE----------------------------------------------------------*/
+
+@media (max-width: 340px) {
+
+    .hello_heading {
+        font-size: 35px !important;
+    }
+
+    .Remy_heading {
+        font-size: 40px !important;
+    }
+
+    .small_paragraph {
+        font-size: 12px !important;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .coffee-button {
+        height: 70%;
+    }
+}
+
+
+@media (max-width: 401px) {
+    .Remy_heading {
+        font-size: 45px;
+    }
+
+    .mob_github_link {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+  
+
+
+
+@media (min-width: 760px) and (max-width: 1110px) {
+    .center_img{
+        height: 14%;
+    }
+
+    
+    .First_headings{
+        width: 95%;
+    }
+
+    .hello_heading{
+        font-size: 35px;
+    }
+
+    .Remy_heading {
+        font-size: 45px;
+    }
+
+    .small_paragraph {
+        width: 93%;
+        font-size: 13px;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .Buy_me_coffee {
+        width: 80%;
+    }
+
+    .coffee-button {
+        padding: 7px;
+        font-size: 6px;
+    }
+
+    .social_media {
+        width: 76%;
+    }
+
+    .all_icons {
+        width: 30%;
+    }
+
+    .ico_1 {
+        padding: 3px;
+        font-size: 8px;
+    }
+
+    .Right_part {
+        width: 40%;
+        justify-content: flex-start;
+    }
+
+    .My_photo{
+        width: 90%;
+        box-shadow: none;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(78, 78, 78, 0.123);
+    }
+
+    .desk_links {
+        width: 40%;
+        overflow: hidden;
+    }
+
+    .link1, .link2, .link3, .link4 {
+        font-size: 10px !important;
+    }
+    
+}
+  
+
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+
+    .Two_Parts {
+        margin-top: 90px;
+    }
+
+    .Left_part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden !important;
+        height: 100% !important;
+        margin-top: 0 !important;
+    }
+
+    .First_headings {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end !important;
+        overflow: hidden !important;
+    }
+
+    .small_paragraph {
+        height: 5% !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px !important;
+        overflow: hidden !important;
+    }
+
+    .Buy_me_coffee {
+        height: 20% !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden !important;
+    }
+
+    .coffee-button {
+        height: 55% !important;
+    }
+
+
+    .Hire_me_and_Github {
+        height: 25% !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden !important;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+
+    .Two_Parts  {
+        margin-top: 0 !important;
+        height: 100% !important;
+    }
+
+
+
+    .Left_part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden !important;
+        height: 80% !important;
+    }
+
+    .First_headings {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end !important;
+        overflow: hidden !important;
+    }
+
+    .Remy_heading {
+        font-size: 60px;
+    }
+
+    .small_paragraph {
+        height: 3% !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px !important;
+        overflow: hidden !important;
+    }
+
+    .Buy_me_coffee {
+        height: 20% !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden !important;
+    }
+
+    .coffee-button {
+        padding: 14px !important;
+    }
+
+    .mob_github_link{
+        width: 10%;
+    }
+
+    .Hire_me_and_Github {
+        height: 20% !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden !important;
+    }
+}
+
+
+
+
+@media (min-width: 470px) and (max-width: 767px){
+
+}

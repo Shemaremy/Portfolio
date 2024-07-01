@@ -233,82 +233,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .workflow {
     width: 20%;
     border-width: 1px;
@@ -316,4 +240,237 @@
     border-radius: 10px;
     border-style: dashed;
     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------PART 6 RESPONSIVE----------------------------------------------------------*/
+/*--------------------------PART 6 RESPONSIVE----------------------------------------------------------*/
+
+@media only screen and (max-width: 390px) {
+    .Database > .mainset > .devicon {
+        font-size: 40px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 280px) {
+
+    .Backend > .mainset > .devicon {
+        font-size: 20px;
+    }
+
+    .Frontend > .mainset > .devicon, 
+    .Design > .mainset > .devicon {
+
+        font-size: 18px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1051px) {
+    .Frontend > .mainset > .devicon, 
+    .Design > .mainset > .devicon {
+
+        font-size: 25px !important;
+    }
+
+    .Backend > .mainset > .devicon {
+        font-size: 25px;
+    }
+
+    .Database > .mainset > .devicon {
+        font-size: 40px !important;
+    }
+    
 }

@@ -175,3 +175,366 @@
         color: rgb(202, 202, 202);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------PART 5 RESPONSIVE----------------------------------------------------------*/
+/*--------------------------PART 5 RESPONSIVE----------------------------------------------------------*/
+
+@media (max-width: 347px) {
+
+    .proffession_title {
+        font-size: 11px !important;
+    }
+
+    .proffession_paragraph {
+        font-size: 9px !important;
+    }
+}
+
+
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .service_svg {
+        height: 40% !important;
+        min-height: 40% !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+
+    .upper_part_services {
+        align-items: flex-end !important;
+    }
+
+    .service_card {
+        height: 55% !important;
+    }
+
+    .service_svg {
+        height: 45% !important;
+        min-height: 45% !important;
+    }
+
+    .proffession_title {
+        font-size: 10px !important;
+    }
+
+    .proffession_paragraph {
+        font-size: 8px !important;
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 5000px) {
+    .proffession_paragraph {
+        font-size: 11px !important;
+        color: rgb(231, 231, 231) !important;
+    }
+}
+
+

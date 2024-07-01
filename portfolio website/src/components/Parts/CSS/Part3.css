@@ -44,7 +44,7 @@
 
 .Left_part3 {
     width: 95%;
-    height: 20%;
+    height: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,10 +65,10 @@
 }
 
 .My_proj_header {
-    width: 85%;
+    width: 90%;
     font-family: sans-serif;
     font-weight: 100;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 0;
     color: rgb(97, 97, 97);
     margin-top: 0;
@@ -96,6 +96,7 @@
     border-width: 0px;
     border-radius: 500px;
     background-color: rgb(80, 145, 199);
+    display: none;
 
     @media only screen and (max-width: 455px) {
         width: 50%;
@@ -155,22 +156,115 @@
 }
 
 .project_card {
+    position: relative;
     height: 50vh;
     border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: rgb(124, 124, 124);
-    background-color: rgb(197, 197, 197);
+    border-width: 0px;
+    border-radius: 0px;
+    border-color: none;
+    background-color: none;
     margin-top: 0;
     margin-bottom: 0;
     margin: 0 auto;
     display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     cursor: grab;
 
 }
+
+.proj_img {
+    min-height: 100%;
+    height: 100%;
+    min-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(100%);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 0, 0, 0);
+    border-radius: 5px;
+}
+
+
+.proj_words {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.upper_proj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgba(85, 85, 85, 0.63), rgba(255, 255, 255, 0));
+
+}
+
+
+.proj_name, .proj_category {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0 auto;
+    font-family: sans-serif;
+    width: 95%;
+    text-align: left;
+}
+
+
+.proj_name {
+    font-weight: 100;
+    color: white;
+    font-size: 20px;
+}
+
+.proj_category {
+    font-size: 9px;
+    color: rgb(226, 226, 226);
+}
+
+
+
+.lower_proj {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_proj {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgba(0, 170, 0, 0.082);
+    color: white;    
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.view_proj:hover {
+    background-color: rgba(0, 170, 0, 0.685);
+    border-color: rgba(0, 170, 0, 0);
+}
+
 
 
 
@@ -203,3 +297,535 @@
 .slick-next:before {
     content: '\203A' !important; /* Unicode for right-pointing single angle quotation mark */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------PART 3 RESPONSIVE----------------------------------------------------------*/
+/*--------------------------PART 3 RESPONSIVE----------------------------------------------------------*/
+
+
+
+@media (max-width: 460px) { /*Because slider cards are compressing nad it looks weird, I decided to switch to normal cards.*/
+
+    /* Hide scrollbar container */
+    ::-webkit-scrollbar {
+        width: 0px !important; 
+        height: 0px !important;
+    }
+    
+    /* Red scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(131, 131, 131);
+        border-radius: 55px;
+        cursor: pointer;
+        height: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(56, 56, 56);
+    }
+
+
+
+    .projects_library {
+        display: none;
+    }
+
+    .small_device_cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100vw;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; 
+    }    
+
+
+
+    .project_card_2 {
+        height: 90%;
+        width: 100%;
+        scroll-snap-align: start; /* Ensures each card snaps to the start */
+        flex-shrink: 0; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .main_card_2 {
+        height: 98%;
+        width: 90%;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        border-color: rgb(124, 124, 124);
+        background-color: rgb(197, 197, 197);
+    }
+    
+
+    .My_proj_header {
+        
+        @media only screen and (max-width: 455px) {
+            width: 100%;
+            height: 60%;
+            text-align: center;
+            font-size: 25px !important;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+
+
+    .my_projects_heading_underline {
+    
+        @media only screen and (max-width: 455px) {
+            display: none;
+        }
+        
+    }
+    
+
+
+
+}
+
+
+@media (min-width: 461px) and (max-width: 5000px) { /*Make our slider component active till infinity*/
+    .projects_library {
+        display: contents;
+    }
+
+    .small_device_cards {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 401px) and (max-width: 455px) {
+    .project_card {
+        height: 50vh !important;
+        width: 48vh !important;
+    }
+
+    .My_proj_header {
+        width: 100%;
+        height: 60% !important;
+        font-size: 30px !important;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        color: rgb(66, 66, 66);
+    }
+}
+
+
+
+@media (min-width: 456px) and (max-width: 679px) {
+
+    
+    
+    .Left_part3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end !important;
+        align-items: center;
+    }
+
+    .my_projects_heading_underline {
+        width: 75% !important;
+    }
+
+    .main_underline {
+        width: 20% !important;
+    }
+
+    .My_proj_header {
+        font-size: 25px !important;
+        width: 80% !important;
+    }
+
+    .project_card {
+        width: 80vw !important;
+        height: 40vh !important;
+    }
+}
+
+
+@media (min-width: 680px) and (max-width: 795px) {
+    .project_card {
+        width: 43vw !important;
+        height: 40vh !important;
+    }
+
+    .My_proj_header {
+        font-size: 30px !important;
+    }
+}
+
+
+@media (min-width: 796px) and (max-width: 1245px) {
+
+    .My_proj_header {
+        font-size: 35px !important;
+    }
+
+    .project_card {
+        width: 40vw !important;
+        height: 43vh !important;
+    }
+}
+
+@media (min-width: 1246px) and (max-width: 5000px) {
+    .project_card {
+        width: 21vw !important;
+    }
+}
+
