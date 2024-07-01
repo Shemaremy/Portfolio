@@ -7,6 +7,10 @@ import Calculator from '../../images/Projects/Portrait/calculator.jpg';
 import Clock from '../../images/Projects/Portrait/Clock.jpg';
 import Drum from '../../images/Projects/Portrait/Drum machine.jpg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -53,7 +57,7 @@ const settings = {
 
 
 const ProjectCards = (    // For only large screens. Small screens its weird
-    <div className="projects_library">
+    <div className="projects_library" data-aos="zoom-out">
         <Slider {...settings} className="Slider">
             <div className="project_card">
                 <img className="proj_img" src={Verve} alt="" />
@@ -63,7 +67,7 @@ const ProjectCards = (    // For only large screens. Small screens its weird
                         <p className="proj_category">e-commerce website</p>
                     </div>
                     <div className="lower_proj">
-                        <button className="view_proj">View project</button>
+                        <button className="view_proj">On it... &nbsp; (60% done)</button>
                     </div>
                 </div>
             </div>
@@ -71,11 +75,11 @@ const ProjectCards = (    // For only large screens. Small screens its weird
                 <img className="proj_img" src={Todo} alt="" />
                 <div className="proj_words">
                     <div className="upper_proj">
-                        <h1 className="proj_name">Todo list</h1>
+                        <h1 className="proj_name">Todo list app</h1>
                         <p className="proj_category">React web app</p>
                     </div>
                     <div className="lower_proj">
-                        <button className="view_proj">View project</button>
+                        <a href="https://remytodolistapp.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -137,19 +141,97 @@ const ProjectCards = (    // For only large screens. Small screens its weird
 const NormalProjectCards = (// For the small screens
     <div className="small_device_cards">
         <div className="project_card_2">
-            <div className="main_card_2">1</div>
+            <div className="main_card_2">
+                <img className="proj_img2" src={Verve} alt="" />
+                <div className="proj_words2">
+                    <div className="upper_proj2">
+                        <h1 className="proj_name2">Verve</h1>
+                        <p className="proj_category2">e-commerce website</p>
+                    </div>
+                    <div className="lower_proj2">
+                        <button className="view_proj2">View project</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="project_card_2">
-            <div className="main_card_2">2</div>
+            <div className="main_card_2">
+                <img className="proj_img2" src={Todo} alt="" />
+                <div className="proj_words2">
+                    <div className="upper_proj2">
+                        <h1 className="proj_name2">Todo list app</h1>
+                        <p className="proj_category2">React web app</p>
+                    </div>
+                    <div className="lower_proj2">
+                        <a href="https://remytodolistapp.netlify.app/"><button className="view_proj">View project</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="project_card_2">
-            <div className="main_card_2">3</div>
+            <div className="main_card_2">
+                <img className="proj_img2" src={Quote} alt="" />
+                <div className="proj_words2">
+                    <div className="upper_proj2">
+                        <h1 className="proj_name2">Random quote machine</h1>
+                        <p className="proj_category2">web app</p>
+                    </div>
+                    <div className="lower_proj2">
+                        <button className="view_proj2">View project</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="project_card_2">
-            <div className="main_card_2">4</div>
+            <div className="main_card_2">
+                <img className="proj_img2" src={Calculator} alt="" />
+                <div className="proj_words2">
+                    <div className="upper_proj2">
+                        <h1 className="proj_name2">Calculator app</h1>
+                        <p className="proj_category2">web app</p>
+                    </div>
+                    <div className="lower_proj2">
+                        <button className="view_proj2">View project</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div className="project_card_2">
+            <div className="main_card_2">
+                <img className="proj_img2" src={Clock} alt="" />
+                <div className="proj_words2">
+                    <div className="upper_proj2">
+                        <h1 className="proj_name2">25 + 5 clock app</h1>
+                        <p className="proj_category2">web app</p>
+                    </div>
+                    <div className="lower_proj2">
+                        <button className="view_proj2">View project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="project_card_2">
+            <div className="main_card_2">
+                <img className="proj_img2" src={Drum} alt="" />
+                <div className="proj_words2">
+                    <div className="upper_proj2">
+                        <h1 className="proj_name2">Drum machine app</h1>
+                        <p className="proj_category2">web app</p>
+                    </div>
+                    <div className="lower_proj2">
+                        <button className="view_proj2">View project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 );
+
+
+
+
+
 
 
 
@@ -160,9 +242,6 @@ function Part3() {
             <div className="Two_Parts3">
                 <div className="Left_part3">
                     <h2 className="My_proj_header">My Projects</h2>
-                    <div className="my_projects_heading_underline">
-                        <div className="main_underline"></div>
-                    </div>
                 </div>
                 <div className="Right_part3">
                     {ProjectCards}

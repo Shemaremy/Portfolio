@@ -1,7 +1,6 @@
 .Part2 {
     width: 95%;
     height: 9%;
-    box-shadow:  0 0 5px rgba(0, 0, 0, 0.274);
     position: relative;
     background-color: rgba(88, 114, 136, 0.075);
     margin-bottom: 0px;
@@ -57,8 +56,8 @@
 }
 
 .About_Photo {
-    height: 180px;
-    width: 180px;
+    height: auto;
+    width: auto;
     border-style: solid;
     border-width: 0px;
     border-radius: 50%;
@@ -99,7 +98,7 @@
     border-radius: 20px;
     border-width: 1px;
     border-color: rgb(64, 255, 47);
-    background-color: rgba(102, 255, 0, 0.075);
+    background-color: rgba(29, 177, 0, 0.116);
     width: 90px;
     padding: 2px;
     font-size: 9px;
@@ -980,7 +979,8 @@
     
 
     .Part2 {
-        width: 90% !important;
+        width: 95% !important;
+        background: linear-gradient(to right, rgba(88, 114, 136, 0) 10%, rgba(50, 60, 68, 0.075) 50%,  rgba(88, 114, 136, 0) 100%) !important;
     }
 
 
