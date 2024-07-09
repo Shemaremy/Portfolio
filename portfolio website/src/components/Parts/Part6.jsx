@@ -23,6 +23,7 @@ function Part6() {
                             <i className="devicon devicon-jquery-plain-wordmark colored"></i>
                             <i className="devicon devicon-react-original-wordmark colored"></i>
                             <i className="devicon devicon-typescript-plain colored"></i>
+                            <i className="devicon devicon-redux-original colored"></i>
                         </div>
                     </div>
                     <div className="Design">

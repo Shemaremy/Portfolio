@@ -296,7 +296,7 @@
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(185, 185, 185) ;
+    border-color: rgb(185, 185, 185);
 }
 
 .cert_img {
@@ -369,7 +369,7 @@
     color: white;
     border-color: rgba(240, 248, 255, 0.692);
     border-radius: 15px;
-    background-color: rgba(0, 160, 0, 0.623);
+    background-color: rgba(59, 141, 59, 0.623);
     opacity: 0;
     cursor: pointer;
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -561,9 +561,8 @@
         margin-bottom: 0;
         font-size: 11px;
         width: 98%;
-        color: rgb(155, 155, 155);
-        color: #00BFFF;
         color: chocolate;
+        color: rgba(66, 175, 66, 0.925);
     }
 }
 
@@ -939,7 +938,7 @@
 
     .check_out_par {
         font-size: 7px !important;
-        width: 70% !important;
+        width: 90% !important;
     }
 
     .learn_more_cert {
@@ -960,7 +959,7 @@
     }
 
     .cert_card {
-        width: 80% !important;
+        width: 90% !important;
         height: 50% !important;
         display: flex;
         flex-direction: row !important;
@@ -969,23 +968,23 @@
     }
 
     .upper_cert {
-        height: 80% !important;
-        width: 60% !important;
+        height: auto !important;
+        width: 45% !important;
         display: flex !important;
         flex-direction: row !important;
         justify-content: center !important;
         align-items: center !important;
-        border-width: 0 !important;
+        border-width: 0;
     }
 
 
     .cert_img {
         min-width: 60% !important;
         width: auto !important;
-        border-radius: 8px;
+        border-radius: 5px;
         border-style: solid;
         border-width: 1px;
-        border-color: rgba(185, 185, 185, 0.74) ;
+        border-color: rgba(185, 185, 185, 0.74);
     }
 
 
@@ -1005,7 +1004,7 @@
 
     .lower_cert {
         height: 100% !important;
-        width: 40% !important;
+        width: 50% !important;
         overflow: hidden;
     }
 
@@ -1248,6 +1247,7 @@
     .check_out_par {
         margin: 0 auto;
         width: 80% !important;
+        font-size: 11px;
     }
 
     .right_part_certificates {
@@ -1280,16 +1280,16 @@
     }
 
     .lower_cert {
-        width: 100% !important;
+        width: 80% !important;
         height: 20% !important;
     }
 
     .cert_name {
-        font-size: 15px;       
+        font-size: 12px;       
     }
 
     .cert_par {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .Experience_panel {

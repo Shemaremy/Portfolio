@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./CSS/Part1.CSS"
 import "./CSS/Responsive.css"
 import working from '../../images/Landing page/working.png';
+import workinggreen from '../../images/Landing page/workinggreen.png';
 
 
 
@@ -309,7 +310,7 @@ function Part1 () {
 
                     <div className="Right_part">
                         <div className="My_photo">
-                            <img className="working_img" src={working} alt="" />
+                            <img className="working_img" src={workinggreen} alt="" />
                         </div>
                     </div>
                 </div>

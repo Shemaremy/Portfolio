@@ -67,7 +67,65 @@ function Part4() {
                 }
             };
         }, []);
+
+        
+        // Downloading Freecodecamp certificate
+        useEffect(() => {
+            const downloadButton = document.getElementById('freecodecamp');
     
+            const startLoading = () => {
+                const loaderSpan = document.createElement('span');
+                const reducePadding = document.querySelector('.coffee-button');
+                reducePadding.style.padding = '8px';
+                loaderSpan.classList.add('loader');
+                downloadButton.appendChild(loaderSpan);
+                downloadButton.disabled = true;
+            };
+
+
+            const handleDownload = async () => {
+                const CV = window.confirm("Are you sure you want to download this file ? It's my Freecodecamp certificate.");
+    
+                if (CV) {
+                    downloadButton.innerHTML = " ";
+                    startLoading();
+            
+                    try {
+                        const response = await fetch('/Freecodecamp.pdf');
+                        const blob = await response.blob();
+                        const url = URL.createObjectURL(blob);
+                        const link = document.createElement('a');
+                        link.setAttribute('href', url);
+                        link.setAttribute('download', 'Freecodecamp.pdf');
+                        link.style.display = 'none';
+                        document.body.appendChild(link);
+                        link.click();
+                        URL.revokeObjectURL(url);
+            
+                        downloadButton.disabled = true;
+                        downloadButton.textContent = "Downloaded successfully!";
+                        downloadButton.classList.add('completed');
+                        downloadButton.innerHTML = "Success!";
+                    } catch (error) {
+                        console.error('Error occurred while downloading:', error);
+                        downloadButton.textContent = "Download failed. Please try again.";
+                        downloadButton.disabled = false;
+                    }
+                    }
+            };
+    
+    
+            if (downloadButton) {
+                downloadButton.addEventListener('click', handleDownload);
+            }
+    
+            return () => {
+                if (downloadButton) {
+                    downloadButton.removeEventListener('click', handleDownload);
+                }
+            };
+        }, []);
+        
 
 
 
@@ -101,10 +159,13 @@ function Part4() {
                 <div className="cert_card">
                     <div className="upper_cert">
                         <img className="cert_img" src={WorkingOnIt} alt="" />
+                        <div className="info">
+                            <button className="essential_download" id="freecodecamp">Download</button>
+                        </div> 
                     </div>
                     <div className="lower_cert">
                         <h4 className="cert_name">Freecodecamp</h4>
-                        <h4 className="cert_par">Not yet acquired ...</h4>
+                        <h4 className="cert_par">A freeCodeCamp certificate where I learned front-end libraries like ReactJS, Sass, Bootstrap, jQuery, and Redux, and completed five hands-on projects.</h4>
                     </div>
                 </div>
                 <div className="cert_card">

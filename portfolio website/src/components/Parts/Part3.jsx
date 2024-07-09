@@ -91,7 +91,7 @@ const ProjectCards = (    // For only large screens. Small screens its weird
                         <p className="proj_category">Web app</p>
                     </div>
                     <div className="lower_proj">
-                        <button className="view_proj">View project</button>
+                        <a href="https://remyquotemachine.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@ const ProjectCards = (    // For only large screens. Small screens its weird
                         <p className="proj_category">web app</p>
                     </div>
                     <div className="lower_proj">
-                        <button className="view_proj">View project</button>
+                        <a href="https://remycalculator.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@ const ProjectCards = (    // For only large screens. Small screens its weird
                         <p className="proj_category">web app</p>
                     </div>
                     <div className="lower_proj">
-                        <button className="view_proj">View project</button>
+                        <a href="https://remyclock.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ const ProjectCards = (    // For only large screens. Small screens its weird
                         <p className="proj_category">web app</p>
                     </div>
                     <div className="lower_proj">
-                        <button className="view_proj">View project</button>
+                        <a href="https://remydrummachine.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
