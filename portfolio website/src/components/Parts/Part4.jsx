@@ -7,6 +7,9 @@ import WorkingOnIt from '../../images/freecodecamp.jpg';
 
 
 
+import CertShape from '../../Shapes/gatanu.png'
+
+
 function Part4() {
 
 
@@ -230,6 +233,9 @@ function Part4() {
                 <div className="certifications_and_experience_bottom">
                     {CertificatesSection}
                     {ExperienceSection}
+                    <div className="certification-shapes">
+                        <img src={CertShape} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
