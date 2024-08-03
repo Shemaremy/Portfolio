@@ -547,13 +547,11 @@
 .job_title {
 
     font-family: sans-serif;
-    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 0;
     font-size: 11px;
     width: 98%;
-    color: rgb(155, 155, 155);
-    color: #00BFFF;
-    color: chocolate;
+    color: rgb(42, 161, 42);
 
     @media only screen and (max-width: 767px) {
         font-family: sans-serif;
@@ -969,7 +967,7 @@
 
     .upper_cert {
         height: auto !important;
-        width: 45% !important;
+        width: 55% !important;
         display: flex !important;
         flex-direction: row !important;
         justify-content: center !important;

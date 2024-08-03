@@ -181,7 +181,7 @@
     object-fit: cover;
     filter: brightness(100%);
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     border-color: rgba(255, 0, 0, 0);
     border-radius: 5px;
 }
@@ -274,9 +274,7 @@
     border-color: rgba(0, 170, 0, 0);
 }
 
-.view_proj:active {
-    transform: scale(0.6);
-}
+
 
 
 

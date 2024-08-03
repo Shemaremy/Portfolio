@@ -1,17 +1,41 @@
-import React from "react";
+import {React, useEffect} from "react";
 import "./CSS/Part2.CSS"
 import "./CSS/Responsive.css"
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-
 import MyFace from '../../images/Profile.jpg';
 
+
 function Part2 () {
+
+    AOS.init();
+    useEffect(() => {
+        AOS.init({
+          disable: false,
+          startEvent: 'DOMContentLoaded',
+          initClassName: 'aos-init',
+          animatedClassName: 'aos-animate',
+          useClassNames: false,
+          disableMutationObserver: false,
+          debounceDelay: 50,
+          throttleDelay: 99,
+          offset: 120,
+          delay: 0,
+          duration: 2000,
+          easing: 'ease',
+          once: false,
+          mirror: false,
+          anchorPlacement: 'top-bottom',
+        });
+      }, []); // Empty dependency array ensures this runs only once
+    
+
+
     return(
         <div className="Part2">
-            <div className="Two_Parts2">
+            <div className="Two_Parts2" data-aos="fade-left">
                 <div className="Left_part2">
                     <div className="About_Photo">
                         <img className="meet_remy_photo"  src={MyFace} alt="" />

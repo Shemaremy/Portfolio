@@ -15,7 +15,7 @@ function Part5() {
                     <h1 className="services_header">Services</h1>
                 </div>
                 <div className="lower_part_services">
-                    <div className="service_cards_container">
+                    <div className="service_cards_container" data-aos="fade-left">
                         <div className="service_card">
                             <div className="upper_service_card"><img className="service_svg" src={WebDvt} alt="" /></div>
                             <div className="lower_service_card">

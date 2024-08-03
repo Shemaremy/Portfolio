@@ -67,7 +67,7 @@ const ProjectCards = (    // For only large screens. Small screens its weird
                         <p className="proj_category">e-commerce website</p>
                     </div>
                     <div className="lower_proj">
-                        <button className="view_proj">View project</button>
+                        <a href="https://v3rve.netlify.app"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@ const ProjectCards = (    // For only large screens. Small screens its weird
 
 
 const NormalProjectCards = (// For the small screens
-    <div className="small_device_cards">
+    <div className="small_device_cards" data-aos="fade-up">
         <div className="project_card_2">
             <div className="main_card_2">
                 <img className="proj_img2" src={Verve} alt="" />
@@ -149,7 +149,7 @@ const NormalProjectCards = (// For the small screens
                         <p className="proj_category2">e-commerce website</p>
                     </div>
                     <div className="lower_proj2">
-                        <button className="view_proj2">View project</button>
+                        <a href="https://v3rve.netlify.app"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,7 @@ const NormalProjectCards = (// For the small screens
                         <p className="proj_category2">web app</p>
                     </div>
                     <div className="lower_proj2">
-                        <button className="view_proj2">View project</button>
+                        <a href="https://remyquotemachine.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -191,7 +191,7 @@ const NormalProjectCards = (// For the small screens
                         <p className="proj_category2">web app</p>
                     </div>
                     <div className="lower_proj2">
-                        <button className="view_proj2">View project</button>
+                        <a href="https://remycalculator.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@ const NormalProjectCards = (// For the small screens
                         <p className="proj_category2">web app</p>
                     </div>
                     <div className="lower_proj2">
-                        <button className="view_proj2">View project</button>
+                        <a href="https://remyclock.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -219,7 +219,7 @@ const NormalProjectCards = (// For the small screens
                         <p className="proj_category2">web app</p>
                     </div>
                     <div className="lower_proj2">
-                        <button className="view_proj2">View project</button>
+                    <a href="https://remydrummachine.netlify.app/"><button className="view_proj">View project</button></a>
                     </div>
                 </div>
             </div>
@@ -241,7 +241,7 @@ function Part3() {
         <div className="Part3">
             <div className="Two_Parts3">
                 <div className="Left_part3">
-                    <h2 className="My_proj_header">My Projects</h2>
+                    <h2 className="My_proj_header" data-aos="fade-right">My Projects</h2>
                 </div>
                 <div className="Right_part3">
                     {ProjectCards}

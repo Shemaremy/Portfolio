@@ -83,7 +83,7 @@
         width: 100%;
         height: 80%;
         box-shadow: none;
-        background-color: rgba(10, 12, 0, 0.445);
+        background-color: rgba(0, 0, 0, 0.39);
         border-radius: 1px;
         border-bottom: none;
         margin-bottom: 0;
@@ -292,8 +292,7 @@
 
 
 
-.Name input::placeholder, .Email input::placeholder 
-{
+.Name input::placeholder, .Email input::placeholder {
     color: rgba(175, 175, 175, 0.363);
     font-size: 12px;
 }
@@ -320,7 +319,7 @@ input {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-color: rgb(96, 165, 94);
+    border-color: rgba(209, 255, 208, 0.5) !important;
     background-color: rgba(255, 255, 255, 0) !important;
     border-width: 1px;
     padding: 10px;
@@ -457,31 +456,27 @@ input:focus  {
 .send_button {
     margin-top: 0;
     border-style: solid;
-    border-color: rgb(6, 168, 0);
     border-width: 1px;
     border-radius: 5px;
     width: 120px;
     padding: 9px;
     cursor: pointer;
     font-size: 11px;
-    background-color: rgba(51, 153, 68, 0.089);
-    color: rgb(175, 175, 175);
-    transition: transform 0.3s ease;
+    color: rgb(255, 255, 255);
+    border-color:  rgb(93, 168, 93);
+    background-color:  rgba(93, 168, 93, 0.178);  
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
 
     @media (max-width: 1060px)  {
 
         width: 100px;
-        padding: 6px;
-        color: rgb(175, 175, 175);
-        border-color: rgb(212, 255, 210);
-        background-color: rgba(132, 206, 122, 0.164);
-        
+        padding: 6px;      
     }
 }
 
 .send_button:hover {
     border-color: rgb(0, 255, 98);
-    background-color: rgba(108, 197, 97, 0.212);
+    background-color:rgb(0, 141, 54);
 }
 
 .send_button:active {

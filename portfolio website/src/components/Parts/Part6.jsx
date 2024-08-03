@@ -11,7 +11,7 @@ function Part6() {
                     <div className="skills_underline_itself"></div>
                 </div>
             </div>
-            <div className="lower_part_skills">
+            <div className="lower_part_skills" data-aos="fade-right">
                 <div className="skill_card Front_and_design">
                     <div className="Frontend">
                         <h4 className="set_name">Front - end</h4>

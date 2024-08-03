@@ -141,12 +141,12 @@ function Part4() {
     // Content for the certificates section
     const CertificatesSection = (
         <div className="Certifications_panel">
-            <div className="left_part_certificates">
+            <div className="left_part_certificates" data-aos="fade-right">
                 <h1 className="check_out"><span className="c_out">Check out <br/></span>My Certificates</h1>
                 <p className="check_out_par">I've dedicated myself to expanding my programming expertise through a range of courses, each aimed at honing specific skills and broadening my technical knowledge. Among these, I've completed courses in languages like Python, JavaScript, and Java, diving deep into topics such as data structures, algorithms, and web development frameworks such as Bootstrap, Reactjs, JQuery and many more. </p>
                 <button className="learn_more_cert">Learn more</button>
             </div>
-            <div className="right_part_certificates">
+            <div className="right_part_certificates" data-aos="fade-up">
                 <div className="cert_card">
                     <div className="upper_cert">
                         <img className="cert_img" src={AlxPhoto} alt="" />
@@ -191,17 +191,17 @@ function Part4() {
             <h1 className="work_experience">Work Experience</h1>
             <div className="experience_list">
                 <ul className="main_experience_list">
-                    <li className="the_li">
+                    <li className="the_li" data-aos="fade-right">
                         <h5 className="Organisation">FRA</h5>
                         <p className="job_title">Software Engineer - Part time</p>
                         <p className="duration">March 2024 - Present</p>
                     </li>
-                    <li className="the_li">
+                    <li className="the_li" data-aos="fade-right">
                         <h5 className="Organisation">SGS</h5>
                         <p className="job_title">Software Engineer - Part time</p>
                         <p className="duration">August 2023 - Present</p>
                     </li>
-                    <li className="the_li">
+                    <li className="the_li" data-aos="fade-right">
                         <h5 className="Organisation">IREMBO services</h5>
                         <p className="job_title">Junior Software Engineer - Full time</p>
                         <p className="duration">March 2020 - July 2020</p>

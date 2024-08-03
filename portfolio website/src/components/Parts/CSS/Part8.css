@@ -165,6 +165,8 @@
     border-width: 1px;
     padding: 7px;
     font-size: 10px;
+    border-color: rgba(255, 255, 255, 0.623);
+    color: rgba(255, 255, 255, 0.541) !important;
 }
 
 
