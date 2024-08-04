@@ -23,7 +23,7 @@ const settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
 
@@ -241,7 +241,8 @@ function Part3() {
         <div className="Part3">
             <div className="Two_Parts3">
                 <div className="Left_part3">
-                    <h2 className="My_proj_header" data-aos="fade-right">My Projects</h2>
+                    <h2 className="My_proj_header">Explore my projects</h2>
+                    <p className="my-proj-description">Check out my collection of projects showcasing my technical skills. While many are from Freecodecamp, I’m also working on some exciting new ones that are even bigger and better.</p>
                 </div>
                 <div className="Right_part3">
                     {ProjectCards}

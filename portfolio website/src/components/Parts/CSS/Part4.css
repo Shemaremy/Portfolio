@@ -541,7 +541,7 @@
 .Organisation {
 
     font-size: 12px;
-    color: rgb(236, 236, 236);
+    color: rgba(236, 236, 236, 0.897);
     margin-bottom: 0%;
     margin-top: 0;
     padding: 0;
@@ -902,7 +902,7 @@
 
 
 
-@media (min-width: 0px) and (max-width: 460px) {
+@media (max-width: 460px) {
     .cert_name, .cert_par {
         margin-left: 5%;
     }
@@ -911,9 +911,18 @@
         width: 100% !important;
     }
 
+
+    .lower_cert {
+        padding-left: 5px;
+    }
+
     .work_experience {
         width: 95% !important;
         font-size: 14px !important;
+    }
+
+    .Organisation {
+        color: rgb(206, 206, 206);
     }
 }
 

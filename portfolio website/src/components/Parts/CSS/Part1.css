@@ -723,7 +723,6 @@ header
     width: 90%;
     object-fit: cover;
     filter: grayscale(50%);
-    display: none;
 }
 
 
