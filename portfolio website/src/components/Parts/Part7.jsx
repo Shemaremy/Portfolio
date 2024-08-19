@@ -25,7 +25,7 @@ function Part7() {
                         </div>
                         <div className="Right_section">
                         
-                            <form className="myForm" action="https://half-tundra-burn.glitch.me/submit" method="POST">
+                            <form className="myForm" action="https://portfolio-form-server.glitch.me/submit" method="POST">
                                 <div className="row">
                                     <div className="Name_Email">
                                         <div className="Name">
