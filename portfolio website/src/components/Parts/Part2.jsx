@@ -1,6 +1,6 @@
 import {React, useEffect} from "react";
-import "./CSS/Part2.CSS"
-import "./CSS/Responsive.css"
+import './CSS/Part2.CSS';
+import "./CSS/Responsive.css";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

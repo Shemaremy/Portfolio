@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
-import "./CSS/Part4.CSS"
-import "./CSS/Responsive.css"
+import './CSS/Part4.CSS';
+import "./CSS/Responsive.css";
 import EssentialDocs from '../../images/Essential Docs.jpg';
 import AlxPhoto from '../../images/Alx Photo.jpg';
 import WorkingOnIt from '../../images/freecodecamp.jpg';

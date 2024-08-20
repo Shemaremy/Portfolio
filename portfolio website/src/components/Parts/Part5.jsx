@@ -1,6 +1,6 @@
 import React from "react";
-import "./CSS/Part5.CSS"
-import "./CSS/Responsive.css"
+import './CSS/Part5.CSS';
+import "./CSS/Responsive.css";
 import WebDvt from "../../illustrations/WebDvt.png"
 import MobileApp from "../../illustrations/MobileApp.png"
 import Database from "../../illustrations/Database.png"

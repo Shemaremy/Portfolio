@@ -1,6 +1,6 @@
 import React from "react";
-import "./CSS/Part8.CSS"
-import "./CSS/Responsive.css"
+import './CSS/Part8.CSS';
+import "./CSS/Responsive.css";
 
 function Part8() {
     return(
