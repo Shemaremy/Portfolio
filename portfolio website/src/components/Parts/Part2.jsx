@@ -57,15 +57,15 @@ function Part2 () {
                             </p>
                             <p className="The_par two_par">
                                 As a full-stack engineer with a deep focus on front-end development, my passion drives 
-                                me to constantly push beyond boundaries. Doing projects to showcase my skills and try to innovate.
-                                Since I am still taking Software Engineering course 
-                                at ALX, I am much more of a self-taught and hungry for some experience through seeking internships 
-                                and job opportunities to further enhance my skills.
+                                me to constantly push beyond boundaries, by doing projects to showcase my skills.
+                                I have taken various Software Engineering courses from ALX, Freecodecamp, and I'm planning to move on with
+                                Coursera. Although I take all these courses, I am much more of a self-taught. Most of my skills are gained form
+                                continous projects. We complete all these projects as a community of Software Engineers created by Levi Okoye from Nigeria.
                             </p>
                             <p className="The_par three_par">
                                 This website consists of everything you would need to know more about my 
-                                achievements and projects that I've done, and feel free to give me a feedback about what you think about my first website, advice, or some 
-                                business inquiries.
+                                achievements and projects that I've done. Feel free to give me a feedback about what you think about my first website, advice, 
+                                business inquiries, and more.
                             </p>
                             <p className="The_par last four_par" style={{ color: 'rgb(110, 112, 0)'}}>
                                 I would like to hear from you!

@@ -1,8 +1,51 @@
-import React from "react";
+import React, {useState} from "react";
 import "./CSS/Part7.CSS"
 import "./CSS/Responsive.css"
 
 function Part7() {
+
+    const [loading, setLoading] = useState(false);
+
+    const [Name, setName] = useState('');
+    const [Email, setEmail] = useState('');
+    const [Message, setMessage] = useState('');
+
+
+
+    const handleEmailSend = (e) => {
+        e.preventDefault();
+        setLoading(true);
+        async function loginUser() {
+            try {
+              const response = await fetch('https://portfolio-form-server.glitch.me/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ Name, Email, Message}),
+              });
+          
+              const data = await response.json();
+              setLoading(false);
+          
+              if (response.ok) {
+                alert('Email sent successfully');
+                console.log('Success:', data);
+                window.location.reload();
+              } else {
+                alert(`Error: ${data.message}`);
+                console.error('Login failed:', data.message);
+              }
+            } catch (error) {
+              console.error('Error:', error);
+              alert('Error: Something went wrong. Please try again.');
+            }
+        }
+        loginUser();
+    };
+
+
+
+
+
     return(
         <div className="Part7">
             <div className="Two_Parts7">
@@ -23,29 +66,43 @@ function Part7() {
                                 <p className="p3"><i className="icon2 fas fa-envelope"></i> &nbsp; remyshema20@gmail.com</p>
                             </div>         
                         </div>
-                        <div className="Right_section">
-                        
-                            <form className="myForm" action="https://portfolio-form-server.glitch.me/submit" method="POST">
+                        <div className="Right_section">                        
+                            <form className="myForm" onSubmit={handleEmailSend}>
                                 <div className="row">
                                     <div className="Name_Email">
                                         <div className="Name">
                                             <h2 className="form_headers">Name</h2>
-                                            {/* Add name attribute for the name input field */}
-                                            <input type="text" className="name" name="name" placeholder="Your name" required />
+                                            <input type="text" className="name" 
+                                                name="Name" value={Name} 
+                                                onChange={(e) => setName(e.target.value)}
+                                                maxLength={20}
+                                                placeholder="Your name" required 
+                                            />
                                         </div>
                                         <div className="Email">
                                             <h2 className="form_headers">Email</h2>
-                                            {/* Add name attribute for the email input field */}
-                                            <input type="email" className="email" name="email" placeholder="Email address" required />
+                                            <input type="email" className="email" 
+                                                name="Email" value={Email} 
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                maxLength={80}
+                                                placeholder="Email address" required 
+                                            />
                                         </div>
                                     </div>
                                     <div className="Message">
                                         <h2 className="form_headers">Message</h2>
-                                        {/* Add name attribute for the message input field */}
-                                        <input className="text_area message" type="text" name="message" placeholder="Message" required />
+                                        <input className="text_area message" 
+                                            type="text" name="Message" 
+                                            value={Message} 
+                                            onChange={(e) => setMessage(e.target.value)}
+                                            maxLength={200}
+                                            placeholder="Message" required 
+                                        />
                                     </div>
                                     <div className="send_button_container">
-                                        <button type="submit" className="send_button" onClick={() => startLoadingtwo()}>Send<i className="icon2 fa fa-paper-plane" style={{ marginLeft: 12 }}></i></button>
+                                        <button className="send_button" type='submit'>
+                                            {loading ? <i className="fa-solid fa-spinner fa-spin"></i> : <>Send <i className="icon2 fa fa-paper-plane fa-fade" style={{ marginLeft: 12, '--fa-animation-duration': '3s'}}></i></>}
+                                        </button>
                                     </div>
                                 </div> 
                             </form>

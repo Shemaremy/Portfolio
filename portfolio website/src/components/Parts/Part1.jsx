@@ -265,7 +265,7 @@ function Part1 () {
                     </div>
 
                     <div className="small_paragraph">
-                        <p id="animated-paragraph" className="paragraph">A fullstack Software Engineer, Visual artist & a creative thinker.</p>
+                        <p id="animated-paragraph" className="paragraph">A MERN Software Engineer, Visual artist & a creative thinker.</p>
                     </div>
 
                     <div className="Buy_me_coffee">
