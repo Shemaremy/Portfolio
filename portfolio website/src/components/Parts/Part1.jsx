@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./CSS/Part1.CSS"
+import './CSS/Part1.CSS';
 import "./CSS/Responsive.css"
 import working from '../../images/Landing page/working.png';
 import workinggreen from '../../images/Landing page/workinggreen.png';
