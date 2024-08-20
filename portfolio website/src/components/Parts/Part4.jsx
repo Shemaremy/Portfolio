@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import './CSS/Part4.CSS';
+import './CSS/Part4.css';
 import "./CSS/Responsive.css";
 import EssentialDocs from '../../images/Essential Docs.jpg';
 import AlxPhoto from '../../images/Alx Photo.jpg';

@@ -1,5 +1,5 @@
 import React from "react";
-import './CSS/Part6.CSS';
+import './CSS/Part6.css';
 import "./CSS/Responsive.css";
 
 function Part6() { 

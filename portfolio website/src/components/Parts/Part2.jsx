@@ -1,5 +1,5 @@
 import {React, useEffect} from "react";
-import './CSS/Part2.CSS';
+import './CSS/Part2.css';
 import "./CSS/Responsive.css";
 
 import AOS from 'aos';

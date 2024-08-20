@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import './CSS/Part7.CSS';
+import './CSS/Part7.css';
 import "./CSS/Responsive.css";
 
 function Part7() {

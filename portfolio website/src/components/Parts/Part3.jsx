@@ -1,5 +1,5 @@
 import React from "react";
-import './CSS/Part3.CSS';
+import './CSS/Part3.css';
 import Verve from '../../images/Projects/Portrait/Verve1.jpg';
 import Todo from '../../images/Projects/Portrait/Todo List.jpg';
 import Quote from '../../images/Projects/Portrait/Quote machine.jpg';
