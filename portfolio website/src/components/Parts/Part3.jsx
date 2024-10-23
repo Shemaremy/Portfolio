@@ -55,7 +55,7 @@ const settings = {
 
 
 
-
+/*
 const ProjectCards = (    // For only large screens. Small screens its weird
     <div className="projects_library" data-aos="zoom-out">
         <Slider {...settings} className="Slider">
@@ -134,9 +134,49 @@ const ProjectCards = (    // For only large screens. Small screens its weird
         </Slider>
     </div>
 );
+*/
 
 
-
+const ProjectCards = (    // For only large screens. Small screens its weird
+    <div className="projects_library" data-aos="zoom-out">
+        <div className="project_card">
+            <div className="proj-image-container">
+                <img className="proj_img" src={Verve} alt="" />
+            </div>
+            <div className="proj_words">
+                <p className="dev-date">Development • July 20, 2020</p>
+                <h4 className="project-name">There live the blind texts they live</h4>
+                <p className="project-description">
+                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+            </div>
+        </div>
+        <div className="project_card">
+            <div className="proj-image-container">
+                <img className="proj_img" src={Verve} alt="" />
+            </div>
+            <div className="proj_words">
+                <p className="dev-date">Development • July 20, 2020</p>
+                <h4 className="project-name">There live the blind texts they live</h4>
+                <p className="project-description">
+                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+            </div>
+        </div>
+        <div className="project_card">
+            <div className="proj-image-container">
+                <img className="proj_img" src={Verve} alt="" />
+            </div>
+            <div className="proj_words">
+                <p className="dev-date">Development • July 20, 2020</p>
+                <h4 className="project-name">There live the blind texts they live</h4>
+                <p className="project-description">
+                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+            </div>
+        </div>
+    </div>
+);
 
 const NormalProjectCards = (// For the small screens
     <div className="small_device_cards" data-aos="fade-up">
@@ -241,8 +281,12 @@ function Part3() {
         <div className="Part3">
             <div className="Two_Parts3">
                 <div className="Left_part3">
-                    <h2 className="My_proj_header">Explore my projects</h2>
+                    <h2 className="My_proj_header">My projects</h2>
                     <p className="my-proj-description">Check out my collection of projects showcasing my technical skills. While many are from Freecodecamp, I’m also working on some exciting new ones that are even bigger and better.</p>
+                    <div className="project-chooser">
+                        <button>Recents</button>
+                        <button>Freecodecamp</button>
+                    </div>
                 </div>
                 <div className="Right_part3">
                     {ProjectCards}

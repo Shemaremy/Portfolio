@@ -100,18 +100,18 @@
 @media (min-width: 1025px) { 
     
     body {
-        height: 570vh !important;
+        height: 590vh !important;
     }
 
     .center_img {
-        height: 18% !important;
+        height: 16% !important;
     }
 
     .Part2 {
         height: 8% !important;
     }
     .Part3 {
-        height: 15% !important;
+        height: 18% !important;
     }
     .Part4 {
         height: 19% !important;
@@ -123,7 +123,7 @@
         height: 11% !important;
     }
     .Part7 {
-        height: 16% !important;
+        height: 15% !important;
     }
     .Part8 {
         height: 1% !important;
