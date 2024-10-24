@@ -619,6 +619,13 @@
         align-items: center !important;
     }
 
+
+    .my-proj-description {
+        margin-top: 20px;
+        font-size: 10px;
+        width: 97%;
+    }
+
     .proj_button {
         font-size: 10px;
         padding-left: 20px;
@@ -628,6 +635,7 @@
     .project-description {
         font-size: 12px;
     }
+
 
 
     .projects_library {
