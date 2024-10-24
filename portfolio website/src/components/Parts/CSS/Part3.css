@@ -619,11 +619,14 @@
         align-items: center !important;
     }
 
+    .proj_button {
+        font-size: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-    .my-proj-description {
-        margin-top: 20px;
-        font-size: 11px;
-        width: 97%;
+    .project-description {
+        font-size: 12px;
     }
 
 
