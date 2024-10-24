@@ -29,6 +29,7 @@
     margin: 0 auto;
     margin-bottom: 0;
     background-color: rgba(0, 24, 0, 0.151);
+    background-color: rgba(0, 24, 0, 0.062);
 
     @media only screen and (max-width: 767px)  {
         height: 100%;
@@ -38,8 +39,8 @@
         padding: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
     }
 }
 
@@ -54,10 +55,10 @@
     padding: 0;
 
     @media only screen and (max-width: 767px) {
+        margin-top: 50px;
         margin-bottom: 0;
         padding-bottom: 0;
         width: 100%;
-        height: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -76,47 +77,24 @@
     margin-bottom: 0;
 }
 
+.My_proj_header {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: underline;
+}
+
 .my-proj-description {
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 18px;
     width: 80%;
     text-align: center;
 }
 
 
-.my_projects_heading_underline {
-    height: 5vh;
-    width: 84%;
-    display: flex;
-    align-items: center;
-
-    @media only screen and (max-width: 455px) {
-        display: none;
-    }
-    
-}
-
-.main_underline {
-    height: 2px;
-    width: 12%;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 500px;
-    background-color: rgb(80, 145, 199);
-    display: none;
-
-    @media only screen and (max-width: 455px) {
-        width: 50%;
-        display: none;
-    }
-}
-
 
 .project-chooser {
     width: 80%;
-    height: 30px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -124,17 +102,30 @@
     gap: 30px;
 }
 
-.project-chooser > button {
+.proj_button {
     cursor: pointer;
     border-width: 0px;
-    font-size: 15px;
-    background-color: rgba(255, 0, 0, 0);
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.171);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.proj_button:hover {
+    background-color: rgba(0, 0, 0, 0.199);
 }
 
 
-.project-chooser > button:hover {
-    color: rgb(0, 109, 128);
+.proj_button.active {
+    background-color: rgba(0, 0, 0, 0.308);
 }
+
+.proj_button.active {
+    text-decoration: underline;
+}
+
 
 
 
@@ -142,11 +133,7 @@
 .Right_part3 {
     width: 85%;
     height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
+    margin-top: 10px;
 
     @media (max-width: 767px) {
         margin-left: 0;
@@ -158,37 +145,17 @@
 
 
 
-
-.Slider {
-    height: 94%;
-    width: 95%;
-    margin: 0 auto;
-}
-
 .projects_library {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
     width: 100%;
     height: 100%;
+    
 }
 
-.slick-list {
-    height: 100%;
-    margin-bottom: 0 !important;
-}
-
-.slick-track {
-    height: 100%;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.slick-slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 100% !important;
-    height: 55vh !important;
-}
 
 .project_card {
     position: relative;
@@ -210,8 +177,9 @@
 }
 
 .proj-image-container {
-    height: 55%;
+    height: 50%;
     width: 100%;
+    cursor: pointer;
 }
 
 .proj_img {
@@ -244,6 +212,7 @@
     font-size: 12px;
     margin-top: 12px !important;
     margin-bottom: 17px !important;
+    color: rgb(95, 95, 95);
 }
 
 .project-name {
@@ -253,40 +222,24 @@
 
 .project-description {
     color: rgb(59, 59, 59);
-    font-size: 15px;
+    font-size: 14px;
+}
+
+
+.project_link {
+    margin-top: 10px !important;
+}
+
+.project_link > i {
+    font-size: 13px;
+}
+
+.project_link > a {
+    font-size: 13px;
 }
 
 
 
-.slick-next, .slick-prev {
-
-    @media only screen and (max-width: 767px) {
-        display: none !important;
-    }
-}
-
-.slick-next {
-    right: -23px !important;
-    color: black !important;
-}
-  
-.slick-prev {
-    left: -23px !important;
-}
-
-.slick-prev:before, .slick-next:before {
-    color: rgba(0, 0, 0, 0.863) !important;
-    font-family: sans-serif !important;
-    font-size: 40px !important;
-}
-
-.slick-prev:before {
-    content: '\2039' !important;
-}
-
-.slick-next:before {
-    content: '\203A' !important; /* Unicode for right-pointing single angle quotation mark */
-}
 
 
 
@@ -633,7 +586,7 @@
 
 
 
-@media (max-width: 460px) { /*Because slider cards are compressing nad it looks weird, I decided to switch to normal cards.*/
+@media (max-width: 460px) {
 
     /* Hide scrollbar container */
     ::-webkit-scrollbar {
@@ -657,7 +610,7 @@
     .My_proj_header {
         width: 90%;
         text-align: center;
-        font-size: 20px !important;
+        font-size: 22px !important;
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
@@ -666,161 +619,17 @@
         align-items: center !important;
     }
 
+
     .my-proj-description {
-        margin-top: 7px;
-        font-size: 9px;
-        width: 90%;
+        margin-top: 20px;
+        font-size: 11px;
+        width: 97%;
     }
-
-
-
 
 
     .projects_library {
-        display: none;
+        gap: 20px;
     }
-
-    .small_device_cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        height: 100%;
-        width: 100vw;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory; 
-    }    
-
-
-
-    .project_card_2 {
-        height: 90%;
-        width: 100%;
-        scroll-snap-align: start; /* Ensures each card snaps to the start */
-        flex-shrink: 0; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .main_card_2 {
-        height: 98%;
-        width: 90%;
-        border-style: solid;
-        border-width: 1px;
-        border-radius: 5px;
-        border-color: rgb(124, 124, 124);
-        background-color: rgb(197, 197, 197);
-        position: relative;
-    }
-    
-
-    .proj_img2 {
-        min-height: 100%;
-        height: 100%;
-        min-width: 100%;
-        width: 100%;
-        object-fit: cover;
-        filter: brightness(100%);
-        border-radius: 5px;
-    }
-    
-    
-    .proj_words2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 100%;
-        width: 100%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background: radial-gradient(circle, transparent, rgba(34, 34, 34, 0.281));
-    }
-    
-    
-    .upper_proj2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 20%;
-        width: 100%;
-        border-radius: 5px;
-        background: linear-gradient(to bottom, rgba(54, 54, 54, 0.63), rgba(255, 255, 255, 0));
-    
-    }
-    
-    
-    .proj_name2, .proj_category2 {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        margin: 0 auto;
-        font-family: sans-serif;
-        width: 95%;
-        text-align: left;
-    }
-    
-    
-    .proj_name2 {
-        font-weight: 100;
-        color: white;
-        font-size: 20px;
-    }
-    
-    .proj_category2 {
-        font-size: 9px;
-        color: rgb(226, 226, 226);
-    }
-    
-    
-    
-    .lower_proj2 {
-        height: 15%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .view_proj2 {
-        border-style: solid;
-        border-width: 1px;
-        border-color: rgb(255, 255, 255);
-        border-radius: 5px;
-        background-color: rgba(0, 170, 0, 0.082);
-        color: white;    
-        font-size: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 7px;
-        width: 50%;
-        margin: 0 auto;
-        cursor: pointer;
-    }
-
-    .lower_proj2 > a {
-        margin: 0 auto;
-        width: 100%;
-        text-decoration: none;
-    }
-    
-    .view_proj2:hover {
-        background-color: rgba(0, 170, 0, 0.685);
-        border-color: rgba(0, 170, 0, 0);
-    }
-
-
-
-
-
-
-
-
 
 
 }
@@ -828,10 +637,23 @@
 
 
 
-@media (min-width: 401px) and (max-width: 455px) {
+@media (max-width: 455px) {
     .project_card {
         height: 50vh !important;
-        width: 48vh !important;
+        width: 90% !important;
+    }
+}
+
+
+
+@media (max-width: 381px) {
+    .project_card {
+        height: 50vh !important;
+        width: 95% !important;
+    }
+
+    .project-description {
+        font-size: 12px;
     }
 }
 
@@ -852,9 +674,6 @@
         width: 75% !important;
     }
 
-    .main_underline {
-        width: 20% !important;
-    }
 
     .My_proj_header {
         font-size: 25px !important;
@@ -892,15 +711,3 @@
     }
 }
 
-
-
-
-@media (min-width: 461px) and (max-width: 5000px) { /*Make our slider component active till infinity*/
-    .projects_library {
-        display: contents;
-    }
-
-    .small_device_cards {
-        display: none;
-    }
-}

@@ -305,7 +305,7 @@
 
 /* Hide scrollbar container */
 ::-webkit-scrollbar {
-    width: 6px !important; 
+    width: 8px !important; 
     height: 10px;
   }
   
@@ -320,7 +320,7 @@
   ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(56, 56, 56);
   }
-  
+
 
 
 

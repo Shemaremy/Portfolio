@@ -309,7 +309,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor: grab;
+    cursor: pointer;
     overflow: hidden;
     object-fit: cover;
     transition: 0.5s ease-in-out;
@@ -381,23 +381,24 @@
     justify-content: center;
     align-items: center;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     padding: 7px;
     width: 30%;
     height: 50%;
-    font-size: 10px;
-    color: white;
+    font-size: 11px;
+    color: #bdc4ff;
     border-color: rgba(240, 248, 255, 0.692);
     border-radius: 15px;
-    background-color: rgba(59, 141, 59, 0.623);
+    background-color: rgba(59, 141, 59, 0);
     opacity: 0;
     cursor: pointer;
     transition: opacity 0.8s ease, transform 0.8s ease;
     transform: translateY(100%);
+    text-decoration: underline;
 }
 
 .essential_download:hover {
-    background-color: rgb(0, 160, 0);
+    text-decoration: underline;
 }
 
 
@@ -1312,11 +1313,12 @@
     }
 
     .cert_name {
-        font-size: 12px;       
+        font-size: 13px;
+        display: none;       
     }
 
     .cert_par {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .Experience_panel {

@@ -1,26 +1,4 @@
 
-/* Hide scrollbar container */
-::-webkit-scrollbar {
-  width: 6px; 
-  height: 10px;
-}
-
-/* Red scrollbar thumb */
-::-webkit-scrollbar-thumb {
-  background-color: rgb(131, 131, 131);
-  border-radius: 55px;
-  cursor: pointer;
-  height: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(56, 56, 56);
-}
-
-
-
-
-
 body {
     position: relative;
     height: 570vh;

@@ -225,7 +225,7 @@ function Part4() {
         <div className="Part4">
             <div className="Certifications_and_experience_panel">
                 <div className="certifications_and_experience_top">
-                    <h3 className="cert-exp-header">Certifications and Experiences</h3>
+                    <h3 className="cert-exp-header">Certifications and Experience</h3>
                     <div className="main_underline_2-container">
                         <div className="main_underline_2"></div>
                     </div>

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import './CSS/Part3.css';
-import Verve from '../../images/Projects/Portrait/Verve1.jpg';
+//import Verve from '../../images/Projects/Portrait/Verve1.jpg';
+import Verve from '../../images/Projects/Verve.png';
+import Gitbit from '../../images/Projects/Gitbit.png';
+import gakwandi from '../../images/Projects/gakwandi.png';
 import Todo from '../../images/Projects/Portrait/Todo List.jpg';
 import Quote from '../../images/Projects/Portrait/Quote machine.jpg';
 import Calculator from '../../images/Projects/Portrait/calculator.jpg';
@@ -12,285 +15,177 @@ import 'aos/dist/aos.css';
 
 
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-
-
-
-const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    responsive: [
-
-        {
-            breakpoint: 1245, // adjust the breakpoint as needed for mobile devices
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            },
-        },
-
-
-
-        {
-            breakpoint: 679, // adjust the breakpoint as needed for mobile devices
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            },
-        }
-
-    ]
-};
-
-
-
-
-
-
-
-
-/*
-const ProjectCards = (    // For only large screens. Small screens its weird
-    <div className="projects_library" data-aos="zoom-out">
-        <Slider {...settings} className="Slider">
-            <div className="project_card">
-                <img className="proj_img" src={Verve} alt="" />
-                <div className="proj_words">
-                    <div className="upper_proj">
-                        <h1 className="proj_name">Verve</h1>
-                        <p className="proj_category">e-commerce website</p>
-                    </div>
-                    <div className="lower_proj">
-                        <a href="https://v3rve.netlify.app"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-            <div className="project_card">
-                <img className="proj_img" src={Todo} alt="" />
-                <div className="proj_words">
-                    <div className="upper_proj">
-                        <h1 className="proj_name">Todo list app</h1>
-                        <p className="proj_category">React web app</p>
-                    </div>
-                    <div className="lower_proj">
-                        <a href="https://remytodolistapp.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-            <div className="project_card">
-                <img className="proj_img" src={Quote} alt="" />
-                <div className="proj_words">
-                    <div className="upper_proj">
-                        <h1 className="proj_name">Random quote machine</h1>
-                        <p className="proj_category">Web app</p>
-                    </div>
-                    <div className="lower_proj">
-                        <a href="https://remyquotemachine.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-            <div className="project_card">
-                <img className="proj_img" src={Calculator} alt="" />
-                <div className="proj_words">
-                    <div className="upper_proj">
-                        <h1 className="proj_name">Calculator app</h1>
-                        <p className="proj_category">web app</p>
-                    </div>
-                    <div className="lower_proj">
-                        <a href="https://remycalculator.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-            <div className="project_card">
-                <img className="proj_img" src={Clock} alt="" />
-                <div className="proj_words">
-                    <div className="upper_proj">
-                        <h1 className="proj_name">25 + 5 clock app</h1>
-                        <p className="proj_category">web app</p>
-                    </div>
-                    <div className="lower_proj">
-                        <a href="https://remyclock.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-            <div className="project_card">
-                <img className="proj_img" src={Drum} alt="" />
-                <div className="proj_words">
-                    <div className="upper_proj">
-                        <h1 className="proj_name">Drum machine app</h1>
-                        <p className="proj_category">web app</p>
-                    </div>
-                    <div className="lower_proj">
-                        <a href="https://remydrummachine.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-        </Slider>
-    </div>
-);
-*/
-
-
-const ProjectCards = (    // For only large screens. Small screens its weird
-    <div className="projects_library" data-aos="zoom-out">
-        <div className="project_card">
-            <div className="proj-image-container">
-                <img className="proj_img" src={Verve} alt="" />
-            </div>
-            <div className="proj_words">
-                <p className="dev-date">Development • July 20, 2020</p>
-                <h4 className="project-name">There live the blind texts they live</h4>
-                <p className="project-description">
-                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-            </div>
-        </div>
-        <div className="project_card">
-            <div className="proj-image-container">
-                <img className="proj_img" src={Verve} alt="" />
-            </div>
-            <div className="proj_words">
-                <p className="dev-date">Development • July 20, 2020</p>
-                <h4 className="project-name">There live the blind texts they live</h4>
-                <p className="project-description">
-                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-            </div>
-        </div>
-        <div className="project_card">
-            <div className="proj-image-container">
-                <img className="proj_img" src={Verve} alt="" />
-            </div>
-            <div className="proj_words">
-                <p className="dev-date">Development • July 20, 2020</p>
-                <h4 className="project-name">There live the blind texts they live</h4>
-                <p className="project-description">
-                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-            </div>
-        </div>
-    </div>
-);
-
-const NormalProjectCards = (// For the small screens
-    <div className="small_device_cards" data-aos="fade-up">
-        <div className="project_card_2">
-            <div className="main_card_2">
-                <img className="proj_img2" src={Verve} alt="" />
-                <div className="proj_words2">
-                    <div className="upper_proj2">
-                        <h1 className="proj_name2">Verve</h1>
-                        <p className="proj_category2">e-commerce website</p>
-                    </div>
-                    <div className="lower_proj2">
-                        <a href="https://v3rve.netlify.app"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="project_card_2">
-            <div className="main_card_2">
-                <img className="proj_img2" src={Todo} alt="" />
-                <div className="proj_words2">
-                    <div className="upper_proj2">
-                        <h1 className="proj_name2">Todo list app</h1>
-                        <p className="proj_category2">React web app</p>
-                    </div>
-                    <div className="lower_proj2">
-                    <a href="https://remytodolistapp.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="project_card_2">
-            <div className="main_card_2">
-                <img className="proj_img2" src={Quote} alt="" />
-                <div className="proj_words2">
-                    <div className="upper_proj2">
-                        <h1 className="proj_name2">Random quote machine</h1>
-                        <p className="proj_category2">web app</p>
-                    </div>
-                    <div className="lower_proj2">
-                        <a href="https://remyquotemachine.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="project_card_2">
-            <div className="main_card_2">
-                <img className="proj_img2" src={Calculator} alt="" />
-                <div className="proj_words2">
-                    <div className="upper_proj2">
-                        <h1 className="proj_name2">Calculator app</h1>
-                        <p className="proj_category2">web app</p>
-                    </div>
-                    <div className="lower_proj2">
-                        <a href="https://remycalculator.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="project_card_2">
-            <div className="main_card_2">
-                <img className="proj_img2" src={Clock} alt="" />
-                <div className="proj_words2">
-                    <div className="upper_proj2">
-                        <h1 className="proj_name2">25 + 5 clock app</h1>
-                        <p className="proj_category2">web app</p>
-                    </div>
-                    <div className="lower_proj2">
-                        <a href="https://remyclock.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="project_card_2">
-            <div className="main_card_2">
-                <img className="proj_img2" src={Drum} alt="" />
-                <div className="proj_words2">
-                    <div className="upper_proj2">
-                        <h1 className="proj_name2">Drum machine app</h1>
-                        <p className="proj_category2">web app</p>
-                    </div>
-                    <div className="lower_proj2">
-                    <a href="https://remydrummachine.netlify.app/"><button className="view_proj">View project</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-);
-
-
-
-
-
-
-
-
 function Part3() {
+
+    const [ projects, setProjects ] = useState ('Recents');
+
+    const handleProjectsChange = (category) => {
+        setProjects(category);
+    };    
+
+
+    const RecentProjects = (
+        <div className="projects_library recents-library">
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <img className="proj_img" src={Verve} alt="" />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • June 20, 2024</p>
+                    <h4 className="project-name">Verve e-commerce website</h4>
+                    <p className="project-description">
+                        I built this web app with MERN stack from scratch since February. It took me so long,
+                        but I learnt much because this was my first big MERN project I've ever built.
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://v3rve.netlify.app">Web link</a>
+                    </p>
+                </div>
+            </div>
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <img className="proj_img" src={Gitbit} alt="" />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • Nov 15, 2024</p>
+                    <h4 className="project-name">GitBit, github contribution tracker</h4>
+                    <p className="project-description">
+                        This came from an idea where I wanted to specialize in backend. At the same time, also wanted
+                        to improve my contribution habit. Then gitbit came to my mind. 
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://gitbit.netlify.app">Web link</a>
+                    </p>
+                </div>
+            </div>
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <img className="proj_img" src={gakwandi} alt="" />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • October 10, 2024</p>
+                    <h4 className="project-name">Gakwandi Zacharie business platform</h4>
+                    <p className="project-description">
+                        My client wanted a bss platform website. Not only did that, I proposed building him a backend system
+                        enabling him to manage his own stock with CRUD operations. So I did that. 
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://gakwandi.netlify.app">Web link</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+
+    const ShortProjects = (
+        <div className="projects_library shorts-library">
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <img className="proj_img" src={Todo} alt="" />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • July 2, 2024</p>
+                    <h4 className="project-name">Simple Todo list web app</h4>
+                    <p className="project-description">
+                        This is my first React project that I've built. It is only a front end project, not a fullstack
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://remytodolistapp.netlify.app">Web link</a>
+                    </p>
+                </div>
+            </div>
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <img className="proj_img" src={Quote} alt="" />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • Nov 15, 2024</p>
+                    <h4 className="project-name">Random quote machine</h4>
+                    <p className="project-description">
+                        This is a Freecodecamp project that generates random quotes whenever a user clicks on a generate
+                        button. 
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://remyquotemachine.netlify.app">Web link</a>
+                    </p>
+                </div>
+            </div>
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <img className="proj_img" src={Calculator} alt="" />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • October 10, 2024</p>
+                    <h4 className="project-name">Calculator web app</h4>
+                    <p className="project-description">
+                        This my first hardest small project that I've built. I never knew how hard it 
+                        was building a calculator that does all the 4 operations with all numbers including decimals
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://remycalculator.netlify.app">Web link</a>
+                    </p>
+                </div>
+            </div>
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <img className="proj_img" src={Clock} alt="" />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • October 10, 2024</p>
+                    <h4 className="project-name">25 + 5 clock app</h4>
+                    <p className="project-description">
+                        This is more of a stop watch, where you set the starting point and ending point time, same way as a normal 
+                        stopwatch does. 
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://remyclock.netlify.app">Web link</a>
+                    </p>
+                </div>
+            </div>
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <img className="proj_img" src={Drum} alt="" />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • October 10, 2024</p>
+                    <h4 className="project-name">Drum machine app</h4>
+                    <p className="project-description">
+                        Honestly, I dont like this one. It ain't fun at all but It helped me gain some skills involving sounds
+                        and how to deal with them using react. 
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://remydrummachine.netlify.app">Web link</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+
+
+    const ProjectCards = (
+        projects === 'Recents' ? RecentProjects : ShortProjects
+    );
+
+
+
 
     return(
         <div className="Part3">
             <div className="Two_Parts3">
                 <div className="Left_part3">
                     <h2 className="My_proj_header">My projects</h2>
-                    <p className="my-proj-description">Check out my collection of projects showcasing my technical skills. While many are from Freecodecamp, I’m also working on some exciting new ones that are even bigger and better.</p>
+                    <p className="my-proj-description">
+                        Check out the collection of my projects showcasing my fullstack skills. I've choosen to categorize them into two parts,
+                        because I've got the big ones, and the small ones that may not impress you that much. These small ones are mainly from 
+                        courses that I've completed like ALX and Freecodecamp.
+                    </p>
                     <div className="project-chooser">
-                        <button>Recents</button>
-                        <button>Freecodecamp</button>
+                        <button onClick={() => handleProjectsChange('Recents')} className={`proj_button ${projects === 'Recents' ? 'active' : ''}`}>Recents</button>
+                        <button onClick={() => handleProjectsChange('Shorts')} className={`proj_button ${projects === 'Shorts' ? 'active' : ''}`}>Short ones</button>
                     </div>
                 </div>
                 <div className="Right_part3">
                     {ProjectCards}
-                    {NormalProjectCards}
                 </div>
             </div>
         </div>        

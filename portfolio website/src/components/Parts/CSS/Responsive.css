@@ -23,32 +23,32 @@
 
 @media (max-width: 767px) {
     body {
-        height: 545vh !important;
+        height: 650vh !important;
     }
 
 
 
     .center_img {
-        height: 16% !important;
+        height: 13% !important;
     }
 
     .Part2 {
-        height: 6% !important;
+        height: 5% !important;
     }
     .Part3 {
-        height: 14% !important;
+        height: 31% !important;
     }
     .Part4 {
-        height: 22% !important;
+        height: 17% !important;
     }
     .Part5 {
-        height: 14% !important;
+        height: 11% !important;
     }
     .Part6 {
-        height: 12% !important;
+        height: 10% !important;
     }
     .Part7 {
-        height: 14% !important;
+        height: 11% !important;
     }
     .Part8 {
         height: 2% !important;
@@ -104,7 +104,7 @@
     }
 
     .center_img {
-        height: 16% !important;
+        height: 17% !important;
     }
 
     .Part2 {
@@ -117,7 +117,7 @@
         height: 19% !important;
     }
     .Part5 {
-        height: 12% !important;
+        height: 11% !important;
     }
     .Part6 {
         height: 11% !important;
