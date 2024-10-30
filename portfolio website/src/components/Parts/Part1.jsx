@@ -284,26 +284,26 @@ function Part1 () {
                     <div className="social_media">
                         <div className="all_icons">
                             <p className="icon Linkedin">
-                                <a href="https://www.linkedin.com">
+                                <a href="https://linkedin.com/in/shema-remy-ba3229288">
                                     <i className="ico_1 fab fa-linkedin"></i>
                                 </a>
                             </p>
 
                             <p className="icon Twitter">
-                                <a href="https://www.twitter.com">
-                                    <i className="ico_1 fab fa-twitter"></i>
+                                <a href="https://x.com/Shemaremi/">
+                                    <i className="ico_1 fa-brands fa-x-twitter"></i>
                                 </a>
                             </p>
 
                             <p className="icon Instagram">
-                                <a href="https://www.instagram.com">
+                                <a href="https://www.instagram.com/shema.remy">
                                     <i className="ico_1 fab fa-instagram"></i>
                                 </a>
                             </p>
 
                             <p className="icon Behance">
-                                <a href="https://www.behance.net">
-                                    <i className="ico_1 fab fa-behance"></i>
+                                <a href="https://github.com/Shemaremy">
+                                    <i className="ico_1 fab fa-github"></i>
                                 </a>
                             </p>
                         </div>

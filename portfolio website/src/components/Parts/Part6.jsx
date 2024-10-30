@@ -41,7 +41,7 @@ function Part6() {
                         <h4 className="set_name">Back - end</h4>
                         <div className="mainset">
                             <i className="devicon devicon-cplusplus-plain colored"></i>
-                            <i className="devicon devicon-csharp-plain colored"></i>
+                            {/* <i className="devicon devicon-csharp-plain colored"></i> */}
                             <i className="devicon devicon-java-plain-wordmark colored"></i>
                             <i className="devicon devicon-python-plain-wordmark colored"></i>
                             <i className="devicon devicon-nodejs-plain-wordmark colored"></i>
@@ -53,7 +53,7 @@ function Part6() {
                         <h4 className="set_name">Database</h4>
                         <div className="mainset">
                             <i className="devicon devicon-mongodb-plain-wordmark colored"></i>
-                            <i className="devicon devicon-sqlite-plain-wordmark colored"></i>
+                            {/* <i className="devicon devicon-sqlite-plain-wordmark colored"></i> */}
                             <i className="devicon devicon-mysql-plain-wordmark colored"></i>
                         </div>
                     </div>

@@ -20,28 +20,39 @@ function Part5() {
                             <div className="upper_service_card"><img className="service_svg" src={WebDvt} alt="" /></div>
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">Web Development</h3>
-                                <p className="proffession_paragraph">I build advanced, responsive and robust web apps that meet client needs, using MERN especially as my favourite combo.</p>
+                                <p className="proffession_paragraph">
+                                    I build advanced, responsive and robust web apps that meet client needs, using MERN especially as my favourite combo.
+                                </p>
                             </div>
                         </div>
                         <div className="service_card">
                             <div className="upper_service_card"><img className="service_svg" src={MobileApp} alt="" /></div>
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">Mobile App Dvt</h3>
-                                <p className="proffession_paragraph">My comprehensive mobile app development services cover building high-performance mobile apps for both Android and iOS platforms. React native is my favourite when it comes to this.</p>
+                                <p className="proffession_paragraph">
+                                    Well, I am still evolving with this service so I got no big experience for this. But I'm planning to 
+                                    go with React Native since I am more of a MERN stack
+                                </p>
                             </div>
                         </div>
                         <div className="service_card">
                             <div className="upper_service_card"><img className="service_svg" src={Database} alt="" /></div>
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">Database Architecture</h3>
-                                <p className="proffession_paragraph">I also build and maintain scalable database solutions to manage your data efficiently, with a deep focus on security and performance optimization with both MongoDB and MySQL</p>
+                                <p className="proffession_paragraph">
+                                    Since I'm more of a MERN stack, I am more likely to use MongoDB. I like it for its flexibility,
+                                    robust performance and its a json format. All of my fullstack projects I use this one.
+                                </p>
                             </div>
                         </div>
                         <div className="service_card">
                             <div className="upper_service_card"><img className="service_svg" src={API} alt="" /></div>
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">API Integration</h3>
-                                <p className="proffession_paragraph">Gain a competitive edge with my scalable API integrations to ensure smooth communication between different software systems. I aim to enhance functionality the most.</p>
+                                <p className="proffession_paragraph">
+                                    I build API's for especially MERN projects or any other javascript projects. I use Express and Nodejs
+                                    to integrate your front end with the back end. 
+                                </p>
                             </div>
                         </div>
                     </div>

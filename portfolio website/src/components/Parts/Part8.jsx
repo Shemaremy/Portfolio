@@ -16,10 +16,10 @@ function Part8() {
                         </p>
                     </div>
                     <div className="Bottom_links_container">
-                        <a className="bottom_a" href="#"><i className="socials fab fa-linkedin" style={{ marginLeft: "3px", color: "rgba(255, 247, 231, 0.514)" }}></i></a>
-                        <a className="bottom_a" href="#"><i className="socials fab fa-twitter" style={{ marginLeft: "2px", color: "rgba(255, 247, 231, 0.514)" }}></i></a>
-                        <a className="bottom_a" href="#"><i className="socials fab fa-instagram" style={{ marginLeft: "0px", color: "rgba(255, 247, 231, 0.514)" }}></i></a>
-                        <a className="bottom_a" href="#"><i className="socials fab fa-behance" style={{ marginLeft: "2px", color: "rgba(255, 247, 231, 0.514)" }}></i></a>
+                        <a className="bottom_a" href="https://linkedin.com/in/shema-remy-ba3229288"><i className="socials fab fa-linkedin" style={{ marginLeft: "3px", color: "rgba(255, 247, 231, 0.514)" }}></i></a>
+                        <a className="bottom_a" href="https://x.com/Shemaremi/"><i className="socials fa-brands fa-x-twitter" style={{ marginLeft: "2px", color: "rgba(255, 247, 231, 0.514)" }}></i></a>
+                        <a className="bottom_a" href="https://www.instagram.com/shema.remy"><i className="socials fab fa-instagram" style={{ marginLeft: "0px", color: "rgba(255, 247, 231, 0.514)" }}></i></a>
+                        <a className="bottom_a" href="https://github.com/Shemaremy"><i className="socials fab fa-github" style={{ marginLeft: "2px", color: "rgba(255, 247, 231, 0.514)" }}></i></a>
                     </div>
                 </div>
                 <div className="Lower_Mobile_ending">
