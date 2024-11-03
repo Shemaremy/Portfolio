@@ -40,12 +40,12 @@ function Part1 () {
             startLoading();
     
             try {
-              const response = await fetch('/CV_Remy.zip');
+              const response = await fetch('/CV_Remy.pdf');
               const blob = await response.blob();
               const url = URL.createObjectURL(blob);
               const link = document.createElement('a');
               link.setAttribute('href', url);
-              link.setAttribute('download', 'CV_Remy.zip');
+              link.setAttribute('download', 'CV_Remy.pdf');
               link.style.display = 'none';
               document.body.appendChild(link);
               link.click();
