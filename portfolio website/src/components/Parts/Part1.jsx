@@ -150,23 +150,6 @@ function Part1 () {
 
 
 
-    // Effect for smoothness in scrolling transitions
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.pageYOffset > 100) {
-                document.querySelector("header").classList.add('is-scrolling');
-            } else {
-                document.querySelector("header").classList.remove('is-scrolling');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
 
 
 
