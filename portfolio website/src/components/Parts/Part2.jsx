@@ -60,7 +60,7 @@ function Part2 () {
                                 me to constantly push beyond boundaries, by doing projects to showcase my skills.
                                 I have taken various Software Engineering courses from ALX, Freecodecamp, and I'm planning to move on with
                                 Coursera. Although I take all these courses, I am much more of a self-taught. Most of my skills are gained form
-                                continous projects. We complete all these projects as a community of Software Engineers created by Levi Okoye from Nigeria.
+                                continous projects. Some projects experience are gained from community of created by Levi Okoye from Nigeria.
                             </p>
                             <p className="The_par three_par">
                                 This website consists of everything you would need to know more about my 
