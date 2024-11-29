@@ -19,64 +19,6 @@ function Part1 () {
 
 
 
-    // Downloading the CV
-    useEffect(() => {
-        const downloadButton = document.getElementById('downloadButton');
-    
-        const startLoading = () => {
-          const loaderSpan = document.createElement('span');
-          const reducePadding = document.querySelector('.coffee-button');
-          reducePadding.style.padding = '8px';
-          loaderSpan.classList.add('loader');
-          downloadButton.appendChild(loaderSpan);
-          downloadButton.disabled = true;
-        };
-    
-        const handleDownload = async () => {
-          const CV = window.confirm("Are you sure you want to download this CV?");
-    
-          if (CV) {
-            downloadButton.innerHTML = " ";
-            startLoading();
-    
-            try {
-              const response = await fetch('/CV_Remy.pdf');
-              const blob = await response.blob();
-              const url = URL.createObjectURL(blob);
-              const link = document.createElement('a');
-              link.setAttribute('href', url);
-              link.setAttribute('download', 'CV_Remy.pdf');
-              link.style.display = 'none';
-              document.body.appendChild(link);
-              link.click();
-              URL.revokeObjectURL(url);
-    
-              downloadButton.disabled = true;
-              downloadButton.textContent = "Downloaded successfully!";
-              downloadButton.classList.add('completed');
-              downloadButton.innerHTML = "Success!";
-            } catch (error) {
-              console.error('Error occurred while downloading:', error);
-              downloadButton.textContent = "Download failed. Please try again.";
-              downloadButton.disabled = false;
-            }
-          }
-        };
-    
-        if (downloadButton) {
-          downloadButton.addEventListener('click', handleDownload);
-        }
-    
-        return () => {
-          if (downloadButton) {
-            downloadButton.removeEventListener('click', handleDownload);
-          }
-        };
-      }, []);
-
-
-
-
 
 
 
@@ -252,7 +194,7 @@ function Part1 () {
                     </div>
 
                     <div className="Buy_me_coffee">
-                        <button className="coffee-button" id="downloadButton">Download my cv</button>
+                        <button className="coffee-button" onClick={() => window.open('/CV_Remy.pdf', '_blank')}>View my cv</button>
                     </div>
 
                     <div className="Hire_me_and_Github">
