@@ -14,125 +14,62 @@ function Part4() {
 
 
 
-        // Downloading the Essentials
-        useEffect(() => {
-            const downloadButton = document.getElementById('essentials');
-    
-            const startLoading = () => {
-                const loaderSpan = document.createElement('span');
-                const reducePadding = document.querySelector('.coffee-button');
-                reducePadding.style.padding = '8px';
-                loaderSpan.classList.add('loader');
-                downloadButton.appendChild(loaderSpan);
-                downloadButton.disabled = true;
-            };
+    // Downloading the Essentials
+    useEffect(() => {
+        const downloadButton = document.getElementById('essentials');
+
+        const startLoading = () => {
+            const loaderSpan = document.createElement('span');
+            const reducePadding = document.querySelector('.coffee-button');
+            reducePadding.style.padding = '8px';
+            loaderSpan.classList.add('loader');
+            downloadButton.appendChild(loaderSpan);
+            downloadButton.disabled = true;
+        };
 
 
-            const handleDownload = async () => {
-                const CV = window.confirm("Are you sure you want to download this file ? It contains CV, Resume, Diploma and English assessment results.");
-    
-                if (CV) {
-                    downloadButton.innerHTML = " ";
-                    startLoading();
-            
-                    try {
-                      const response = await fetch('/Remy_Essentials.zip');
-                      const blob = await response.blob();
-                      const url = URL.createObjectURL(blob);
-                      const link = document.createElement('a');
-                      link.setAttribute('href', url);
-                      link.setAttribute('download', 'Remy_Essentials.zip');
-                      link.style.display = 'none';
-                      document.body.appendChild(link);
-                      link.click();
-                      URL.revokeObjectURL(url);
-            
-                      downloadButton.disabled = true;
-                      downloadButton.textContent = "Downloaded successfully!";
-                      downloadButton.classList.add('completed');
-                      downloadButton.innerHTML = "Success!";
-                    } catch (error) {
-                      console.error('Error occurred while downloading:', error);
-                      downloadButton.textContent = "Download failed. Please try again.";
-                      downloadButton.disabled = false;
-                    }
-                  }
-            };
-    
-    
-            if (downloadButton) {
-                downloadButton.addEventListener('click', handleDownload);
-            }
-    
-            return () => {
-                if (downloadButton) {
-                    downloadButton.removeEventListener('click', handleDownload);
-                }
-            };
-        }, []);
+        const handleDownload = async () => {
+            const CV = window.confirm("Are you sure you want to download this file ? It contains CV, Resume, Diploma and English assessment results.");
 
+            if (CV) {
+                downloadButton.innerHTML = " ";
+                startLoading();
         
-        // Downloading Freecodecamp certificate
-        useEffect(() => {
-            const downloadButton = document.getElementById('freecodecamp');
-    
-            const startLoading = () => {
-                const loaderSpan = document.createElement('span');
-                const reducePadding = document.querySelector('.coffee-button');
-                reducePadding.style.padding = '8px';
-                loaderSpan.classList.add('loader');
-                downloadButton.appendChild(loaderSpan);
-                downloadButton.disabled = true;
-            };
-
-
-            const handleDownload = async () => {
-                const CV = window.confirm("Are you sure you want to download this file ? It's my Freecodecamp certificate.");
-    
-                if (CV) {
-                    downloadButton.innerHTML = " ";
-                    startLoading();
-            
-                    try {
-                        const response = await fetch('/Freecodecamp.pdf');
-                        const blob = await response.blob();
-                        const url = URL.createObjectURL(blob);
-                        const link = document.createElement('a');
-                        link.setAttribute('href', url);
-                        link.setAttribute('download', 'Freecodecamp.pdf');
-                        link.style.display = 'none';
-                        document.body.appendChild(link);
-                        link.click();
-                        URL.revokeObjectURL(url);
-            
-                        downloadButton.disabled = true;
-                        downloadButton.textContent = "Downloaded successfully!";
-                        downloadButton.classList.add('completed');
-                        downloadButton.innerHTML = "Success!";
-                    } catch (error) {
-                        console.error('Error occurred while downloading:', error);
-                        downloadButton.textContent = "Download failed. Please try again.";
-                        downloadButton.disabled = false;
-                    }
-                    }
-            };
-    
-    
-            if (downloadButton) {
-                downloadButton.addEventListener('click', handleDownload);
-            }
-    
-            return () => {
-                if (downloadButton) {
-                    downloadButton.removeEventListener('click', handleDownload);
-                }
-            };
-        }, []);
+                try {
+                    const response = await fetch('/Remy_Essentials.zip');
+                    const blob = await response.blob();
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.setAttribute('href', url);
+                    link.setAttribute('download', 'Remy_Essentials.zip');
+                    link.style.display = 'none';
+                    document.body.appendChild(link);
+                    link.click();
+                    URL.revokeObjectURL(url);
         
+                    downloadButton.disabled = true;
+                    downloadButton.textContent = "Downloaded successfully!";
+                    downloadButton.classList.add('completed');
+                    downloadButton.innerHTML = "Success!";
+                } catch (error) {
+                    console.error('Error occurred while downloading:', error);
+                    downloadButton.textContent = "Download failed. Please try again.";
+                    downloadButton.disabled = false;
+                }
+                }
+        };
 
 
+        if (downloadButton) {
+            downloadButton.addEventListener('click', handleDownload);
+        }
 
-
+        return () => {
+            if (downloadButton) {
+                downloadButton.removeEventListener('click', handleDownload);
+            }
+        };
+    }, []);        
 
 
 
@@ -163,7 +100,7 @@ function Part4() {
                     <div className="upper_cert">
                         <img className="cert_img" src={WorkingOnIt} alt="" />
                         <div className="info">
-                            <button className="essential_download" id="freecodecamp">Download</button>
+                            <button className="essential_download" onClick={() => window.open('/Freecodecamp.pdf', '_blank')}>View more</button>
                         </div> 
                     </div>
                     <div className="lower_cert">
