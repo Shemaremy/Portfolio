@@ -18,17 +18,25 @@ import 'aos/dist/aos.css';
 function Part3() {
 
     const [ projects, setProjects ] = useState ('Recents');
+    const [loading, setLoading] = useState(false);
+
 
     const handleProjectsChange = (category) => {
         setProjects(category);
+        setLoading(true);
     };    
+
+
+    const handleImageLoaded = () => {
+        setLoading(false);
+    };
 
 
     const RecentProjects = (
         <div className="projects_library recents-library">
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={Verve} alt="" />
+                    <img className="proj_img" src={Verve} alt="" onLoad={handleImageLoaded}/>
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • June 20, 2024</p>
@@ -163,8 +171,13 @@ function Part3() {
 
 
     const ProjectCards = (
-        projects === 'Recents' ? RecentProjects : ShortProjects
+        loading ? (
+            <div className="loading-text">Loading...</div>
+        ) : (
+            projects === 'Recents' ? RecentProjects : ShortProjects
+        )
     );
+    
 
 
 

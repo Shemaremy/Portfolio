@@ -290,6 +290,18 @@
 
 }
 
+
+.right_part_certificates::-webkit-scrollbar {
+    width: 5px !important;
+}
+
+.right_part_certificates::-webkit-scrollbar-thumb {
+    background-color: rgba(131, 131, 131, 0.671);
+    border-radius: 55px;
+    cursor: pointer;
+}
+
+
 .cert_card {
     height: 45%;
     width: 30%;

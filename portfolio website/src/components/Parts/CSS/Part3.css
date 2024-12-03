@@ -156,6 +156,17 @@
     
 }
 
+.projects_library::-webkit-scrollbar {
+    width: 5px !important; 
+    height: 5px;
+}
+
+.projects_library::-webkit-scrollbar-thumb {
+    background-color: rgba(131, 131, 131, 0.562);
+    border-radius: 55px;
+    cursor: pointer;
+}
+
 
 .project_card {
     position: relative;
