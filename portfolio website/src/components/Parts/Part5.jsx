@@ -30,8 +30,8 @@ function Part5() {
                             <div className="lower_service_card">
                                 <h3 className="proffession_title">Mobile App Dvt</h3>
                                 <p className="proffession_paragraph">
-                                    Well, I am still evolving with this service so I got no big experience for this. But I'm planning to 
-                                    go with React Native since I am more of a MERN stack
+                                    When it comes to Mobile App dvt, I am more of a React Native guy. I use it to build both IOS & Android apps.
+                                    Although I have no big experience with it like reactjs, I added it as a core skill to know and a service to provide
                                 </p>
                             </div>
                         </div>
