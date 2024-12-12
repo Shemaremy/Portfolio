@@ -233,7 +233,7 @@ header
 
 .desk_links a {
     text-decoration: none;
-    color: black; /* Set default color to black */
+    color: black;
     margin: 0 10px;
     padding: 0.5% 1%;
     font-family: 'Orbitron', sans-serif;
@@ -241,14 +241,14 @@ header
     position: relative;
     cursor: pointer;
 
-    @media (max-width: 767px)     /* Mobile devices */
+    @media (max-width: 767px)     
     {
         display: none;
     }
 }
 
 .desk_links a.active {
-    color: rgb(6, 168, 0); /* Set active link color to green */
+    color: rgb(6, 168, 0);
 }
 
 .desk_links a.active::after {
