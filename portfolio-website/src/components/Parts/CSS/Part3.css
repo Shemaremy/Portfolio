@@ -630,6 +630,10 @@
 
 @media (max-width: 460px) {
 
+    .project-loader {
+        height: 25%;
+    }
+
     /* Hide scrollbar container */
     ::-webkit-scrollbar {
         width: 0px !important; 
