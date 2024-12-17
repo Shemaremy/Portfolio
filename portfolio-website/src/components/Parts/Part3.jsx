@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import './CSS/Part3.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Verve from '../../images/Projects/Verve.png';
 import Gitbit from '../../images/Projects/Gitbit.png';
 import gakwandi from '../../images/Projects/gakwandi.png';
@@ -29,7 +31,15 @@ function Part3() {
         <div className="projects_library recents-library">
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={Verve} alt="" />
+                    <LazyLoadImage
+                        className="proj_img"
+                        alt={"Verve"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={Verve} 
+                    />
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • June 20, 2024</p>
@@ -45,7 +55,15 @@ function Part3() {
             </div>
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={Gitbit} alt="" />
+                    <LazyLoadImage
+                        className="proj_img"
+                        alt={"Gitbit"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={Gitbit} 
+                    />
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • Nov 15, 2024</p>
@@ -61,7 +79,15 @@ function Part3() {
             </div>
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={gakwandi} alt="" />
+                    <LazyLoadImage
+                        className="proj_img"
+                        alt={"gakwandi"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={gakwandi} 
+                    />
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • October 10, 2024</p>
@@ -82,7 +108,15 @@ function Part3() {
         <div className="projects_library shorts-library">
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={Todo} alt="" />
+                    <LazyLoadImage
+                        className="proj_img"
+                        alt={"Todo"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={Todo} 
+                    />
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • July 2, 2024</p>
@@ -97,7 +131,15 @@ function Part3() {
             </div>
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={Quote} alt="" />
+                    <LazyLoadImage
+                        className="proj_img"
+                        alt={"Quote"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={Quote} 
+                    />
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • Nov 15, 2024</p>
@@ -113,7 +155,15 @@ function Part3() {
             </div>
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={Calculator} alt="" />
+                    <LazyLoadImage
+                        className="proj_img"
+                        alt={"Calculator"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={Calculator} 
+                    />
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • October 10, 2024</p>
@@ -129,7 +179,15 @@ function Part3() {
             </div>
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={Clock} alt="" />
+                    <LazyLoadImage
+                        className="proj_img"
+                        alt={"Clock"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={Clock} 
+                    />
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • October 10, 2024</p>
@@ -145,7 +203,15 @@ function Part3() {
             </div>
             <div className="project_card">
                 <div className="proj-image-container">
-                    <img className="proj_img" src={Drum} alt="" />
+                    <LazyLoadImage
+                        className="proj_img"
+                        alt={"Drum"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={Drum} 
+                    />
                 </div>
                 <div className="proj_words">
                     <p className="dev-date">Development • October 10, 2024</p>

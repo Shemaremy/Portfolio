@@ -1,6 +1,8 @@
 import {React, useEffect} from "react";
 import './CSS/Part2.css';
 import "./CSS/Responsive.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -29,7 +31,7 @@ function Part2 () {
           mirror: false,
           anchorPlacement: 'top-bottom',
         });
-      }, []); // Empty dependency array ensures this runs only once
+      }, []);
     
 
 
@@ -39,6 +41,11 @@ function Part2 () {
                 <div className="Left_part2">
                     <div className="About_Photo">
                         <img className="meet_remy_photo"  src={MyFace} alt="" />
+                        {/* <LazyLoadImage
+                            className="meet_remy_photo"
+                            alt={"Myface"}
+                            src={MyFace} 
+                        /> */}
                     </div>
                     <div className="my_github_desk_contain">
                     <a href="https://github.com/Shemaremy">

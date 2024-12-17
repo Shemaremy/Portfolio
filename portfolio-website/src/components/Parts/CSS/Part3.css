@@ -191,8 +191,12 @@
     to {
       transform: rotate(360deg);
     }
-  }
+}
   
+.lazy-load-image-background.blur {
+    filter: blur(0px) !important; /* Reduce the blur level here */
+}
+
 
 
 .project_card {
