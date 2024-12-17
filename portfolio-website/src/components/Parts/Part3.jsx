@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './CSS/Part3.css';
-//import Verve from '../../images/Projects/Portrait/Verve1.jpg';
 import Verve from '../../images/Projects/Verve.png';
 import Gitbit from '../../images/Projects/Gitbit.png';
 import gakwandi from '../../images/Projects/gakwandi.png';
@@ -10,18 +9,20 @@ import Calculator from '../../images/Projects/Portrait/calculator.jpg';
 import Clock from '../../images/Projects/Portrait/Clock.jpg';
 import Drum from '../../images/Projects/Portrait/Drum machine.jpg';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 
 
 function Part3() {
 
     const [ projects, setProjects ] = useState ('Recents');
+    const [loading, setLoading] = useState(false);
 
     const handleProjectsChange = (category) => {
-        setProjects(category);
-    };    
+        setLoading(true);
+        setTimeout(() => {
+            setProjects(category);
+            setLoading(false);
+        }, 1000);
+    };   
 
 
     const RecentProjects = (
@@ -163,8 +164,10 @@ function Part3() {
 
 
     const ProjectCards = (
-        projects === 'Recents' ? RecentProjects : ShortProjects
+        loading ? <div className="project-loader"><div className="spinner"></div></div> : 
+        (projects === 'Recents' ? RecentProjects : ShortProjects)
     );
+
 
 
 
