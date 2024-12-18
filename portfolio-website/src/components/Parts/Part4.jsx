@@ -90,6 +90,9 @@ function Part4() {
                 <div className="cert_card">
                     <div className="upper_cert">
                         <img className="cert_img" src={AlxPhoto} alt="" />
+                        <div className="info">
+                            <button className="essential_download" onClick={() => window.open('/ALX_Certificate.pdf', '_blank')}>View more</button>
+                        </div>
                     </div>
                     <div className="lower_cert">
                         <h4 className="cert_name">ALX</h4>
