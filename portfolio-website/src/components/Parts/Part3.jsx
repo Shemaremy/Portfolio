@@ -49,7 +49,7 @@ function Part3() {
                         but I learnt much because this was my first big MERN project I've ever built.
                     </p>
                     <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://v3rve.netlify.app">Web link</a>
+                        <i className="fa-solid fa-link"></i> : <a href="https://v3rve.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
@@ -73,7 +73,7 @@ function Part3() {
                         to improve my contribution habit. Then gitbit came to my mind. 
                     </p>
                     <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://gitbit.netlify.app">Web link</a>
+                        <i className="fa-solid fa-link"></i> : <a href="https://gitbit.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
@@ -97,7 +97,7 @@ function Part3() {
                         enabling him to manage his own stock with CRUD operations. So I did that. 
                     </p>
                     <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://gakwandi.netlify.app">Web link</a>
+                        <i className="fa-solid fa-link"></i> : <a href="https://gakwandi.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
@@ -125,7 +125,7 @@ function Part3() {
                         This is my first React project that I've built. It is only a front end project, not a fullstack
                     </p>
                     <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remytodolistapp.netlify.app">Web link</a>
+                        <i className="fa-solid fa-link"></i> : <a href="https://remytodolistapp.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
@@ -149,7 +149,7 @@ function Part3() {
                         button. 
                     </p>
                     <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remyquotemachine.netlify.app">Web link</a>
+                        <i className="fa-solid fa-link"></i> : <a href="https://remyquotemachine.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
@@ -173,7 +173,7 @@ function Part3() {
                         was building a calculator that does all the 4 operations with all numbers including decimals
                     </p>
                     <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remycalculator.netlify.app">Web link</a>
+                        <i className="fa-solid fa-link"></i> : <a href="https://remycalculator.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
@@ -197,7 +197,7 @@ function Part3() {
                         stopwatch does. 
                     </p>
                     <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remyclock.netlify.app">Web link</a>
+                        <i className="fa-solid fa-link"></i> : <a href="https://remyclock.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
@@ -221,7 +221,7 @@ function Part3() {
                         and how to deal with them using react. 
                     </p>
                     <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remydrummachine.netlify.app">Web link</a>
+                        <i className="fa-solid fa-link"></i> : <a href="https://remydrummachine.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
