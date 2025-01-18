@@ -91,7 +91,7 @@ function Part4() {
                     <div className="upper_cert">
                         <img className="cert_img" src={AlxPhoto} alt="" />
                         <div className="info">
-                            <button className="essential_download" onClick={() => window.open('/ALX_Certificate.pdf', '_blank')}>View more</button>
+                            <button className="essential_download" onClick={() => window.open('/ALX_Certificate.pdf', '_blank')}>View pdf</button>
                         </div>
                     </div>
                     <div className="lower_cert">
@@ -103,7 +103,7 @@ function Part4() {
                     <div className="upper_cert">
                         <img className="cert_img" src={WorkingOnIt} alt="" />
                         <div className="info">
-                            <button className="essential_download" onClick={() => window.open('/Freecodecamp.pdf', '_blank')}>View more</button>
+                            <button className="essential_download" onClick={() => window.open('/Freecodecamp.pdf', '_blank')}>View pdf</button>
                         </div> 
                     </div>
                     <div className="lower_cert">

@@ -40,12 +40,12 @@ function Part2 () {
             <div className="Two_Parts2" data-aos="fade-left">
                 <div className="Left_part2">
                     <div className="About_Photo">
-                        <img className="meet_remy_photo"  src={MyFace} alt="" />
-                        {/* <LazyLoadImage
+                        {/* <img className="meet_remy_photo"  src={MyFace} alt="" /> */}
+                        <LazyLoadImage
                             className="meet_remy_photo"
                             alt={"Myface"}
                             src={MyFace} 
-                        /> */}
+                        />
                     </div>
                     <div className="my_github_desk_contain">
                     <a href="https://github.com/Shemaremy">
