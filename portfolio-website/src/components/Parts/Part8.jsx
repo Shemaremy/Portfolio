@@ -23,7 +23,7 @@ function Part8() {
                     </div>
                 </div>
                 <div className="Lower_Mobile_ending">
-                    <p className="copyright">Copyright © 2024. All Rights Reserved</p>
+                    <p className="copyright">Copyright © 2025. All Rights Reserved</p>
                 </div>
             </div>
         </div>
