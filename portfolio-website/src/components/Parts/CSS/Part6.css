@@ -178,7 +178,8 @@
     font-size: 15px;
     padding-left: 5%;
     text-decoration: underline;
-    color: rgb(92, 43, 7);
+    /* color: rgb(92, 43, 7); */
+    color: rgba(4, 110, 0, 0.466);
 }
 
 .mainset {
@@ -203,7 +204,7 @@
     margin-left: 5%;
     filter: grayscale(100%);
     cursor: pointer;
-    transition: filter 0.2s ease-in-out;
+    transition: color 0.1s ease-in-out;
     color: rgb(59, 59, 59) !important;
 
     @media only screen and (max-width: 767px) {
@@ -212,8 +213,8 @@
 }
 
 .devicon:hover {
-    color: chocolate !important;
-    filter: grayscale(0%);
+    /* color: chocolate !important; */
+    color: rgba(0, 0, 0, 0.397) !important;
 }
 
 

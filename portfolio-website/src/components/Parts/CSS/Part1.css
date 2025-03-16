@@ -21,7 +21,12 @@
 .navigation_links {
     display: flex;
     justify-content: center;
-    padding-top: 1.5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(8px); 
 
     @media (max-width: 767px) {
         height: 70px;
@@ -258,7 +263,7 @@ header
     bottom: -5px;
     width: 80%;
     height: 2px;
-    background-color: rgb(6, 168, 0); /* Active link glowing line color */
+    background-color: rgb(6, 168, 0);
     transform: scaleX(1);
 }
 
@@ -269,18 +274,16 @@ header
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: blue; /* Non-active link glowing line color */
     transform: scaleX(0);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .desk_links a:hover::after {
-    background-color: blue; /* Change glowing line color to blue on hover */
     transform: scaleX(0);
 }
 
 .desk_links a:hover {
-    color: rgb(0, 175, 161); /* Change color to green on hover */
+    color: rgb(127, 201, 124);
 }
 
 
@@ -294,6 +297,7 @@ header
     height: 90%;
     width: 100%;
     overflow: hidden;
+    margin-top: 50px;
 
     @media (max-width: 767px) {
         height: 70%;

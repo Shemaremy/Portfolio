@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import './CSS/Part1.css';
 import "./CSS/Responsive.css";
 import working from '../../images/Landing page/working.png';
@@ -17,6 +17,7 @@ import Smalldots from '../../Shapes/Smalldots.png'
 function Part1 () {
 
 
+    const [activeLink, setActiveLink] = useState("link1");
 
 
 
@@ -129,8 +130,9 @@ function Part1 () {
 
 
     // This handles when the desktop nav buttons are clicked, scroll to a certain section
-    const handleLinkClickDesk = (sectionClass, event) => {
+    const handleLinkClickDesk = (sectionClass, linkClass, event) => {
         event.preventDefault();
+        setActiveLink(linkClass);
 
         if (sectionClass) {
             const section = document.querySelector(`.${sectionClass}`);
@@ -167,7 +169,7 @@ function Part1 () {
 
                 <nav className="mobile-nav">
                     <div className="mobile_nav_contains">
-                        <a className="Ml_1" onClick={(e) => handleLinkClick(null, e)}>Home</a>
+                        <a className="Ml_1" onClick={(e) => handleLinkClick('center_img', e)}>Home</a>
                         <a className="Ml_2" onClick={(e) => handleLinkClick('Part3', e)}>Projects</a>
                         <a className="Ml_3" onClick={(e) => handleLinkClick('Part5', e)}>Services</a>
                         <a className="Ml_4" onClick={(e) => handleLinkClick('Starting_Part7', e)}>Contact</a>
@@ -175,10 +177,20 @@ function Part1 () {
                 </nav>
 
                 <div className="desk_links">
-                    <a className="link1 active" onClick={(e) => handleLinkClickDesk(null, e)}>Home</a>
-                    <a className="link2" onClick={(e) => handleLinkClickDesk('Part3', e)}>Projects</a>
-                    <a className="link3" onClick={(e) => handleLinkClickDesk('Part5', e)}>Services</a>
-                    <a className="link4" onClick={(e) => handleLinkClickDesk('Part7', e)}>Contact</a>
+                <div className="desk_links">
+                    <a className={`link1 ${activeLink === "link1" ? "active" : ""}`} onClick={(e) => handleLinkClickDesk("center_img", "link1", e)}>
+                        Home
+                    </a>
+                    <a className={`link2 ${activeLink === "link2" ? "active" : ""}`} onClick={(e) => handleLinkClickDesk("Part3", "link2", e)}>
+                        Projects
+                    </a>
+                    <a className={`link3 ${activeLink === "link3" ? "active" : ""}`} onClick={(e) => handleLinkClickDesk("Part5", "link3", e)}>
+                        Services
+                    </a>
+                    <a className={`link4 ${activeLink === "link4" ? "active" : ""}`} onClick={(e) => handleLinkClickDesk("Part7", "link4", e)}>
+                        Contact
+                    </a>
+                    </div>
                 </div>
             </div>
 

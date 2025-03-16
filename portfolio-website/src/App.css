@@ -175,6 +175,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100;
     
     @media (max-width: 767px)     /* Mobile devices */
     {

@@ -4,6 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Verve from '../../images/Projects/Verve.png';
 import Gitbit from '../../images/Projects/Gitbit.png';
+import Kpuppies from '../../images/Projects/kpuppies.png';
 import gakwandi from '../../images/Projects/gakwandi.png';
 import Todo from '../../images/Projects/Portrait/Todo List.jpg';
 import Quote from '../../images/Projects/Portrait/Quote machine.jpg';
@@ -81,6 +82,35 @@ function Part3() {
                 <div className="proj-image-container">
                     <LazyLoadImage
                         className="proj_img"
+                        alt={"kpuppies"}
+                        effect="blur"
+                        wrapperProps={{
+                            style: {transitionDelay: "1s"},
+                        }}
+                        src={Kpuppies} 
+                    />
+                </div>
+                <div className="proj_words">
+                    <p className="dev-date">Development • March 11, 2024</p>
+                    <h4 className="project-name">Kigali Puppies</h4>
+                    <p className="project-description">
+                        Meet Kigali Puppies, a pet e-commerce store built with both passion and MERN stack. We built this website 
+                        me and my partner where he worked on the front end and I assisted on the backend.
+                    </p>
+                    <p className="project_link">
+                        <i className="fa-solid fa-link"></i> : <a href="https://kigalipuppies.com" target="_blank">Web link</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+
+    const ShortProjects = (
+        <div className="projects_library shorts-library">
+            <div className="project_card">
+                <div className="proj-image-container">
+                    <LazyLoadImage
+                        className="proj_img"
                         alt={"gakwandi"}
                         effect="blur"
                         wrapperProps={{
@@ -93,19 +123,14 @@ function Part3() {
                     <p className="dev-date">Development • October 10, 2024</p>
                     <h4 className="project-name">Gakwandi Zacharie business platform</h4>
                     <p className="project-description">
-                        My client wanted a bss platform website. Not only did that, I proposed building him a backend system
-                        enabling him to manage his own stock with CRUD operations. So I did that. 
+                        My client wanted a bss platform website. Not only did that, I built him a backend system
+                        to manage his own stock with CRUD operations.
                     </p>
                     <p className="project_link">
                         <i className="fa-solid fa-link"></i> : <a href="https://gakwandi.netlify.app" target="_blank">Web link</a>
                     </p>
                 </div>
             </div>
-        </div>
-    );
-
-    const ShortProjects = (
-        <div className="projects_library shorts-library">
             <div className="project_card">
                 <div className="proj-image-container">
                     <LazyLoadImage
@@ -122,7 +147,8 @@ function Part3() {
                     <p className="dev-date">Development • July 2, 2024</p>
                     <h4 className="project-name">Simple Todo list web app</h4>
                     <p className="project-description">
-                        This is my first React project that I've built. It is only a front end project, not a fullstack
+                        Meet my first React project that I've built. I've choosen to leave
+                        it as it is, so that I can come back here and see where I came from.
                     </p>
                     <p className="project_link">
                         <i className="fa-solid fa-link"></i> : <a href="https://remytodolistapp.netlify.app" target="_blank">Web link</a>
@@ -245,12 +271,12 @@ function Part3() {
                     <h2 className="My_proj_header">My projects</h2>
                     <p className="my-proj-description">
                         Check out the collection of my projects showcasing my fullstack skills. I've choosen to categorize them into two parts,
-                        because I've got the big ones, and the small ones that may not impress you that much. These small ones are mainly from 
-                        courses that I've completed like ALX and Freecodecamp.
+                        because I've got my favourites, and other ones whose purpose of building them was to improve my coding skills. These others are mainly from 
+                        courses that I've completed like ALX and Freecodecamp. Fell free to explore them and provide a feedback
                     </p>
                     <div className="project-chooser">
-                        <button onClick={() => handleProjectsChange('Recents')} className={`proj_button ${projects === 'Recents' ? 'active' : ''}`}>Recents</button>
-                        <button onClick={() => handleProjectsChange('Shorts')} className={`proj_button ${projects === 'Shorts' ? 'active' : ''}`}>Short ones</button>
+                        <button onClick={() => handleProjectsChange('Recents')} className={`proj_button ${projects === 'Recents' ? 'active' : ''}`}>Favourites</button>
+                        <button onClick={() => handleProjectsChange('Shorts')} className={`proj_button ${projects === 'Shorts' ? 'active' : ''}`}>Others</button>
                     </div>
                 </div>
                 <div className="Right_part3">
