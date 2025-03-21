@@ -222,12 +222,12 @@
     height: 50%;
     width: 100%;
     cursor: pointer;
+    height: auto;
+    width: auto;
 }
 
 .proj_img {
-    min-height: 100%;
     height: 100%;
-    min-width: 100%;
     width: 100%;
     object-fit: cover;
     filter: brightness(100%);
@@ -685,7 +685,7 @@
 
 
     .projects_library {
-        gap: 20px;
+        gap: 0px;
     }
 
 
@@ -717,8 +717,6 @@
 
 
 @media (min-width: 456px) and (max-width: 679px) {
-
-    
     
     .Left_part3{
         display: flex;

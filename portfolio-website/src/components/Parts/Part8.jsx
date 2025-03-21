@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import './CSS/Part8.css';
 import "./CSS/Responsive.css";
 
 function Part8() {
+    const date = new Date();
+
     return(
         <div className="Part8">
             <div className="Two_Parts_Mobile_ending">
@@ -23,7 +25,7 @@ function Part8() {
                     </div>
                 </div>
                 <div className="Lower_Mobile_ending">
-                    <p className="copyright">Copyright © 2025. All Rights Reserved</p>
+                    <p className="copyright">Copyright © {date.getFullYear()}. All Rights Reserved</p>
                 </div>
             </div>
         </div>
