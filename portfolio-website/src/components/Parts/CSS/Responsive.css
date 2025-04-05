@@ -58,7 +58,7 @@
 
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1110px) {
 
     body {
         height: 460vh !important;
@@ -97,7 +97,7 @@
 
 
 
-@media (min-width: 1025px) { 
+@media (min-width: 1111px) { 
     
     body {
         height: 590vh !important;

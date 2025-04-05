@@ -29,12 +29,12 @@
     backdrop-filter: blur(8px);
 
     @media (max-width: 767px) {
-        background-color: rgba(107, 107, 107, 0.377);
+        background-color: rgba(107, 107, 107, 0.158);
         height: 70px;
         margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 0;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(8px);
     }
 }
 
@@ -300,16 +300,6 @@ header
     width: 100%;
     overflow: hidden;
     margin-top: 50px;
-
-    @media (max-width: 767px) {
-        height: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 90px;
-    }
 }
 
 
@@ -346,25 +336,19 @@ header
     align-items: flex-end;
     overflow: hidden;
 
-    @media (max-width: 767px){
-        height: 100%;
-        width: 100%;
-        margin-left: 0;
-        padding-right: 0;
-        margin-top: 80%;
-        margin-bottom: 0;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-    }
 }
+
+.left-part-wrapper {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 .First_headings {
     color: #000000d3;
-    width: 85%;
+    width: auto;
 
     @media (max-width: 767px) {
         width: 100%;
@@ -378,9 +362,8 @@ header
 }
 
 
-.hello_heading
-{
-    margin-bottom: 5px; /* Adjust the value as needed */
+.hello_heading {
+    margin-bottom: 5px; 
     font-family: Arial, sans-serif;
     font-weight: 500;
     font-size: 50px;
@@ -398,7 +381,7 @@ header
 .Remy_heading {
 
     margin-bottom: 2%;   
-    margin-top: 1%; /* Adjust the value as needed */
+    margin-top: 1%; 
     font-family: 'Orbitron', sans-serif;
     font-size: 60px;
     width: 100%;
@@ -421,45 +404,42 @@ header
     }
 }
 
-.shema
-{
+.shema {
     color: green;
 }
 
 
-/* HEADING (h2, h1) ANIMATIONS MAN */
+
 
 .heading {
-    opacity: 0; /* Start with the headings invisible */
-    transform: translateY(20px); /* Shift the headings downwards initially */
-    transition: opacity 1s, transform 1s; /* Apply smooth transition for opacity and transform */
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 1s, transform 1s;
     transition-delay: 1s;
 }
 
-/* Define the animation when the first heading becomes visible */
+
 .heading.show-heading:first-child {
-    transition-delay: 1.5s; /* Delay the animation for the first heading */
+    transition-delay: 1.5s; 
 }
 
-/* Define the animation when the headings become visible */
+
 .heading.show-heading {
-    opacity: 1; /* Make the heading visible */
-    transform: translateY(0); /* Reset the transformation to its original position */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
 
-.small_paragraph
-{
+.small_paragraph {
     font-family: 'Caveat', cursive;
     font-size: 17px;
     font-weight: 100;
-    margin-bottom: 2%;
     color: #000000c4;
-    width: 80%;
+    width: auto;
+    margin-left: 30px;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 767px) {
         width: 100%;
         margin-left: 0;
         display: flex;
@@ -474,16 +454,12 @@ header
 }
 
 
-/* PARAGRAPH TRANSITION */
-
-
-/* Apply initial styles to hide the paragraph text */
 .small_paragraph .paragraph span {
     opacity: 0;
     animation: revealLetter 10ms ease forwards;
 }
 
-/* Define animation for revealing each letter */
+
 @keyframes revealLetter {
     0% {
         opacity: 0;
@@ -500,13 +476,12 @@ header
 
 
 .Buy_me_coffee {
-    width: 76%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(100, 148, 237, 0);
+    width: auto;
+    margin-left: 55px;
 
-    @media (max-width: 767px)     /* Mobile devices */
-    {
+    @media (max-width: 767px) {
         width: 100%;
         margin-right: 0;
         justify-content: center;
@@ -636,24 +611,23 @@ header
 
 .social_media {
   background-color: rgba(203, 3, 243, 0);
-  width: 71%;   
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  width: auto;
+  margin-top: 25px;
 
-  @media (max-width: 767px)     /* Mobile devices */
-    {
+  @media (max-width: 767px) {
         display: none;
     }
 }
 
 .all_icons {
-    width: 30%;
-    height: 50%;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    margin-left: 90px;
 }
 
 
@@ -997,19 +971,62 @@ header
         align-items: center;
     }
 }
-  
+
+
+@media (max-width: 767px) {
+
+    .Two_Parts {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .Left_part {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .left-part-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-part-wrapper > div {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto;
+    }
+
+}
 
 
 
-@media (min-width: 760px) and (max-width: 1110px) {
+@media (min-width: 768px) and (max-width: 1110px) {
     .center_img{
         height: 14%;
     }
 
-    
-    .First_headings{
-        width: 95%;
+
+    .desk_links {
+        width: auto;
+        overflow: hidden;
     }
+
+    .link1, .link2, .link3, .link4 {
+        font-size: 10px !important;
+    }
+
+    .Left_part {
+        align-items: center;
+    }
+
+    .left-part-wrapper {
+        width: auto;
+    }
+
 
     .hello_heading{
         font-size: 35px;
@@ -1020,14 +1037,15 @@ header
     }
 
     .small_paragraph {
-        width: 93%;
         font-size: 13px;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
     }
 
-    .Buy_me_coffee {
-        width: 80%;
+    .social_media {
+        margin-top: 0px;
+    }
+
+    .all_icons {
+        margin-left: 60px;
     }
 
     .coffee-button {
@@ -1035,13 +1053,7 @@ header
         font-size: 6px;
     }
 
-    .social_media {
-        width: 76%;
-    }
 
-    .all_icons {
-        width: 30%;
-    }
 
     .ico_1 {
         padding: 3px;
@@ -1062,159 +1074,17 @@ header
         border-width: 0px;
         border-color: rgba(78, 78, 78, 0.123);
     }
-
-    .desk_links {
-        width: 40%;
-        overflow: hidden;
-    }
-
-    .link1, .link2, .link3, .link4 {
-        font-size: 10px !important;
-    }
     
 }
   
 
 
 
-@media (min-width: 0px) and (max-width: 600px) {
-
-
-    .Two_Parts {
-        margin-top: 90px;
-    }
-
-    .Left_part {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        overflow: hidden !important;
-        height: 100% !important;
-        margin-top: 0 !important;
-    }
-
-    .First_headings {
-        height: 40%;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end !important;
-        overflow: hidden !important;
-    }
-
-    .small_paragraph {
-        height: 5% !important;
-        width: 100% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 13px !important;
-        overflow: hidden !important;
-    }
-
-    .Buy_me_coffee {
-        height: 20% !important;
-        width: 100% !important;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: hidden !important;
-    }
-
-    .coffee-button {
-        height: 55% !important;
-    }
-
-
-    .Hire_me_and_Github {
-        height: 25% !important;
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-top: 0 !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden !important;
-    }
-}
-
-
-@media (min-width: 600px) and (max-width: 767px) {
-
-
-    .Two_Parts  {
-        margin-top: 0 !important;
-        height: 100% !important;
-    }
-
-
-
-    .Left_part {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        overflow: hidden !important;
-        height: 80% !important;
-    }
-
-    .First_headings {
-        height: 40%;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end !important;
-        overflow: hidden !important;
-    }
-
-    .Remy_heading {
-        font-size: 60px;
-    }
-
-    .small_paragraph {
-        height: 3% !important;
-        width: 100% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 13px !important;
-        overflow: hidden !important;
-    }
-
-    .Buy_me_coffee {
-        height: 20% !important;
-        width: 100% !important;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: hidden !important;
-    }
-
-    .coffee-button {
-        padding: 14px !important;
-    }
-
-    .mob_github_link{
-        width: 10%;
-    }
-
-    .Hire_me_and_Github {
-        height: 20% !important;
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-top: 0 !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden !important;
-    }
-}
 
 
 
 
-@media (min-width: 1025px) and (max-width: 1300px){
+@media (min-width: 1111px) and (max-width: 1300px){
     .My_photo {
         height: 40%;
     }

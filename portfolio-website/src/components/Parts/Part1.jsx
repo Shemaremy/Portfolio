@@ -196,53 +196,55 @@ function Part1 () {
 
             <div className="Two_Parts">
                 <div className="Left_part">
-                    <div className="First_headings">
-                        <h2 className="hello_heading heading">Hello, I'm</h2>
-                        <h1 className="Remy_heading heading">REMY <span className="shema">SHEMA</span></h1>
-                    </div>
+                    <div className="left-part-wrapper">
+                        <div className="First_headings">
+                            <h2 className="hello_heading heading">Hello, I'm</h2>
+                            <h1 className="Remy_heading heading">REMY <span className="shema">SHEMA</span></h1>
+                        </div>
 
-                    <div className="small_paragraph">
-                        <p id="animated-paragraph" className="paragraph">A MERN stack Engineer & a creative thinker.</p>
-                    </div>
+                        <div className="small_paragraph">
+                            <p id="animated-paragraph" className="paragraph">A MERN stack Engineer & a creative thinker.</p>
+                        </div>
 
-                    <div className="Buy_me_coffee">
-                        <button className="coffee-button" onClick={() => window.open('/CV_Remy.pdf', '_blank')}>View my cv</button>
-                    </div>
+                        <div className="Buy_me_coffee">
+                            <button className="coffee-button" onClick={() => window.open('/CV_Remy.pdf', '_blank')}>View my cv</button>
+                        </div>
 
-                    <div className="Hire_me_and_Github">
-                        <p className="Github_ico">
-                            <a href="https://github.com/Shemaremy" className="mob_github_link">
-                                <i className="fab fa-github mob_github_ico" ></i>
-                                <p className="mob_my_github_word">My Github</p>
-                            </a>
-                        </p>
-                    </div>
-
-                    <div className="social_media">
-                        <div className="all_icons">
-                            <p className="icon Linkedin">
-                                <a href="https://linkedin.com/in/shema-remy-ba3229288">
-                                    <i className="ico_1 fab fa-linkedin"></i>
+                        <div className="Hire_me_and_Github">
+                            <p className="Github_ico">
+                                <a href="https://github.com/Shemaremy" className="mob_github_link">
+                                    <i className="fab fa-github mob_github_ico" ></i>
+                                    <p className="mob_my_github_word">My Github</p>
                                 </a>
                             </p>
+                        </div>
 
-                            <p className="icon Twitter">
-                                <a href="https://x.com/Shemaremi/">
-                                    <i className="ico_1 fa-brands fa-x-twitter"></i>
-                                </a>
-                            </p>
+                        <div className="social_media">
+                            <div className="all_icons">
+                                <p className="icon Linkedin">
+                                    <a href="https://linkedin.com/in/shema-remy-ba3229288">
+                                        <i className="ico_1 fab fa-linkedin"></i>
+                                    </a>
+                                </p>
 
-                            <p className="icon Instagram">
-                                <a href="https://www.instagram.com/shema.remy">
-                                    <i className="ico_1 fab fa-instagram"></i>
-                                </a>
-                            </p>
+                                <p className="icon Twitter">
+                                    <a href="https://x.com/Shemaremi/">
+                                        <i className="ico_1 fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </p>
 
-                            <p className="icon Behance">
-                                <a href="https://github.com/Shemaremy">
-                                    <i className="ico_1 fab fa-github"></i>
-                                </a>
-                            </p>
+                                <p className="icon Instagram">
+                                    <a href="https://www.instagram.com/shema.remy">
+                                        <i className="ico_1 fab fa-instagram"></i>
+                                    </a>
+                                </p>
+
+                                <p className="icon Behance">
+                                    <a href="https://github.com/Shemaremy">
+                                        <i className="ico_1 fab fa-github"></i>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
