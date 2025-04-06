@@ -1,467 +1,373 @@
 .Part4 {
-    width: 100%; /* Adjust the width as needed */
-    height: 19%;
-    background-color: rgba(179, 179, 179, 0.267);
-    margin-top: 0%;
-    margin-bottom: 0%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0, 128, 0, 0);
-    display: flex;
-    justify-content: center;
+  width: 100%; /* Adjust the width as needed */
+  height: 19%;
+  background-color: rgba(179, 179, 179, 0.267);
+  margin-top: 0%;
+  margin-bottom: 0%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 128, 0, 0);
+  display: flex;
+  justify-content: center;
 
-    
-    @media (max-width: 767px)     /* Mobile devices */
-    {
-        border-radius: 0px;
-        border-color: rgba(230, 230, 230, 0);
-        width: 100%;
-        box-shadow: none;
-        background-color: rgba(203, 212, 219, 0.507);
-    }
-
-
+  @media (max-width: 767px) /* Mobile devices */ {
+    border-radius: 0px;
+    border-color: rgba(230, 230, 230, 0);
+    width: 100%;
+    box-shadow: none;
+    background-color: rgba(203, 212, 219, 0.507);
+  }
 }
 
-
-
-
 .Certifications_and_experience_panel {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
-    @media only screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
-    }
+    height: 100%;
+  }
 }
 
 .certifications_and_experience_top {
-    height: 20%;
-    width: 97%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
+  height: 20%;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
 
-    @media only screen and (max-width: 767px) {
-        width: 100%;
-        height: 15%;
-    }
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    height: 15%;
+  }
 }
-
-
-
 
 .cert-exp-header {
-    width: 85%;
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 40px;
-    margin-bottom: 0;
-    color: rgb(97, 97, 97);
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 30px;
-    text-align: right;
+  width: 85%;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 0;
+  color: rgb(97, 97, 97);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  text-align: right;
 
-    @media only screen and (max-width: 767px) {
-        font-size: 28px;
-    }
+  @media only screen and (max-width: 767px) {
+    font-size: 28px;
+  }
 }
 
+.main_underline_2-container {
+  height: 4vh;
+  width: 84%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
 
-
-.main_underline_2-container { 
+  @media only screen and (max-width: 767px) {
     height: 4vh;
-    width: 84%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; 
-    margin-top: 0;
-    margin-bottom: 0;
-
-    @media only screen and (max-width: 767px) {
-        height: 4vh;
-    }
+  }
 }
 
-.main_underline_2 {  
-    height: 2px;
-    width: 20%;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 500px;
-    /* background-color: rgb(80, 145, 199); */
-    background-color: rgb(67, 165, 67);
+.main_underline_2 {
+  height: 2px;
+  width: 20%;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 500px;
+  /* background-color: rgb(80, 145, 199); */
+  background-color: rgb(67, 165, 67);
 }
-
-
-
-
-
 
 .certifications_and_experience_bottom {
-    height: 80%;
-    width: 100%;
-    background-color: rgb(79, 90, 87);
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-    overflow: auto;
-    position: relative;
-    z-index: 1;
+  height: 80%;
+  width: 100%;
+  background-color: rgb(79, 90, 87);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  z-index: 1;
 
-    @media only screen and (max-width: 767px) {
-        justify-content: space-around;
-        height: 85%;
-    }
-
+  @media only screen and (max-width: 767px) {
+    justify-content: space-around;
+    height: 85%;
+  }
 }
-
-
-
-
 
 .certification-shapes {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 100;
-    left: 0;
-    right: 100;
-    z-index: -1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 100;
+  left: 0;
+  right: 100;
+  z-index: -1;
 }
-
 
 .certification-shapes > img {
-    width: 40%;
-    opacity: 0.3;
-    filter: grayscale(100%);
+  width: 40%;
+  opacity: 0.3;
+  filter: grayscale(100%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .Certifications_panel {
-    height: 50%;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+  height: 50%;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .left_part_certificates {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .check_out {
-    width: 60%;
-    font-family: sans-serif;
-    font-size: 35px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    font-family: "Dosis", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.788);
-    overflow: hidden;
-    word-break: break-all;
-
+  width: 60%;
+  font-family: sans-serif;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.788);
+  overflow: hidden;
+  word-break: break-all;
 }
 
 .c_out {
-    font-size: 15px;
-    font-family: "Playwrite IT Moderna", cursive;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    color: rgb(93, 163, 76);
+  font-size: 15px;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(93, 163, 76);
 }
 
 .check_out_par {
-    font-family: sans-serif;
-    margin-top: 15px;
-    margin-bottom: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.788);
-
+  font-family: sans-serif;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.788);
 }
 
-
-
 .learn_more_cert {
-    border-style: solid;
-    border-width: 1px;
-    width: 30%;
-    padding: 7px;
-    border-radius: 20px;
-    background-color: rgba(0, 139, 0, 0.37);
-    border-color: rgb(133, 133, 133);
-    margin-top: 5%;
-    color: rgb(224, 224, 224);
-    cursor: pointer;
-    font-size: 11px;
-    transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out ;
-
-
-
+  border-style: solid;
+  border-width: 1px;
+  width: 30%;
+  padding: 7px;
+  border-radius: 20px;
+  background-color: rgba(0, 139, 0, 0.37);
+  border-color: rgb(133, 133, 133);
+  margin-top: 5%;
+  color: rgb(224, 224, 224);
+  cursor: pointer;
+  font-size: 11px;
+  transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .learn_more_cert:hover {
-    background-color: rgba(0, 118, 139, 0.37);
-} 
+  background-color: rgba(0, 118, 139, 0.37);
+}
 
 .learn_more_cert:active {
-    transform: scale(0.1);
+  transform: scale(0.1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .right_part_certificates {
-    height: 100%;
-    width: 55%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-
 .right_part_certificates::-webkit-scrollbar {
-    width: 5px !important;
+  width: 5px !important;
 }
 
 .right_part_certificates::-webkit-scrollbar-thumb {
-    background-color: rgba(131, 131, 131, 0.671);
-    border-radius: 55px;
-    cursor: pointer;
+  background-color: rgba(131, 131, 131, 0.671);
+  border-radius: 55px;
+  cursor: pointer;
 }
-
 
 .cert_card {
-    height: 45%;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  height: 45%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .upper_cert {
-    width: auto;
-    height: 53%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    object-fit: cover;
-    transition: 0.5s ease-in-out;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(185, 185, 185);
+  width: auto;
+  height: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(185, 185, 185);
 }
 
 .cert_img {
-    min-height: 100%;
-    min-width: auto;
-    height: 100%;
-    width: auto;
-    transition: opacity 0.8s ease, transform 0.8s ease, filter 0.5s ease-in-out;
-
+  min-height: 100%;
+  min-width: auto;
+  height: 100%;
+  width: auto;
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.5s ease-in-out;
 }
 
 .lower_cert {
-    width: auto;
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-
+  width: auto;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .cert_name {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    font-family: sans-serif;
-    color: rgb(93, 163, 76);
-
-
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: rgb(93, 163, 76);
 }
 
 .cert_par {
-    font-family: sans-serif;
-    margin-top: 4px;
-    margin-bottom: 0;
-    padding: 0;
-    /*font-size: 10px;*/
-    text-align: center;
-    color: rgba(255, 255, 255, 0.788);
-    font-weight: 100;
-
-
+  font-family: sans-serif;
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding: 0;
+  /*font-size: 10px;*/
+  text-align: center;
+  color: rgba(255, 255, 255, 0.788);
+  font-weight: 100;
 }
 
 .info {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    position: absolute; 
-    bottom: 0;
-    box-sizing: border-box;
-    transition: transform 0.8s ease; 
-    transform: translateY(0); 
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  transition: transform 0.8s ease;
+  transform: translateY(0);
 }
 
-
 .essential_download {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-width: 0px;
-    padding: 7px;
-    width: 30%;
-    height: 50%;
-    font-size: 11px;
-    color: #bdc4ff;
-    border-color: rgba(240, 248, 255, 0.692);
-    border-radius: 15px;
-    background-color: rgba(59, 141, 59, 0);
-    opacity: 0;
-    cursor: pointer;
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    transform: translateY(100%);
-    text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0px;
+  padding: 7px;
+  width: 30%;
+  height: 50%;
+  font-size: 11px;
+  color: #bdc4ff;
+  border-color: rgba(240, 248, 255, 0.692);
+  border-radius: 15px;
+  background-color: rgba(59, 141, 59, 0);
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(100%);
+  text-decoration: underline;
 }
 
 .essential_download:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
 .upper_cert:hover .info .essential_download {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .upper_cert:hover .cert_img {
-    filter: grayscale(100%) blur(2px) brightness(50%);
-    transform: scale(1.1);
+  filter: grayscale(100%) blur(2px) brightness(50%);
+  transform: scale(1.1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .Experience_panel {
+  height: 42%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgba(25, 27, 27, 0.616);
 
-    height: 42%;
+  @media only screen and (max-width: 767px) {
+    height: 35%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background-color: rgba(25, 27, 27, 0.616);
-
-
-    @media only screen and (max-width: 767px) {
-        height: 35%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        background-color: rgb(55, 61, 59);
-        background-color: rgb(25, 27, 27);
-    }
-
+    background-color: rgb(55, 61, 59);
+    background-color: rgb(25, 27, 27);
+  }
 }
 
 .work_experience {
-    width: 20%;
+  width: 20%;
+  height: 15%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: rgb(155, 155, 155);
+  letter-spacing: 2px;
+
+  @media only screen and (max-width: 767px) {
+    width: 47%;
     height: 15%;
     margin-top: 0;
     margin-bottom: 0;
@@ -473,35 +379,31 @@
     align-items: center;
     color: rgb(155, 155, 155);
     letter-spacing: 2px;
-
-    @media only screen and (max-width: 767px) {
-        width: 47%;
-        height: 15%;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        font-family: sans-serif;
-        overflow: hidden;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        color: rgb(155, 155, 155);
-        letter-spacing: 2px;
-    }
+  }
 }
 
 .experience_list {
-    height: 85%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-
 .main_experience_list {
-    width: 93%;
+  width: 93%;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
@@ -510,839 +412,461 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-    @media only screen and (max-width: 767px) {
-        width: 100%;
-        height: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
+  }
 }
 
-
 .the_li {
+  background-color: rgb(79, 84, 90);
+  background: linear-gradient(
+    to left,
+    rgba(79, 84, 90, 0.116),
+    rgba(0, 0, 0, 0)
+  );
+  text-align: right;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
 
-    background-color: rgb(79, 84, 90);
-    background: linear-gradient(to left, rgba(79, 84, 90, 0.116), rgba(0, 0, 0, 0));
+  @media only screen and (max-width: 767px) {
+    background-color: rgba(54, 57, 61, 0.24);
     text-align: right;
-    width: 100%;
+    width: 95%;
     height: 30%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-
-    @media only screen and (max-width: 767px) {
-        background-color: rgba(54, 57, 61, 0.24);
-        text-align: right;
-        width: 95%;
-        height: 30%;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 10px;
-    }
-    
+  }
 }
 
 .Organisation {
+  font-size: 12px;
+  color: rgba(236, 236, 236, 0.897);
+  margin-bottom: 0%;
+  margin-top: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  width: 97%;
+  text-decoration: underline;
 
-    font-size: 12px;
-    color: rgba(236, 236, 236, 0.897);
-    margin-bottom: 0%;
+  @media only screen and (max-width: 767px) {
+    font-size: 13px;
+    color: rgb(236, 236, 236);
+    margin-bottom: 2%;
     margin-top: 0;
     padding: 0;
     font-family: "Dosis", sans-serif;
     font-weight: 600;
-    width: 97%;
+    width: 96%;
     text-decoration: underline;
-    
-
-    @media only screen and (max-width: 767px) {
-        font-size: 13px;
-        color: rgb(236, 236, 236);
-        margin-bottom: 2%;
-        margin-top: 0;
-        padding: 0;
-        font-family: "Dosis", sans-serif;
-        font-weight: 600;
-        width: 96%;
-        text-decoration: underline;
-    }
+  }
 }
 
 .job_title {
+  font-family: sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 11px;
+  width: 98%;
+  color: rgb(42, 161, 42);
 
+  @media only screen and (max-width: 767px) {
     font-family: sans-serif;
-    margin-top: 5px;
+    margin-top: 0;
     margin-bottom: 0;
     font-size: 11px;
     width: 98%;
-    color: rgb(42, 161, 42);
-
-    @media only screen and (max-width: 767px) {
-        font-family: sans-serif;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 11px;
-        width: 98%;
-        color: chocolate;
-        color: rgba(66, 175, 66, 0.925);
-    }
+    color: chocolate;
+    color: rgba(66, 175, 66, 0.925);
+  }
 }
 
 .duration {
-    font-family: "Dosis", sans-serif;
+  font-family: "Dosis", sans-serif;
+  font-size: 10px;
+  margin-top: 0;
+  font-weight: 500;
+  width: 98%;
+  color: rgb(155, 155, 155);
+  color: #b0b0b0;
+
+  @media only screen and (max-width: 767px) {
     font-size: 10px;
+    font-family: "Dosis", sans-serif;
     margin-top: 0;
     font-weight: 500;
     width: 98%;
     color: rgb(155, 155, 155);
-    color: #B0B0B0;
-
-    @media only screen and (max-width: 767px) {
-        font-size: 10px;
-        font-family: "Dosis", sans-serif;
-        margin-top: 0;
-        font-weight: 500;
-        width: 98%;
-        color: rgb(155, 155, 155);
-        color: #B0B0B0;
-    }
+    color: #b0b0b0;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------PART 4 RESPONSIVE----------------------------------------------------------*/
 /*--------------------------PART 4 RESPONSIVE----------------------------------------------------------*/
-
-
 
 @media (max-width: 460px) {
-    .cert_name, .cert_par {
-        margin-left: 5%;
-    }
+  .cert_name,
+  .cert_par {
+    margin-left: 5%;
+  }
 
-    .left_part_certificates {
-        width: 100% !important;
-    }
+  .left_part_certificates {
+    width: 100% !important;
+  }
 
+  .lower_cert {
+    padding-left: 5px;
+  }
 
-    .lower_cert {
-        padding-left: 5px;
-    }
+  .work_experience {
+    width: 95% !important;
+    font-size: 14px !important;
+  }
 
-    .work_experience {
-        width: 95% !important;
-        font-size: 14px !important;
-    }
-
-    .Organisation {
-        color: rgb(206, 206, 206);
-    }
+  .Organisation {
+    color: rgb(206, 206, 206);
+  }
 }
-
-
-
-
-
 
 @media (min-width: 0px) and (max-width: 560px) {
+  .certifications_and_experience_top {
+    display: none !important;
+  }
 
-    .certifications_and_experience_top {
-        display: none !important;
-    }
+  .certifications_and_experience_bottom {
+    height: 100% !important;
+  }
 
-    .certifications_and_experience_bottom {
-        height: 100% !important;
-    }
+  .Certifications_panel {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    height: 65% !important;
+  }
 
+  .left_part_certificates {
+    width: 90%;
+    height: 30% !important;
+  }
 
-    .Certifications_panel {
-        flex-direction: column !important;
-        align-items: center;
-        justify-content: center;
-        height: 65% !important;
-    }
+  .c_out {
+    display: none;
+  }
 
-    .left_part_certificates {
-        width: 90%;
-        height: 30% !important;
-    }
+  .check_out {
+    width: 100% !important;
+    font-size: 30px !important;
+  }
 
-    .c_out {
-        display: none;
-    }
+  .check_out_par {
+    font-size: 7px !important;
+    width: 90% !important;
+  }
 
-    .check_out {
-        width: 100% !important;
-        font-size: 30px !important;
-    }
+  .learn_more_cert {
+    width: 20%;
+    background-color: green;
+    padding: 4px;
+    font-size: 10px;
+    display: none;
+  }
 
-    .check_out_par {
-        font-size: 7px !important;
-        width: 90% !important;
-    }
+  .right_part_certificates {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    overflow: auto;
+    height: 100% !important;
+  }
 
-    .learn_more_cert {
-        width: 20%;
-        background-color: green;
-        padding: 4px;
-        font-size: 10px;
-        display: none;
-    }
+  .cert_card {
+    width: 90% !important;
+    height: 50% !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+  }
 
+  .upper_cert {
+    height: auto !important;
+    width: 55% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-width: 0;
+  }
 
-    .right_part_certificates{
-        width: 100% !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        overflow: auto;
-        height: 100% !important;
-    }
+  .cert_img {
+    min-width: 60% !important;
+    width: auto !important;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(185, 185, 185, 0.74);
+  }
 
-    .cert_card {
-        width: 90% !important;
-        height: 50% !important;
-        display: flex;
-        flex-direction: row !important;
-        justify-content: space-around;
-        align-items: center;
-    }
+  .essential_download {
+    width: 60% !important;
+    font-size: 7px !important;
+  }
 
-    .upper_cert {
-        height: auto !important;
-        width: 55% !important;
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: center !important;
-        align-items: center !important;
-        border-width: 0;
-    }
+  .lower_cert {
+    height: 100% !important;
+    width: 50% !important;
+    overflow: hidden;
+  }
 
+  .cert_name {
+    font-size: 10px;
+    margin-top: 3% !important;
+    width: 100%;
+  }
 
-    .cert_img {
-        min-width: 60% !important;
-        width: auto !important;
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: rgba(185, 185, 185, 0.74);
-    }
+  .cert_par {
+    width: 100%;
+    text-align: left !important;
+    font-size: 9px;
+  }
 
+  .Experience_panel {
+    height: 30% !important;
+  }
 
-
-    .essential_download {
-        width: 60% !important;
-        font-size: 7px !important;
-    }
-
-
-
-
-
-
-
-
-
-    .lower_cert {
-        height: 100% !important;
-        width: 50% !important;
-        overflow: hidden;
-    }
-
-    .cert_name {
-        font-size: 10px;
-        margin-top: 3% !important;
-        width: 100%;
-    }
-
-    .cert_par {
-        width: 100%;
-        text-align: left !important;
-        font-size: 9px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .Experience_panel {
-        height: 30% !important;
-    }
-
-    .work_experience {
-        width: 95% !important;
-        font-size: 13px !important;
-    }
-
-
-
-
+  .work_experience {
+    width: 95% !important;
+    font-size: 13px !important;
+  }
 }
-
-
-
-
-
-
-
-
 
 @media (min-width: 561px) and (max-width: 767px) {
+  /* Hide scrollbar container */
+  ::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+  }
 
-    /* Hide scrollbar container */
-    ::-webkit-scrollbar {
-        width: 0px !important; 
-        height: 0px !important;
-    }
-    
-    /* Red scrollbar thumb */
-    ::-webkit-scrollbar-thumb {
-        background-color: rgb(131, 131, 131);
-        border-radius: 55px;
-        cursor: pointer;
-        height: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: rgb(56, 56, 56);
-    }
-    
+  /* Red scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(131, 131, 131);
+    border-radius: 55px;
+    cursor: pointer;
+    height: 10px;
+  }
 
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(56, 56, 56);
+  }
 
+  .certifications_and_experience_bottom {
+    justify-content: space-between !important;
+  }
 
-    .certifications_and_experience_bottom{
-        justify-content: space-between !important;
-    }
+  .Certifications_panel {
+    align-items: flex-end !important;
+    justify-content: space-around !important;
+    height: 65% !important;
+  }
 
-    .Certifications_panel{
-        align-items: flex-end !important;
-        justify-content: space-around !important;
-        height: 65% !important;
-    }
+  .left_part_certificates {
+    width: 50% !important;
+    height: 80% !important;
+  }
 
-    .left_part_certificates{
-        width: 50% !important;
-        height: 80% !important;
-    }
+  .check_out {
+    width: 100% !important;
+  }
 
-    .check_out {
-        width: 100% !important;
-    }
+  .check_out_par {
+    width: 90% !important;
+    font-size: 10px !important;
+  }
 
-    .check_out_par {
-        width: 90% !important;
-        font-size: 10px !important;
-    }
+  .learn_more_cert {
+    display: none;
+  }
 
-    .learn_more_cert {
-        display: none;
-    }
+  .right_part_certificates {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 45% !important;
+    height: 90% !important;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+  }
 
-    .right_part_certificates {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 45% !important;
-        height: 90% !important;
-        overflow-y: auto;
-        scroll-snap-type: x mandatory;
-    }
+  .cert_card {
+    width: 100% !important;
+    height: 50% !important;
+  }
 
-    .cert_card {
-        width: 100% !important;
-        height: 50% !important;
-    }
+  .upper_cert {
+    height: 53%;
+  }
 
-    .upper_cert {
-        height: 53%;
-    }
+  .lower_cert {
+    width: 100% !important;
+    height: 20% !important;
+  }
 
-    .lower_cert {
-        width: 100% !important;
-        height: 20% !important;
-    }
+  .cert_name {
+    font-size: 15px;
+  }
 
-    .cert_name {
-        font-size: 15px;       
-    }
+  .cert_par {
+    font-size: 8px;
+  }
 
-    .cert_par {
-        font-size: 8px;
-    }
-
-
-    .work_experience {
-        width: 95% !important;
-        font-size: 16px !important;
-    }
-
+  .work_experience {
+    width: 95% !important;
+    font-size: 16px !important;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 768px) and (max-width: 994px) {
+  .Certifications_panel {
+    justify-content: space-around !important;
+  }
 
-    .Certifications_panel {
-        justify-content: space-around !important;
-    }
+  .left_part_certificates {
+    width: 50% !important;
+    height: 75% !important;
+  }
 
-    .left_part_certificates {
-        width: 50% !important;
-        height: 75% !important;
-    }
+  .check_out {
+    width: 80% !important;
+    margin: 0 auto;
+  }
 
-    .check_out {
-        width: 80% !important;
-        margin: 0 auto;
-    }
+  .check_out_par {
+    margin: 0 auto;
+    width: 80% !important;
+    font-size: 10px !important;
+  }
 
-    .check_out_par {
-        margin: 0 auto;
-        width: 80% !important;
-        font-size: 10px !important;
-    }
+  .right_part_certificates {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    width: 35% !important;
+    height: 100% !important;
+    overflow-y: auto;
+  }
 
-    .right_part_certificates {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-end !important;
-        width: 35% !important;
-        height: 100% !important;
-        overflow-y: auto;
-    }
+  .learn_more_cert {
+    margin-left: 10%;
+    display: none;
+  }
 
-    .learn_more_cert {
-        margin-left: 10%;
-        display: none;
-    }
+  .cert_card {
+    width: 100% !important;
+    height: 55% !important;
+    margin-top: 5%;
+  }
 
-    .cert_card {
-        width: 100% !important;
-        height: 55% !important;
-        margin-top: 5%;
-    }
+  .upper_cert {
+    width: auto;
+    height: 65% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .upper_cert {
-        width: auto;
-        height: 65% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .lower_cert {
+    width: 100% !important;
+    height: 20% !important;
+  }
 
-    .lower_cert {
-        width: 100% !important;
-        height: 20% !important;
-    }
+  .cert_name {
+    font-size: 15px;
+  }
 
-    .cert_name {
-        font-size: 15px;       
-    }
+  .cert_par {
+    font-size: 10px;
+  }
 
-    .cert_par {
-        font-size: 10px;
-    }
-
-    .work_experience {
-        font-size: 13px !important;
-    }
+  .work_experience {
+    font-size: 13px !important;
+  }
 }
-
 
 @media (min-width: 995px) and (max-width: 5000px) {
+  .Certifications_panel {
+    justify-content: space-around !important;
+  }
 
-    .Certifications_panel {
-        justify-content: space-around !important;
-    }
+  .left_part_certificates {
+    width: 50% !important;
+    height: 75% !important;
+  }
 
-    .left_part_certificates {
-        width: 50% !important;
-        height: 75% !important;
-    }
+  .check_out {
+    width: 80% !important;
+    margin: 0 auto;
+  }
 
-    .check_out {
-        width: 80% !important;
-        margin: 0 auto;
-    }
+  .check_out_par {
+    margin: 0 auto;
+    width: 80% !important;
+    font-size: 11px;
+  }
 
-    .check_out_par {
-        margin: 0 auto;
-        width: 80% !important;
-        font-size: 11px;
-    }
+  .right_part_certificates {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    width: 35% !important;
+    height: 100% !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 
-    .right_part_certificates {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-end !important;
-        width: 35% !important;
-        height: 100% !important;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
+  .learn_more_cert {
+    margin-left: 10%;
+    display: none;
+  }
 
-    .learn_more_cert {
-        margin-left: 10%;
-        display: none;
-    }
+  .cert_card {
+    width: 100% !important;
+    height: 70% !important;
+    margin-top: 5%;
+  }
 
-    .cert_card {
-        width: 100% !important;
-        height: 70% !important;
-        margin-top: 5%;
-    }
+  .upper_cert {
+    width: auto;
+    height: 65% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .upper_cert {
-        width: auto;
-        height: 65% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .lower_cert {
+    width: 80% !important;
+    height: 20% !important;
+  }
 
-    .lower_cert {
-        width: 80% !important;
-        height: 20% !important;
-    }
+  .cert_name {
+    font-size: 13px;
+    display: none;
+  }
 
-    .cert_name {
-        font-size: 13px;
-        display: none;       
-    }
+  .cert_par {
+    font-size: 10px;
+  }
 
-    .cert_par {
-        font-size: 10px;
-    }
+  .Experience_panel {
+    box-shadow: 0px 0px 10px black;
+  }
 
-    .Experience_panel {
-        box-shadow: 0px 0px 10px black;
-    }
-
-    .work_experience {
-        font-size: 13px !important;
-    }
+  .work_experience {
+    font-size: 13px !important;
+  }
 }
-
-
-
-

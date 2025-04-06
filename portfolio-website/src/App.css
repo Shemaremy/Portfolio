@@ -23,6 +23,28 @@ body {
 }
 
 
+:root {
+    /* --- Colors --- */
+    --light-primary: rgba(138, 138, 138, 0.199);
+    --light-green: rgb(6, 168, 0);
+    --green: green;
+    --light-gray: rgb(99, 104, 103);
+    --dark-gray: rgba(11, 14, 12, 0.815);
+    --dark-dark-gray: rgba(11, 14, 12, 0.219);
+
+    /* --- Font Sizes --- */
+    --xxxs: 10px;
+    --xxs: 10px;
+    --xs: 10px;
+    --s: 10px;
+    --m: 10px;
+    --l: 10px;
+    --xl: 10px;
+    --xxl: 10px;
+    --xxxl: 10px;
+}
+
+
 .Everything_is_here {
     border-style: solid;
     border-width: 0px;
@@ -188,3 +210,11 @@ body {
 
 
 /*--------------------------------------------------------------------------------------------------------*/
+
+.center_img,
+.Part3,
+.Part6 {
+    background-color: var(--light-primary);
+}
+
+
