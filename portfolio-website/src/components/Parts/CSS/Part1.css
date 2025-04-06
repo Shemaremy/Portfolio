@@ -656,6 +656,10 @@ header {
     justify-content: center;
     align-items: center;
   }
+
+  .small_paragraph {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 767px) {
