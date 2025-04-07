@@ -73,6 +73,32 @@ function Part4() {
 
 
 
+    // Certificates container
+    const certificates = [
+        {
+          img: AlxPhoto,
+          pdfLink: '/ALX_Certificate.pdf',
+          name: 'ALX',
+          description: 'ALX certificate helped me aquire crucial and basic languages like html, css, python, javascript, git & github, ...',
+          type: 'view'
+        },
+        {
+          img: WorkingOnIt,
+          pdfLink: '/Freecodecamp.pdf',
+          name: 'Freecodecamp',
+          description: 'A freeCodeCamp certificate where I learned front-end libraries like ReactJS, Sass, Bootstrap, jQuery, and Redux, and completed five hands-on projects.',
+          type: 'view'
+        },
+        {
+          img: EssentialDocs,
+          name: 'Essentials',
+          description: 'File of my essential docs like CV, Resume, Diploma ...',
+          type: 'download'
+        }
+      ];
+      
+
+
 
 
 
@@ -87,42 +113,25 @@ function Part4() {
                 <button className="learn_more_cert">Learn more</button>
             </div>
             <div className="right_part_certificates" data-aos="fade-up">
-                <div className="cert_card">
+            {certificates.map((cert, index) => (
+                <div className="cert_card" key={index}>
                     <div className="upper_cert">
-                        <img className="cert_img" src={AlxPhoto} alt="" />
-                        <div className="info">
-                            <button className="essential_download" onClick={() => window.open('/ALX_Certificate.pdf', '_blank')}>View pdf</button>
-                        </div>
+                    <img className="cert_img" src={cert.img} alt="" />
+                    <div className="info">
+                        {cert.type === 'view' ? (
+                        <button className="essential_download" onClick={() => window.open(cert.pdfLink, '_blank')}>View pdf</button>
+                        ) : (
+                        <button className="essential_download" id="essentials">Download</button>
+                        )}
+                    </div>
                     </div>
                     <div className="lower_cert">
-                        <h4 className="cert_name">ALX</h4>
-                        <h4 className="cert_par">Not yet acquired ...</h4>
+                    <h4 className="cert_name">{cert.name}</h4>
+                    <h4 className="cert_par">{cert.description}</h4>
                     </div>
                 </div>
-                <div className="cert_card">
-                    <div className="upper_cert">
-                        <img className="cert_img" src={WorkingOnIt} alt="" />
-                        <div className="info">
-                            <button className="essential_download" onClick={() => window.open('/Freecodecamp.pdf', '_blank')}>View pdf</button>
-                        </div> 
-                    </div>
-                    <div className="lower_cert">
-                        <h4 className="cert_name">Freecodecamp</h4>
-                        <h4 className="cert_par">A freeCodeCamp certificate where I learned front-end libraries like ReactJS, Sass, Bootstrap, jQuery, and Redux, and completed five hands-on projects.</h4>
-                    </div>
-                </div>
-                <div className="cert_card">
-                    <div className="upper_cert">
-                        <img className="cert_img" src={EssentialDocs} alt="" />
-                        <div className="info">
-                            <button className="essential_download" id="essentials">Download</button>
-                        </div>                        
-                    </div>
-                    <div className="lower_cert">
-                        <h4 className="cert_name">Essentials</h4>
-                        <h4 className="cert_par">File of my essential docs like CV, Resume, Diploma ...</h4>
-                    </div>
-                </div>
+            ))}
+
             </div>
         </div>
     );

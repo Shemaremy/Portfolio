@@ -6,11 +6,15 @@ import Verve from '../../images/Projects/Verve.png';
 import Gitbit from '../../images/Projects/Gitbit.png';
 import Kpuppies from '../../images/Projects/kpuppies.png';
 import gakwandi from '../../images/Projects/gakwandi.png';
-import Todo from '../../images/Projects/Portrait/Todo List.jpg';
-import Quote from '../../images/Projects/Portrait/Quote machine.jpg';
-import Calculator from '../../images/Projects/Portrait/calculator.jpg';
-import Clock from '../../images/Projects/Portrait/Clock.jpg';
-import Drum from '../../images/Projects/Portrait/Drum machine.jpg';
+import Remio from '../../images/Projects/Remio.png';
+import Todo from '../../images/Projects/Todo List.jpg';
+import Dropbox from '../../images/Projects/dropbox.png';
+import Clock from '../../images/Projects/Clock.jpg';
+import Drum from '../../images/Projects/Drum machine.jpg';
+
+
+//import Quote from '../../images/Projects/Quote machine.jpg';
+//import Calculator from '../../images/Projects/calculator.jpg';
 
 
 
@@ -19,6 +23,89 @@ function Part3() {
     const [ projects, setProjects ] = useState ('Recents');
     const [loading, setLoading] = useState(false);
 
+
+    const recentProjectsData = [
+        {
+          image: Verve,
+          alt: "Verve",
+          date: "June 20, 2024",
+          title: "Verve e-commerce website",
+          description: "I built this web app with MERN stack from scratch since February. It took me so long, but I learnt much because this was my first big MERN project I've ever built.",
+          link: "https://v3rve.netlify.app"
+        },
+        {
+          image: Gitbit,
+          alt: "Gitbit",
+          date: "Nov 15, 2024",
+          title: "GitBit, github contribution tracker",
+          description: "This came from an idea where I wanted to specialize in backend. At the same time, also wanted to improve my contribution habit. Then gitbit came to my mind. ",
+          link: "https://gitbit.netlify.app"
+        },
+        {
+          image: Kpuppies,
+          alt: "kpuppies",
+          date: "March 11, 2024",
+          title: "Kigali Puppies",
+          description: "Meet Kigali Puppies, a pet e-commerce store built with both passion and MERN stack. We built this website me and my partner where he worked on the front end and I assisted on the backend.",
+          link: "https://kigalipuppies.com"
+        }
+    ];
+      
+    const shortProjectsData = [
+        {
+            image: gakwandi,
+            alt: "gakwandi",
+            date: "October 10, 2024",
+            title: "Gakwandi Zacharie business platform",
+            description: "My client wanted a bss platform website. Not only did that, I built him a backend system to manage his own stock with CRUD operations.",
+            link: "https://gakwandi.netlify.app"
+        },
+        {
+            image: Remio,
+            alt: "Remio",
+            date: "April 5, 2025",
+            title: "Remio Short courses",
+            description: "Remio is a website that equips learners with the knowledge and tools to excel in the digital age such as Fullstack and graphic design.",
+            link: "https://remio.netlify.app"
+        },
+        {
+            image: Dropbox,
+            alt: "Remydp",
+            date: "October 10, 2024",
+            title: "Dropbox uploader",
+            description: "This tool enables you to upload an image on dropbox automatically, and generate a raw url link for use immediately with no need for logs in",
+            link: "https://remydp.netlify.app"
+        },
+        {
+            image: Todo,
+            alt: "Todo",
+            date: "July 2, 2024",
+            title: "Simple Todo list",
+            description: "Meet my first React project that I've built. I've choosen to leave it as it is, so that I can come back here and see where I came from.",
+            link: "https://remytodolistapp.netlify.app"
+        },
+        {
+            image: Clock,
+            alt: "Clock",
+            date: "October 10, 2024",
+            title: "25 + 5 clock app",
+            description: "This is more of a stop watch, where you set the starting point and ending point time, same way as a normal stopwatch does.",
+            link: "https://remyclock.netlify.app"
+        },
+        {
+            image: Drum,
+            alt: "Drum",
+            date: "October 10, 2024",
+            title: "Drum machine app",
+            description: "Honestly, I dont like this one. It ain't fun at all but It helped me gain some skills involving sounds and how to deal with them using react.",
+            link: "https://remydrummachine.netlify.app"
+        }
+    ];
+    
+      
+
+
+    // Handling switching of projects section ----------------
     const handleProjectsChange = (category) => {
         setLoading(true);
         setTimeout(() => {
@@ -28,237 +115,42 @@ function Part3() {
     };   
 
 
-    const RecentProjects = (
-        <div className="projects_library recents-library">
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"Verve"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={Verve} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • June 20, 2024</p>
-                    <h4 className="project-name">Verve e-commerce website</h4>
-                    <p className="project-description">
-                        I built this web app with MERN stack from scratch since February. It took me so long,
-                        but I learnt much because this was my first big MERN project I've ever built.
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://v3rve.netlify.app" target="_blank">Web link</a>
-                    </p>
-                </div>
+    const renderProjects = (projects) => (
+        <div className="projects_library">
+          {projects.map((proj, index) => (
+            <div className="project_card" key={index}>
+              <div className="proj-image-container">
+                <LazyLoadImage
+                  className="proj_img"
+                  alt={proj.alt}
+                  effect="blur"
+                  wrapperProps={{ style: { transitionDelay: "1s" } }}
+                  src={proj.image}
+                />
+              </div>
+              <div className="proj_words">
+                <p className="dev-date">Development • {proj.date}</p>
+                <h4 className="project-name">{proj.title}</h4>
+                <p className="project-description">{proj.description}</p>
+                <p className="project_link">
+                  <i className="fa-solid fa-link"></i> : <a href={proj.link} target="_blank">Web link</a>
+                </p>
+              </div>
             </div>
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"Gitbit"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={Gitbit} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • Nov 15, 2024</p>
-                    <h4 className="project-name">GitBit, github contribution tracker</h4>
-                    <p className="project-description">
-                        This came from an idea where I wanted to specialize in backend. At the same time, also wanted
-                        to improve my contribution habit. Then gitbit came to my mind. 
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://gitbit.netlify.app" target="_blank">Web link</a>
-                    </p>
-                </div>
-            </div>
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"kpuppies"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={Kpuppies} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • March 11, 2024</p>
-                    <h4 className="project-name">Kigali Puppies</h4>
-                    <p className="project-description">
-                        Meet Kigali Puppies, a pet e-commerce store built with both passion and MERN stack. We built this website 
-                        me and my partner where he worked on the front end and I assisted on the backend.
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://kigalipuppies.com" target="_blank">Web link</a>
-                    </p>
-                </div>
-            </div>
+          ))}
         </div>
-    );
-
-    const ShortProjects = (
-        <div className="projects_library shorts-library">
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"gakwandi"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={gakwandi} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • October 10, 2024</p>
-                    <h4 className="project-name">Gakwandi Zacharie business platform</h4>
-                    <p className="project-description">
-                        My client wanted a bss platform website. Not only did that, I built him a backend system
-                        to manage his own stock with CRUD operations.
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://gakwandi.netlify.app" target="_blank">Web link</a>
-                    </p>
-                </div>
-            </div>
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"Todo"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={Todo} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • July 2, 2024</p>
-                    <h4 className="project-name">Simple Todo list web app</h4>
-                    <p className="project-description">
-                        Meet my first React project that I've built. I've choosen to leave
-                        it as it is, so that I can come back here and see where I came from.
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remytodolistapp.netlify.app" target="_blank">Web link</a>
-                    </p>
-                </div>
-            </div>
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"Quote"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={Quote} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • Nov 15, 2024</p>
-                    <h4 className="project-name">Random quote machine</h4>
-                    <p className="project-description">
-                        This is a Freecodecamp project that generates random quotes whenever a user clicks on a generate
-                        button. 
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remyquotemachine.netlify.app" target="_blank">Web link</a>
-                    </p>
-                </div>
-            </div>
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"Calculator"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={Calculator} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • October 10, 2024</p>
-                    <h4 className="project-name">Calculator web app</h4>
-                    <p className="project-description">
-                        This my first hardest small project that I've built. I never knew how hard it 
-                        was building a calculator that does all the 4 operations with all numbers including decimals
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remycalculator.netlify.app" target="_blank">Web link</a>
-                    </p>
-                </div>
-            </div>
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"Clock"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={Clock} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • October 10, 2024</p>
-                    <h4 className="project-name">25 + 5 clock app</h4>
-                    <p className="project-description">
-                        This is more of a stop watch, where you set the starting point and ending point time, same way as a normal 
-                        stopwatch does. 
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remyclock.netlify.app" target="_blank">Web link</a>
-                    </p>
-                </div>
-            </div>
-            <div className="project_card">
-                <div className="proj-image-container">
-                    <LazyLoadImage
-                        className="proj_img"
-                        alt={"Drum"}
-                        effect="blur"
-                        wrapperProps={{
-                            style: {transitionDelay: "1s"},
-                        }}
-                        src={Drum} 
-                    />
-                </div>
-                <div className="proj_words">
-                    <p className="dev-date">Development • October 10, 2024</p>
-                    <h4 className="project-name">Drum machine app</h4>
-                    <p className="project-description">
-                        Honestly, I dont like this one. It ain't fun at all but It helped me gain some skills involving sounds
-                        and how to deal with them using react. 
-                    </p>
-                    <p className="project_link">
-                        <i className="fa-solid fa-link"></i> : <a href="https://remydrummachine.netlify.app" target="_blank">Web link</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    );
+      );
+      
 
 
-    const ProjectCards = (
-        loading ? <div className="project-loader"><div className="spinner"></div></div> : 
-        (projects === 'Recents' ? RecentProjects : ShortProjects)
-    );
+
+    // Project cards area --------------------------
+    const ProjectCards = loading ? (
+        <div className="project-loader"><div className="spinner"></div></div>
+      ) : (
+        projects === 'Recents' ? renderProjects(recentProjectsData) : renderProjects(shortProjectsData)
+      );
+      
 
 
 
