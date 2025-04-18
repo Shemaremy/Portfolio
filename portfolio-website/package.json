@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "start": "node server.js"
+    "preview": "vite preview"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -16,11 +15,7 @@
     "react-dom": "^18.2.0",
     "react-lazy-load-image-component": "^1.6.3",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1",
-    "@sendgrid/mail": "^8.1.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
