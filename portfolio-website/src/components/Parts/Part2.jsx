@@ -63,11 +63,10 @@ function Part2 () {
                                 Greetings, I'm Remy SHEMA, a passionate software engineer based in Rwanda.
                             </p>
                             <p className="The_par two_par">
-                                As a full-stack engineer with a deep focus on front-end development, my passion drives 
-                                me to constantly push beyond boundaries, by doing projects to showcase my skills.
-                                I have taken various Software Engineering courses from ALX, Freecodecamp, and I'm planning to move on with
-                                Coursera. Although I take all these courses, I am much more of a self-taught. Most of my skills are gained form
-                                continous projects. Some projects experience are gained from community of created by Levi Okoye from Nigeria.
+                                As a full-stack engineer with a deep focus in MERN stack, my passion for this drives me to constantly push myself 
+                                further, by doing projects to showcase my skills. I have taken various Software Engineering courses from ALX,
+                                Freecodecamp, alongside while pursuing my bachelor degree at AUCA university.
+                                Although I take all these courses with my education I am much more of a self-taught and enjoy discovering more on my own. 
                             </p>
                             <p className="The_par three_par">
                                 This website consists of everything you would need to know more about my 
