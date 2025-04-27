@@ -1,15 +1,8 @@
 .center_img {
   width: 100%; /* Adjust the width as needed */
-  height: 18%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0);
   margin-bottom: 0px;
   overflow: hidden;
-
-  @media (max-width: 767px) {
-    border-radius: 0px;
-    height: 15%;
-    margin-bottom: 0;
-  }
 }
 
 .navigation_links {
@@ -21,15 +14,6 @@
   width: 100%;
   z-index: 10;
   backdrop-filter: blur(8px);
-
-  @media (max-width: 767px) {
-    background-color: rgba(107, 107, 107, 0.158);
-    height: 70px;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    backdrop-filter: blur(8px);
-  }
 }
 
 .container {
@@ -47,7 +31,6 @@
 
 .hamburger_container {
   width: 40%;
-  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -97,20 +80,19 @@
 }
 
 .blur {
-  filter: blur(8px); /* Adjust the blur strength as needed */
+  filter: blur(8px); 
 }
 
 .fixed {
   position: fixed;
-  top: 0; /* Adjust this value according to your layout */
-  left: 0; /* Adjust this value according to your layout */
-  width: 100%; /* Adjust this value according to your layout */
-  z-index: 999; /* Adjust this value according to your layout */
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  z-index: 999; 
 }
 
 .Mobile_Logo_container {
   width: 40%;
-  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -258,16 +240,15 @@ header {
   position: relative;
   display: flex;
   flex-direction: row;
-  height: 90%;
   width: 100%;
   overflow: hidden;
-  margin-top: 50px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 .frontpage-shapes-container {
   position: absolute;
   width: 100%;
-  height: 100%;
   z-index: -1;
   top: 100;
   bottom: 0;
@@ -286,7 +267,6 @@ header {
 }
 
 .Left_part {
-  height: 100%;
   width: 50%;
   overflow: auto;
   display: flex;
@@ -515,7 +495,6 @@ header {
 }
 
 .mob_github_link {
-  height: 100%;
   width: 15%;
   display: flex;
   flex-direction: row;
@@ -599,7 +578,6 @@ header {
 }
 
 .My_photo {
-  height: 70%;
   width: 70%;
   background-color: rgba(127, 255, 212, 0);
   border-style: solid;
@@ -612,10 +590,7 @@ header {
 }
 
 .working_img {
-  min-height: 90%;
-  height: 90%;
-  min-width: 90%;
-  width: 90%;
+  width: 480px;
   object-fit: cover;
   filter: grayscale(50%);
 }
@@ -623,69 +598,9 @@ header {
 /*--------------------------PART 1 RESPONSIVE----------------------------------------------------------*/
 /*--------------------------PART 1 RESPONSIVE----------------------------------------------------------*/
 
-@media (max-width: 340px) {
-  .hello_heading {
-    font-size: 35px !important;
-  }
-
-  .Remy_heading {
-    font-size: 40px !important;
-  }
-
-  .small_paragraph {
-    font-size: 12px !important;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .coffee-button {
-    height: 70%;
-  }
-}
-
-@media (max-width: 401px) {
-  .Remy_heading {
-    font-size: 45px;
-  }
-
-  .mob_github_link {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .small_paragraph {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .Two_Parts {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .Left_part {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .left-part-wrapper {
-    width: 100%;
-    height: auto;
-  }
-
-  .left-part-wrapper > div {
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 auto;
+@media (min-width: 1111px) and (max-width: 1300px) {
+  .My_photo {
+    height: 40%;
   }
 }
 
@@ -760,8 +675,80 @@ header {
   }
 }
 
-@media (min-width: 1111px) and (max-width: 1300px) {
-  .My_photo {
-    height: 40%;
+@media (max-width: 767px) {
+  .Two_Parts {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+
+  .navigation_links {
+    background-color: rgba(107, 107, 107, 0.157);
+    height: 70px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    backdrop-filter: blur(8px);
+  }
+
+  .Left_part {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .left-part-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-part-wrapper > div {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto;
   }
 }
+
+@media (max-width: 401px) {
+  .Remy_heading {
+    font-size: 45px;
+  }
+
+  .mob_github_link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small_paragraph {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  .hello_heading {
+    font-size: 35px !important;
+  }
+
+  .Remy_heading {
+    font-size: 40px !important;
+  }
+
+  .small_paragraph {
+    font-size: 12px !important;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .coffee-button {
+    height: 70%;
+  }
+}
+

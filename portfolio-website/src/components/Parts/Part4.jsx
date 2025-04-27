@@ -125,10 +125,10 @@ function Part4() {
                         )}
                     </div>
                     </div>
-                    <div className="lower_cert">
-                    <h4 className="cert_name">{cert.name}</h4>
-                    <h4 className="cert_par">{cert.description}</h4>
-                    </div>
+                    {/* <div className="lower_cert">
+                        <h4 className="cert_name">{cert.name}</h4>
+                        <h4 className="cert_par">{cert.description}</h4>
+                    </div> */}
                 </div>
             ))}
 

@@ -7,16 +7,6 @@
   border-color: rgba(0, 0, 0, 0);
   border-radius: 5px;
   background-color: rgba(209, 226, 215, 0.575);
-
-  @media only screen and (max-width: 767px) {
-    box-shadow: none;
-    height: 16%;
-    width: 100%;
-    background-color: rgba(245, 255, 216, 0.315);
-    background-color: rgba(109, 128, 0, 0.151);
-
-    background-color: rgba(138, 138, 138, 0.199);
-  }
 }
 
 .Two_Parts5 {
@@ -24,13 +14,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
   height: 100%;
   background-color: rgba(29, 12, 0, 0.555);
   background-color: rgb(99, 104, 103);
-
-  @media (max-width: 767px) {
-    margin-top: 0%;
-  }
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .upper_part_services {
@@ -40,13 +29,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media only screen and (max-width: 767px) {
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
 }
 
 .services_header {
@@ -60,10 +42,6 @@
   margin-bottom: 0;
   text-align: center;
   text-decoration: underline;
-
-  @media only screen and (max-width: 767px) {
-    margin-top: 0;
-  }
 }
 
 .lower_part_services {
@@ -72,10 +50,6 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-
-  @media only screen and (max-width: 767px) {
-    height: 70%;
-  }
 }
 
 .service_cards_container {
@@ -84,12 +58,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media only screen and (max-width: 767px) {
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-  }
+  gap: 10px;
 }
 
 .service_card {
@@ -97,17 +66,14 @@
   width: 23%;
   border-style: solid;
   border-width: 1px;
-  border-color: aliceblue;
-  border-radius: 5px;
+  border-color: rgba(240, 248, 255, 0.747);
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
-
-  @media only screen and (max-width: 767px) {
-    width: 48%;
-    height: 48%;
-    border-radius: 3px;
-    border-color: rgb(204, 204, 204);
-  }
+  gap: 15px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .upper_service_card {
@@ -120,10 +86,7 @@
 }
 
 .service_svg {
-  height: 47%;
-  min-height: 47%;
-  width: auto;
-  min-width: auto;
+  width: 50px;
   filter: invert(100%);
 }
 
@@ -236,5 +199,18 @@
   .proffession_paragraph {
     font-size: 11px !important;
     color: rgb(231, 231, 231) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .service_cards_container {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .service_card {
+    width: 42%;
   }
 }

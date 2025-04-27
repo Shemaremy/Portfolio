@@ -17,17 +17,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
-
-  @media (max-width: 767px) /* Mobile devices */ {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    height: 100%;
-    width: 100%;
-    margin-top: 0;
-  }
 }
 
 .Upper_Mobile_ending {
@@ -134,6 +123,18 @@
 /*--------------------------PART 8 SECTION----------------------------------------------------------*/
 /*--------------------------PART 8 SECTION----------------------------------------------------------*/
 
+@media (max-width: 1060px) {
+  .Two_Parts_Mobile_ending {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+}
+
+
 @media (max-width: 320px) {
   .phone_container,
   .email_container {
@@ -145,3 +146,17 @@
     padding: 6px !important;
   }
 }
+
+
+@media (max-width: 767px) {
+  .Two_Parts_Mobile_ending {
+    padding-top: 15px;
+    padding-bottom: 2px;
+    gap: 20px;
+  }
+
+  .Mobile_tel {
+    gap: 5px;
+  }
+}
+

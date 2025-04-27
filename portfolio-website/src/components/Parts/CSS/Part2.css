@@ -13,15 +13,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 1024px) {
-    height: 7%;
-    box-shadow: none;
-    border-radius: 1px;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 }
 
 .Two_Parts2 {
@@ -30,17 +21,10 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 0;
-
-  @media (max-width: 767px) /* Mobile devices */ {
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 5%;
-  }
 }
+
 .Left_part2 {
   overflow: hidden;
-  height: 100%;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -64,13 +48,10 @@
 }
 
 .meet_remy_photo {
-  min-height: 100%;
-  min-width: 95%;
-  height: 100%;
-  width: 95%;
+  width: 140px;
   border-radius: 50%;
   border-style: solid;
-  border-width: 2px;
+  border-width: 0px;
   border-color: rgb(83, 180, 38);
   border-color: white;
 }
@@ -82,11 +63,10 @@
 }
 
 .my_github_desktop {
-  padding: 9px;
   border-style: solid;
   border-radius: 20px;
   border-width: 1px;
-  border-color: rgb(64, 255, 47);
+  border-color: rgba(0, 184, 0, 0.74);
   background-color: rgba(29, 177, 0, 0.116);
   width: 90px;
   padding: 2px;
@@ -98,7 +78,6 @@
 }
 
 .my_github_desktop:hover {
-  transform: scale(1.2);
   background-color: rgba(102, 255, 0, 0.281);
 }
 
@@ -107,15 +86,12 @@
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  overflow: hidden;
-
-  @media (max-width: 767px) /* Mobile devices */ {
-    font-size: 30px;
-    height: 80%;
-    width: 53%;
-  }
+  gap: 10px;
+  overflow: auto;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .About_me_header,
@@ -137,8 +113,7 @@
 }
 
 .About_me_container {
-  height: 80%;
-  width: 80%;
+  width: 72%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,37 +122,17 @@
   border-width: 1px;
   border-radius: 30px 0px 30px 0px;
   border-color: rgba(56, 56, 56, 0);
-  margin-bottom: 20px;
   background-color: rgba(224, 224, 224, 0);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.342);
-
-  @media (max-width: 1023px) {
-    width: 95%;
-    height: auto;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-    overflow-y: auto;
-  }
+  padding: 30px;
 }
 
 .About_me_par_container {
-  width: 90%;
-  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-around !important;
   align-items: center;
   margin: 0 auto;
-
-  @media (max-width: 767px) {
-    width: 100%;
-    height: 90%;
-    padding: 0;
-    overflow-y: auto;
-    display: block;
-  }
 }
 
 .The_par {
@@ -185,76 +140,38 @@
   font-weight: 400;
   font-style: normal;
   color: rgba(0, 0, 0, 0.849);
-  font-size: 12px;
-  height: 30%;
-  width: 100%;
+  font-size: 11px;
   overflow-y: hidden;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 2px;
   padding: 0;
-
-  @media (max-width: 767px) /* Mobile devices */ {
-    font-size: 10px;
-    width: 80%;
-    height: 100%;
-    margin-top: 0;
-  }
 }
 
 .last {
   width: 100%;
-
-  @media (max-width: 767px) {
-    width: 80%;
-  }
 }
 
 .one_par {
   width: 100%;
   height: 10% !important;
   height: auto !important;
-
-  @media (max-width: 767px) {
-    height: auto !important;
-    margin-top: 10%;
-    width: 90%;
-  }
 }
 
 .two_par {
   width: 100%;
   height: 36% !important;
   height: auto !important;
-
-  @media (max-width: 767px) {
-    width: 90% !important;
-    height: auto !important;
-    margin-top: 10%;
-  }
 }
 
 .three_par {
   width: 100%;
   height: 23% !important;
   height: auto !important;
-
-  @media (max-width: 767px) {
-    height: auto !important;
-    width: 95%;
-    margin-top: 10%;
-  }
 }
 
 .four_par {
   width: 100%;
   height: 10% !important;
   height: auto !important;
-
-  @media (max-width: 767px) {
-    height: auto !important;
-    margin-top: 10%;
-    margin-bottom: 5%;
-  }
 }
 
 /* Hide scrollbar container */
@@ -276,32 +193,9 @@
 /*--------------------------PART 2 RESPONSIVE----------------------------------------------------------*/
 /*--------------------------PART 2 RESPONSIVE----------------------------------------------------------*/
 
-@media (max-width: 350px) {
-  .About_Photo {
-    height: auto !important;
-    width: auto !important;
-  }
 
-  .meet_remy_photo {
-    min-height: 45% !important;
-    min-width: auto !important;
-    height: 45% !important;
-    width: auto !important;
-  }
-}
 
 @media (min-width: 351px) and (max-width: 660px) {
-  .About_Photo {
-    height: auto !important;
-    width: auto !important;
-  }
-
-  .meet_remy_photo {
-    min-height: 50% !important;
-    min-width: auto !important;
-    height: 50% !important;
-    width: auto !important;
-  }
 
   .About_me_header {
     color: rgb(82, 82, 82);
@@ -316,23 +210,6 @@
     height: 100% !important;
     padding-bottom: 4%;
   }
-
-  .About_Photo {
-    height: auto !important;
-    width: auto !important;
-  }
-
-  .meet_remy_photo {
-    min-height: 60% !important;
-    min-width: auto !important;
-    height: 60% !important;
-    width: auto !important;
-  }
-
-  .The_par {
-    margin-top: 10px !important;
-    margin-bottom: 0 !important;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 5000px) {
@@ -343,17 +220,9 @@
   .Right_part2 {
     width: 65% !important;
   }
-  .About_Photo {
-    height: 55% !important;
-    width: auto !important;
-  }
 
-  .meet_remy_photo {
-    min-height: 90% !important;
-    min-width: auto !important;
-    height: 90% !important;
-    width: auto !important;
-  }
+
+
 
   .my_github_desk_contain {
     display: contents;
@@ -368,20 +237,6 @@
     align-items: flex-end !important;
   }
 
-  .About_me_container {
-    height: 70% !important;
-  }
-
-  .About_me_par_container {
-    overflow: auto !important;
-    height: auto !important;
-    display: block !important;
-  }
-
-  .The_par {
-    height: auto !important;
-    margin-top: 3% !important;
-  }
 }
 
 @media (min-width: 1024px) and (max-width: 5000px) {
@@ -395,17 +250,7 @@
     ) !important;
   }
 
-  .About_Photo {
-    height: 50% !important;
-    width: auto !important;
-  }
 
-  .meet_remy_photo {
-    min-height: 100% !important;
-    min-width: auto !important;
-    height: 100% !important;
-    width: auto !important;
-  }
 
   .my_github_desktop {
     margin-top: 15%;
@@ -420,28 +265,52 @@
     align-items: flex-end !important;
   }
 
-  .About_me_container {
-    height: 70% !important;
-    padding-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+  .Part2 {
+    height: 250px;
   }
 
-  .About_me_par_container {
-    overflow: auto !important;
-    height: auto !important;
-    display: block !important;
+  .Two_Parts2 {
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
   }
 
-  .The_par {
-    height: auto !important;
-    margin-top: 2% !important;
-    font-size: 11px !important;
-  }
-
-  .Left_part2 {
-    background-color: rgba(0, 128, 0, 0) !important;
+  .meet_remy_photo {
+    width: 130px;
+    border-width: 2px;
   }
 
   .Right_part2 {
-    background-color: rgba(210, 105, 30, 0);
+    display: block;
+    height: 80%;
+    padding: 0;
+  }
+
+  .About_me_header {
+    position: absolute;
+    background-color: rgb(227, 235, 241);
+  }
+
+  .About_me_container {
+    width: 90%;
+    padding: 0;
+    border-radius: 0;
+    border-width: 0;
+    box-shadow: none;
+    overflow: scroll;
+  }
+
+  .About_me_par_container {
+    display: flex;
+    overflow: scroll;
+    padding-top: 50px;
+  }
+
+  .The_par {
+    display: flex;
   }
 }

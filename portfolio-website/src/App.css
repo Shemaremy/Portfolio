@@ -3,6 +3,7 @@ body {
     position: relative;
     height: 570vh;
     width: 100vw;
+    height: auto;
     background-color: aliceblue;
     overflow-x: hidden;
     display: flex;

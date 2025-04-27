@@ -1,19 +1,12 @@
 .Part6 {
   width: 100%; /* Adjust the width as needed */
   height: 14%;
-  margin-top: 0%;
-  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 767px) {
-    box-shadow: none;
-    border-radius: 0px;
-    width: 100%;
-    height: 12%;
-  }
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .upper_part_skills {
@@ -23,12 +16,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media only screen and (max-width: 767px) {
-    display: flex;
-    justify-content: center;
-    height: 20%;
-  }
 }
 
 .skills_header {
@@ -40,16 +27,6 @@
   color: rgb(88, 88, 88);
   margin-top: 0;
   margin-bottom: 0;
-
-  @media only screen and (max-width: 767px) {
-    height: 65%;
-    width: 90%;
-    font-size: 23px;
-    margin-bottom: 0;
-    margin-top: 0;
-    display: flex;
-    align-items: flex-end;
-  }
 }
 
 .skills_underline_container {
@@ -75,12 +52,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
-  @media only screen and (max-width: 767px) {
-    background-color: #30303007;
-    height: 80%;
-    justify-content: space-between;
-  }
 }
 
 .skill_card {
@@ -90,6 +61,13 @@
   border-width: 0px;
   border-color: rgba(148, 148, 148, 0.575);
   border-radius: 2px;
+  gap: 30px;
+}
+
+.skill_card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /*-----------------------------------------*/
@@ -98,12 +76,6 @@
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-
-  @media only screen and (max-width: 767px) {
-    width: 49%;
-    height: 90%;
-    padding-left: 5px;
-  }
 }
 
 .Frontend,
@@ -250,4 +222,28 @@
   .Database > .mainset > .devicon {
     font-size: 40px !important;
   }
+}
+
+@media (max-width: 768px) {
+  .upper_part_skills {
+    padding-bottom: 15px;
+  }
+
+  .skill_card {
+    padding: 0;
+    width: auto;
+    gap: 50px;
+  }
+
+  .lower_part_skills {
+    gap: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    align-items: normal;
+  }
+
+  .devicon {
+    font-size: 25px !important;
+  }
+
 }

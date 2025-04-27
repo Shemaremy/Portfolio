@@ -14,17 +14,17 @@ function Wrapper() {
 
     return (
         <div className="Everything_is_here">
-            <Part1/>
+            <Part1/> {/* Hero */}
             <div className="Mobile_Divisor"></div>
-            <Part2/>
+            <Part2/> {/* Meet Remy */}
             <div className="Mobile_Divisor"></div>
-            <Part3/>
-            <Part4/>
-            <Part5/>
-            <Part6/>
+            <Part3/> {/* Projects */}
+            <Part4/> {/* Certificates */}
+            <Part5/> {/* Services */}
+            <Part6/> {/* Skillset */}
             <div className="Starting_Part7"></div>
-            <Part7/>
-            <Part8/>
+            <Part7/> {/* Form footer */}
+            <Part8/> {/* All rights reserved */}
         </div>
     );
 }

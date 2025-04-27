@@ -214,7 +214,7 @@ function Part1 () {
                             <p className="Github_ico">
                                 <a href="https://github.com/Shemaremy" className="mob_github_link">
                                     <i className="fab fa-github mob_github_ico" ></i>
-                                    <p className="mob_my_github_word">My Github</p>
+                                    <span className="mob_my_github_word">My Github</span>
                                 </a>
                             </p>
                         </div>
