@@ -15,12 +15,12 @@ function Part7() {
     const handleEmailSend = (e) => {
         e.preventDefault();
         setLoading(true);
-        async function loginUser() {
+        async function sendEmail() {
             try {
               const response = await fetch('https://portfolio-form-server.glitch.me/submit', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ Name, Email, Message}),
+                headers: { 'Content-Type': 'application/json' }, // Tells server the request body is in JSON format
+                body: JSON.stringify({ Name, Email, Message}), // Converting json object into JSON string
               });
           
               const data = await response.json();
@@ -39,7 +39,7 @@ function Part7() {
               alert('Error: Something went wrong. Please try again.');
             }
         }
-        loginUser();
+        sendEmail();
     };
 
 
