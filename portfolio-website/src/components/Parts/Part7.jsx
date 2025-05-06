@@ -19,8 +19,8 @@ function Part7() {
             try {
               const response = await fetch('https://portfolio-form-server.glitch.me/submit', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' }, // Tells server the request body is in JSON format
-                body: JSON.stringify({ Name, Email, Message}), // Converting json object into JSON string
+                headers: { 'Content-Type': 'application/json' }, 
+                body: JSON.stringify({ Name, Email, Message}),
               });
           
               const data = await response.json();
@@ -101,7 +101,7 @@ function Part7() {
                                     </div>
                                     <div className="send_button_container">
                                         <button className="send_button" type='submit'>
-                                            {loading ? <i className="fa-solid fa-spinner fa-spin"></i> : <>Send <i className="icon2 fa fa-paper-plane fa-fade" style={{ marginLeft: 12, '--fa-animation-duration': '3s'}}></i></>}
+                                            {loading ? <>Sending &nbsp; <i className="fa-solid fa-spinner fa-spin"></i></> : <>Send <i className="icon2 fa fa-paper-plane fa-fade" style={{ marginLeft: 12, '--fa-animation-duration': '3s'}}></i></>}
                                         </button>
                                     </div>
                                 </div> 
