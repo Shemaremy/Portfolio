@@ -27,7 +27,6 @@ function Part1 () {
 
     // Smooth transitions for the headings and frontpage words
     useEffect(() => {
-        // HEADING (h1, h2) TRANSITIONS
         const headings = document.querySelectorAll('.heading');
         headings.forEach((heading, index) => {
             setTimeout(() => {
@@ -89,14 +88,12 @@ function Part1 () {
 
     }, []);
 
- 
 
 
 
 
 
-
-    // When the burger is clicked, this is called
+    // Called on burger click
     const toggleMobileMenu = () => {
         const menu_btn = document.querySelector('.hamburger');
         const mobile_menu = document.querySelector('.mobile-nav');
@@ -115,7 +112,7 @@ function Part1 () {
 
 
 
-    // This handles when the mobile nav buttons are clicked, scroll to a certain section
+    // Onclick of mobile nav links & scroll to section
     const handleLinkClick = (sectionClass, event) => {
         event.preventDefault();
         toggleMobileMenu();
@@ -129,7 +126,7 @@ function Part1 () {
 
 
 
-    // This handles when the desktop nav buttons are clicked, scroll to a certain section
+    // Desktop nav links onclick, scroll to section
     const handleLinkClickDesk = (sectionClass, linkClass, event) => {
         event.preventDefault();
         setActiveLink(linkClass);
@@ -140,6 +137,39 @@ function Part1 () {
         }
     };
 
+
+
+    // Make a link active on scroll view
+    useEffect(() => {
+        const sections = [
+            { className: "center_img", linkClass: "link1" },
+            { className: "Part3", linkClass: "link2" },
+            { className: "Part4", linkClass: "link3" },
+            { className: "Part7", linkClass: "link4" },
+        ];
+
+        const observers = [];
+
+        sections.forEach(({ className, linkClass }) => {
+            const section = document.querySelector(`.${className}`);
+            if (section) {
+                const observer = new IntersectionObserver(
+                    ([entry]) => {
+                        if (entry.isIntersecting) {
+                            setActiveLink(linkClass);
+                        }
+                    },
+                    { threshold: 0.5 }
+                );
+                observer.observe(section);
+                observers.push(observer);
+            }
+        });
+
+        return () => {
+            observers.forEach((observer) => observer.disconnect());
+        };
+    }, []);
 
 
 
@@ -171,7 +201,7 @@ function Part1 () {
                     <div className="mobile_nav_contains">
                         <a className="Ml_1" onClick={(e) => handleLinkClick('center_img', e)}>Home</a>
                         <a className="Ml_2" onClick={(e) => handleLinkClick('Part3', e)}>Projects</a>
-                        <a className="Ml_3" onClick={(e) => handleLinkClick('Part5', e)}>Services</a>
+                        <a className="Ml_3" onClick={(e) => handleLinkClick('Part4', e)}>Certificates</a>
                         <a className="Ml_4" onClick={(e) => handleLinkClick('Starting_Part7', e)}>Contact</a>
                     </div>
                 </nav>
@@ -184,8 +214,8 @@ function Part1 () {
                     <a className={`link2 ${activeLink === "link2" ? "active" : ""}`} onClick={(e) => handleLinkClickDesk("Part3", "link2", e)}>
                         Projects
                     </a>
-                    <a className={`link3 ${activeLink === "link3" ? "active" : ""}`} onClick={(e) => handleLinkClickDesk("Part5", "link3", e)}>
-                        Services
+                    <a className={`link3 ${activeLink === "link3" ? "active" : ""}`} onClick={(e) => handleLinkClickDesk("Part4", "link3", e)}>
+                        Certificates
                     </a>
                     <a className={`link4 ${activeLink === "link4" ? "active" : ""}`} onClick={(e) => handleLinkClickDesk("Part7", "link4", e)}>
                         Contact
