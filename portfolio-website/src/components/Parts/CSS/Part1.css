@@ -713,7 +713,7 @@ header {
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 415px) {
   .Remy_heading {
     font-size: 45px;
   }
@@ -727,7 +727,7 @@ header {
   }
 
   .small_paragraph {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
