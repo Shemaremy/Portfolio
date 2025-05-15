@@ -98,7 +98,7 @@ function Part1 () {
         const menu_btn = document.querySelector('.hamburger');
         const mobile_menu = document.querySelector('.mobile-nav');
         const everything_is_here = document.querySelector('body');
-        const center_img_elements = document.querySelectorAll('.Two_Parts, .Part2');
+        const center_img_elements = document.querySelectorAll('.Two_Parts, .Part2, .Part3, .Part4, .Part5, .Part6, .Part7, .Part8');
 
         menu_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
@@ -199,10 +199,10 @@ function Part1 () {
 
                 <nav className="mobile-nav">
                     <div className="mobile_nav_contains">
-                        <a className="Ml_1" onClick={(e) => handleLinkClick('center_img', e)}>Home</a>
-                        <a className="Ml_2" onClick={(e) => handleLinkClick('Part3', e)}>Projects</a>
-                        <a className="Ml_3" onClick={(e) => handleLinkClick('Part4', e)}>Certificates</a>
-                        <a className="Ml_4" onClick={(e) => handleLinkClick('Starting_Part7', e)}>Contact</a>
+                        <a className="Ml_1" onClick={(e) => handleLinkClick('center_img', e)}>Home <i className="fa-solid fa-house"></i></a>
+                        <a className="Ml_2" onClick={(e) => handleLinkClick('Part3', e)}>Projects <i className="fa-solid fa-list-check"></i></a>
+                        <a className="Ml_3" onClick={(e) => handleLinkClick('Part4', e)}>Certificates <i className="fa-solid fa-file-invoice"></i></a>
+                        <a className="Ml_4" onClick={(e) => handleLinkClick('Starting_Part7', e)}>Contact <i className="fa-solid fa-id-badge"></i></a>
                     </div>
                 </nav>
 
