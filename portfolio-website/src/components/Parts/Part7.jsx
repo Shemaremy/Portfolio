@@ -62,8 +62,10 @@ function Part7() {
                             </div>
 
                             <div className="Tel_container">
-                                <p className="p2"><i className="icon2 fa fa-phone" aria-hidden="true"></i> &nbsp; +250 783 674 289</p>
-                                <p className="p3"><i className="icon2 fas fa-envelope"></i> &nbsp; remyshema20@gmail.com</p>
+                                <i className="icon2 fa fa-phone" aria-hidden="true"></i> &nbsp;
+                                <a className="p2" href="tel:+250783674289">+250 783 674 289</a> <br />
+                                <i className="icon2 fas fa-envelope"></i> &nbsp;
+                                <a className="p3" href="mailto:remyshema20@gmail.com">remyshema20@gmail.com</a>
                             </div>         
                         </div>
                         <div className="Right_section">                        
