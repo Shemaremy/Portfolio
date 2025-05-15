@@ -1,4 +1,4 @@
 # Portfolio
-My personal portfolio website
+My portfolio website
 
 URL: https://remyshema.netlify.app
