@@ -425,7 +425,7 @@ header {
   cursor: pointer;
   background-color: rgba(0, 184, 0, 0.062);
   border-color: rgba(0, 184, 0, 0.74);
-  transition: transform 0.3s ease-in-out, background-color 0.7s ease !important;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease !important;
 
   @media (max-width: 767px) {
     background-color: rgba(0, 184, 0, 0.116);
@@ -440,7 +440,7 @@ header {
 }
 
 .coffee-button:hover {
-  background-color: rgba(0, 184, 0, 0.308);
+  background-color: rgba(0, 184, 0, 0.13);
 }
 
 .coffee-button:active {
@@ -713,7 +713,7 @@ header {
   }
 }
 
-@media (max-width: 401px) {
+@media (max-width: 410px) {
   .Remy_heading {
     font-size: 45px;
   }

@@ -114,10 +114,6 @@
   align-items: flex-end;
   justify-content: center;
   font-size: 10px;
-
-  @media (max-width: 767px) {
-    font-size: 8px;
-  }
 }
 
 /*--------------------------PART 8 SECTION----------------------------------------------------------*/
@@ -157,6 +153,10 @@
 
   .Mobile_tel {
     gap: 5px;
+  }
+
+  .copyright {
+    font-size: 10px;
   }
 }
 
