@@ -30,7 +30,7 @@ function Part3() {
           alt: "Verve",
           date: "June 20, 2024",
           title: "Verve e-commerce website",
-          description: "I built this web app with MERN stack from scratch since February. It took me so long, but I learnt much because this was my first big MERN project I've ever built.",
+          description: "I built this web app with MERN stack from scratch since February. It took me so long, but I learnt much because this was my first big MERN project I've built.",
           link: "https://v3rve.netlify.app"
         },
         {
